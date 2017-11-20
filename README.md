@@ -1,4 +1,0 @@
-# Chromium-stats
-## Igalia
-## LGE
-
