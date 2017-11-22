@@ -7,16 +7,19 @@ CHROMIUM_PATH=$HOME/chromium-stats/chromium
 # Update Chromium source code.
 cd "$CHROMIUM_PATH"
 git pull
-echo "Finish to update Chromium."
+timestamp=$(date +"%T")
+echo "[$timestamp] Finish to update Chromium."
 
 # Start to analyze LGE commit counts.
 now="$(date +'%Y-%m-%d')"
-echo "Starting checking foo@lge.com commits from 2017-01-01 to $now, please wait..."
-gitinspector --format=html --since="2017-01-01" --until="$now" -T -x "email:^(?!([a-zA-Z0-9._-]+@lge.com))" $CHROMIUM_PATH > $GIT_COUNTER_PATH/index.html
+timestamp=$(date +"%T")
+echo "[$timestamp] Starting checking foo@lge.com commits from 2017-01-01 to $now, please wait..."
+$HOME/github/gitinspector/gitinspector.py --format=html --since="2017-01-01" --until="$now" -T -x "email:^(?!([a-zA-Z0-9._-]+@lge.com))" $CHROMIUM_PATH > $GIT_COUNTER_PATH/index.html
 
 # Upload the result to github.
 cd "$GIT_COUNTER_PATH"
 git add index.html
 git commit -m "Update index.html by bot"
 git push origin master:master
-
+timestamp=$(date +"%T")
+echo "[$timestamp] Finish to upload new index.html!"
