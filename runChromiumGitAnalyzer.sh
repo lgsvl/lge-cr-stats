@@ -26,4 +26,5 @@ do
     git push origin master:master
     timestamp=$(date +"%T")
     echo "[$timestamp] Finish to upload new index.html!"
+    sleep 17h
 done
