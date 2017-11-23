@@ -15,7 +15,7 @@ echo "[$timestamp] Finish to update Chromium."
 now="$(date +'%Y-%m-%d')"
 timestamp=$(date +"%T")
 echo "[$timestamp] Starting checking foo@lge.com commits from 2017-01-01 to $now, please wait..."
-$HOME/github/gitinspector/gitinspector.py --format=html --since="2017-01-01" --until="$now" -T -x "email:^(?!([a-zA-Z0-9._-]+@lge.com))" $CHROMIUM_PATH > $GIT_COUNTER_PATH/index.html
+gitinspector.py --format=html --since="2017-01-01" --until="$now" -T -x "email:^(?!([a-zA-Z0-9._-]+@lge.com))" $CHROMIUM_PATH > $GIT_COUNTER_PATH/index.html
 
 # Upload the result to github.
 cd $GIT_COUNTER_PATH
