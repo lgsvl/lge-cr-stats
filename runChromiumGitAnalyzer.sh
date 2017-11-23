@@ -1,12 +1,13 @@
-#!/bin/sh
+#!/bin/bash
 
 # Define pathes for this tool and Chromium source.
 GIT_COUNTER_PATH=$HOME/github/Chromium-stats
 CHROMIUM_PATH=$HOME/chromium-stats/chromium
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/gyuyoung/github/Chromium-stats:$PATH
 
 # Update Chromium source code.
-cd "$CHROMIUM_PATH"
-git pull
+cd $CHROMIUM_PATH
+git pull origin master:master
 timestamp=$(date +"%T")
 echo "[$timestamp] Finish to update Chromium."
 
@@ -17,7 +18,7 @@ echo "[$timestamp] Starting checking foo@lge.com commits from 2017-01-01 to $now
 $HOME/github/gitinspector/gitinspector.py --format=html --since="2017-01-01" --until="$now" -T -x "email:^(?!([a-zA-Z0-9._-]+@lge.com))" $CHROMIUM_PATH > $GIT_COUNTER_PATH/index.html
 
 # Upload the result to github.
-cd "$GIT_COUNTER_PATH"
+cd $GIT_COUNTER_PATH
 git add index.html
 git commit -m "Update index.html by bot"
 git push origin master:master
