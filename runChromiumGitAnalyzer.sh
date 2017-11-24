@@ -13,13 +13,13 @@ do
     cd $CHROMIUM_PATH
     git pull origin master:master
     timestamp=$(date +"%T")
-    echo "[$timestamp] Finish to update Chromium." > $LOG_PATH/log_file.log
+    echo "[$timestamp] Finish to update Chromium."
 
     # Start to analyze LGE commit counts.
     now="$(date +'%Y-%m-%d')"
     timestamp=$(date +"%T")
-    echo "[$timestamp] Starting checking foo@lge.com commits from 2017-01-01 to $now, please wait..." > $LOG_PATH/log_file.log
-    gitinspector.py --format=html --since="2017-01-01" --until="$now" -T -x "email:^(?!([a-zA-Z0-9._-]+@lge.com))" $CHROMIUM_PATH > $GIT_COUNTER_PATH/index.html
+    echo "[$timestamp] Starting checking foo@lge.com commits from 2017-09-01 to $now, please wait..."
+    gitinspector.py --format=html --since="2017-09-01" --until="$now" -T -x "email:^(?!([a-zA-Z0-9._-]+@lge.com))" $CHROMIUM_PATH > $GIT_COUNTER_PATH/index.html
 
     # Upload the result to github.
     cd $GIT_COUNTER_PATH
@@ -27,6 +27,6 @@ do
     git commit -m "Update index.html by bot"
     git push origin master:master
     timestamp=$(date +"%T")
-    echo "[$timestamp] Finish to upload new index.html!" > $LOG_PATH/log_file.log
+    echo "[$timestamp] Finish to upload new index.html!"
     sleep 1h
 done
