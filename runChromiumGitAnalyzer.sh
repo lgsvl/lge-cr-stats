@@ -33,6 +33,6 @@ do
     timestamp=$(date +"%T")
     echo "[$timestamp] Finish to upload new index.html!"
     timestamp=$(date +"%T")
-    echo "[$timestamp] Sleeping 10 mininutes..."
+    echo "[$timestamp] Sleeping 18 hours..."
     sleep 18h
 done
