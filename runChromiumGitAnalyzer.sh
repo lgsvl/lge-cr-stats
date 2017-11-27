@@ -10,7 +10,7 @@ export PATH=$GIT_INSPECTOR_PATH:$PATH
 while :
 do
     # Update Chromium source code.
-    cd "$CHROMIUM_PATH"
+    cd $CHROMIUM_PATH
     git pull origin master:master
     timestamp=$(date +"%T")
     echo "[$timestamp] Finish to update Chromium."
@@ -23,7 +23,7 @@ do
     cp $INDEX_ORG_PATH/index-org.html $GIT_COUNTER_PATH/index.html
 
     # Upload the result to github.
-    cd "$GIT_COUNTER_PATH"
+    cd $GIT_COUNTER_PATH
     git add index.html
     git commit -m "Update index.html by bot"
     git push origin master:master
