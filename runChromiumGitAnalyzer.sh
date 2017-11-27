@@ -10,6 +10,8 @@ export PATH=$GIT_INSPECTOR_PATH:$PATH
 while :
 do
     # Update Chromium source code.
+    timestamp=$(date +"%T")
+    echo "[$timestamp] Start updating  Chromium trunk, please wait..."
     cd $CHROMIUM_PATH
     git pull origin master:master
     timestamp=$(date +"%T")
@@ -29,5 +31,7 @@ do
     git push origin master:master
     timestamp=$(date +"%T")
     echo "[$timestamp] Finish to upload new index.html!"
+    timestamp=$(date +"%T")
+    echo "[$timestamp] Sleeping 10 mininutes..."
     sleep 18h
 done
