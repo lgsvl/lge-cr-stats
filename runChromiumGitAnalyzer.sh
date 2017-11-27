@@ -5,6 +5,7 @@ GIT_COUNTER_PATH=$HOME/github/Chromium-stats
 CHROMIUM_PATH=$HOME/chromium-stats/chromium
 GIT_INSPECTOR_PATH=$HOME/github/gitinspector
 INDEX_ORG_PATH=$HOME/chromium-stats/log
+ START_DATE="2017-01-01"
 export PATH=$GIT_INSPECTOR_PATH:$PATH
 
 while :
@@ -20,8 +21,8 @@ do
     # Start to analyze LGE commit counts.
     now="$(date +'%Y-%m-%d')"
     timestamp=$(date +"%T")
-    echo "[$timestamp] Starting checking foo@lge.com commits from 2017-01-01 to $now, please wait..."
-    gitinspector.py --format=html --since="2017-01-01" --until="$now" -T -x "email:^(?!([a-zA-Z0-9._-]+@lge.com))" $CHROMIUM_PATH > $INDEX_ORG_PATH/index-org.html
+    echo "[$timestamp] Starting checking foo@lge.com commits from $START_DATE to $now, please wait..."
+    gitinspector.py --format=html --since="$START_DATE" --until="$now" -T -x "email:^(?!([a-zA-Z0-9._-]+@lge.com))" $CHROMIUM_PATH > $INDEX_ORG_PATH/index-org.html
     cp $INDEX_ORG_PATH/index-org.html $GIT_COUNTER_PATH/index.html
 
     # Upload the result to github.
