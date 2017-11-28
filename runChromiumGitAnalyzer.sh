@@ -30,10 +30,9 @@ do
     git add index.html
     git commit -m "Update index.html by bot"
     git fetch origin master
-    git rebase -i origin/master
+    git rebase origin/master
     git push origin master:master
     timestamp=$(date +"%T")
     echo "[$timestamp] Finish to upload new index.html!"
     timestamp=$(date +"%T")
-    echo "[$timestamp] Sleeping 18 hours..."
 done
