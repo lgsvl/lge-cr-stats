@@ -15,6 +15,7 @@ do
     echo "[$timestamp] Start updating  Chromium trunk, please wait..."
     cd $CHROMIUM_PATH
     git pull origin master:master
+    git gc --auto
     timestamp=$(date +"%T")
     echo "[$timestamp] Finish to update Chromium."
 
