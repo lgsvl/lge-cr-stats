@@ -23,7 +23,7 @@ do
     now="$(date +'%Y-%m-%d')"
     timestamp=$(date +"%T")
     echo "[$timestamp] Starting checking foo@lge.com commits from $START_DATE to $now, please wait..."
-    gitinspector.py --format=html --file-types=** --since="$START_DATE" --until="$now" -T -x "email:^(?!([a-zA-Z0-9._-]+@lge.com))" $CHROMIUM_PATH > $INDEX_ORG_PATH/index-org.html
+    gitinspector.py --format=html --file-types=*,java,c,cc,cpp,h,py,js,sql,mm,html,txt,gn,md,idl,in,gyp,gypi,bp --since="$START_DATE" --until="$now" -T -x "email:^(?!([a-zA-Z0-9._-]+@lge.com))" $CHROMIUM_PATH > $INDEX_ORG_PATH/index-org.html
     cp $INDEX_ORG_PATH/index-org.html $GIT_COUNTER_PATH/index.html
 
     # Upload the result to github.
