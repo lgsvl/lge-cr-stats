@@ -2,10 +2,10 @@
 
 # Define pathes for this tool and Chromium source.
 GIT_COUNTER_PATH=$HOME/github/Chromium-stats
-CHROMIUM_PATH=$HOME/chromium-stats/chromium
+CHROMIUM_PATH=$HOME/chromium-stats/chromium/src
 GIT_INSPECTOR_PATH=$HOME/github/gitinspector
 INDEX_ORG_PATH=$HOME/chromium-stats/log
- START_DATE="2017-01-01"
+START_DATE="2017-01-01"
 export PATH=$GIT_INSPECTOR_PATH:$PATH
 
 while :
@@ -36,4 +36,5 @@ do
     timestamp=$(date +"%T")
     echo "[$timestamp] Finish to upload new index.html!"
     timestamp=$(date +"%T")
+    sleep 8h
 done
