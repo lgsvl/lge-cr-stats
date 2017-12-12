@@ -1,11 +1,19 @@
 #!/bin/bash
 
+if [ -z "$1" ]
+    then
+        echo "No email domain."
+        echo "Usage : ./runChromiumGitAnalyzer.sh [email domain] (i.e. ./runChromiumGitAnalyzer.sh lge.com, igalia.com)"
+        exit 1
+fi
+
 # Define pathes for this tool and Chromium source.
-GIT_COUNTER_PATH=$HOME/github/Chromium-stats
+GIT_COUNTER_PATH=$HOME/github/LGE-Chromium-Stats/lge-chromium-contribution-stats
+GIT_INSPECTOR_PATH=$HOME/github/LGE-Chromium-Stats/gitinspector-for-lge-chromium-stats
 CHROMIUM_PATH=$HOME/chromium-stats/chromium/src
-GIT_INSPECTOR_PATH=$HOME/github/gitinspector
 INDEX_ORG_PATH=$HOME/chromium-stats/log
 START_DATE="2017-01-01"
+
 export PATH=$GIT_INSPECTOR_PATH:$PATH
 
 while :
@@ -19,11 +27,11 @@ do
     timestamp=$(date +"%T")
     echo "[$timestamp] Finish to update Chromium."
 
-    # Start to analyze LGE commit counts.
+    # Start to analyze commit counts.
     now="$(date +'%Y-%m-%d')"
     timestamp=$(date +"%T")
-    echo "[$timestamp] Starting checking foo@lge.com commits from $START_DATE to $now, please wait..."
-    gitinspector.py --format=html --file-types=** --hard=false --since="$START_DATE" --until="$now" -T -x "email:^(?!([a-zA-Z0-9._-]+@lge.com))" $CHROMIUM_PATH > $INDEX_ORG_PATH/index-org.html
+    echo "[$timestamp] Starting checking foo@$1 commits from $START_DATE to $now, please wait..."
+    gitinspector.py --format=html --file-types=** --hard=false --since="$START_DATE" --until="$now" -T -x "email:^(?!([a-zA-Z0-9._-]+@$1))" $CHROMIUM_PATH > $INDEX_ORG_PATH/index-org.html
     cp $INDEX_ORG_PATH/index-org.html $GIT_COUNTER_PATH/index.html
 
     # Upload the result to github.
@@ -34,7 +42,7 @@ do
     git rebase origin/master
     git push origin master:master
     timestamp=$(date +"%T")
-    echo "[$timestamp] Finish to upload new index.html!"
+    echo "[$timestamp] Finish to upload new index.html!\n"
     timestamp=$(date +"%T")
     sleep 8h
 done
