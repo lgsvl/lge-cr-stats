@@ -6,8 +6,8 @@ OUTPUT_PATH=$HOME/github/LGE-Chromium-Stats/lge-chromium-contribution-stats/
 
 export LGE_EMAIL="@lge.com"
 
-#while :
-#do
+while :
+do
     # Update Chromium source code.
     start_timestamp=$(date +"%T")
     timestamp=$start_timestamp
@@ -50,8 +50,8 @@ export LGE_EMAIL="@lge.com"
     echo "[$timestamp] Finish to upload new result!"
     echo "- StartTime: $start_timestamp"
     echo "- EndTime: $timestamp"
-#    sleep 8h
-#done
+    sleep 18h
+done
 
 skip_commit() {
     shift;
