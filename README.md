@@ -2,7 +2,7 @@
 This tool is to generate a result to track LGE Chromium contribution
 
 # Instruction
-## Install git_stats tool first.
+## Install git_stats tool
 ```sh
 $ sudo apt-get install ruby
 $ sudo gem install git_stats
