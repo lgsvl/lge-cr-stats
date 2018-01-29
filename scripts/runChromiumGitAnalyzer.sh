@@ -21,7 +21,7 @@ do
     # Start to analyze commit counts.
     now="$(date +'%Y-%m-%d')"
     timestamp=$(date +"%T")
-    echo "[$timestamp] Starting checking Igalia commits until $now, please wait..."
+    echo "[$timestamp] Starting checking LGE commits until $now, please wait..."
     git filter-branch -f --commit-filter '
         if echo "$GIT_AUTHOR_EMAIL" | grep -q "$LGE_EMAIL";
         then
