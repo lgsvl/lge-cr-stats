@@ -4,8 +4,7 @@ This tool is to generate a result to track LGE Chromium contribution
 # Instruction
 ## Install git_stats tool
 ```sh
-$ sudo apt-get install ruby
-$ sudo gem install git_stats
+$ git clone https://github.com/ChromiumGitCoutner/lge_git_stats.git
 ```
 
 ## Checkout Chromium
@@ -27,6 +26,7 @@ Register the chromium path in the file.
 ```sh
  CHROMIUM_PATH=/path/to/Chromium/src (i.e. $HOME/chromium-stats/chromium/Chromium/)
  OUTPUT_PATH=/path/to/lge-chromium-contribution-stats  (i.e. $HOME/github/LGE-Chromium-Stats/lge-chromium-contribution-stats/
+ GIT_STATS_PATH=/path/to/lge_git_stats/bin/git_stats
  ```
  
 ## Replace ssh key files in .ssh for auto result update
