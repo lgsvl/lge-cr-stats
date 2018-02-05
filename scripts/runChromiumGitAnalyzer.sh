@@ -33,7 +33,7 @@ do
     timestamp=$(date +"%T")
     echo "[$timestamp] Finish to find LGE commits."
 
-    git_stats generate -p $CHROMIUM_PATH -o $OUTPUT_PATH
+    $HOME/github/LGE-Chromium-Stats/lge_git_stats/git_stats generate -p $CHROMIUM_PATH -o $OUTPUT_PATH
 
     # Restore master branch
     git reset --hard refs/original/refs/heads/master
