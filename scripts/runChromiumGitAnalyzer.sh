@@ -3,6 +3,7 @@
 # Define pathes for this tool and Chromium source.
 CHROMIUM_PATH=$HOME/chromium-stats/chromium/Chromium/
 OUTPUT_PATH=$HOME/github/LGE-Chromium-Stats/lge-chromium-contribution-stats/
+GIT_STATS_PATH=$HOME/github/LGE-Chromium-Stats/lge_git_stats/bin/git_stats
 
 export LGE_EMAIL="@lge.com"
 
@@ -33,7 +34,7 @@ do
     timestamp=$(date +"%T")
     echo "[$timestamp] Finish to find LGE commits."
 
-    $HOME/github/LGE-Chromium-Stats/lge_git_stats/bin/git_stats generate -p $CHROMIUM_PATH -o $OUTPUT_PATH
+    $GIT_STATS_PATH generate -p $CHROMIUM_PATH -o $OUTPUT_PATH
 
     # Restore master branch
     git reset --hard refs/original/refs/heads/master
