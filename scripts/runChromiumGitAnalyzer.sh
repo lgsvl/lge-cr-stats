@@ -16,6 +16,7 @@ do
     cd $CHROMIUM_PATH
     git pull origin master:master
     git subtree add --prefix=v8-log https://chromium.googlesource.com/v8/v8.git master
+    git subtree add --prefix=pdfium-log https://pdfium.googlesource.com/pdfium master
     timestamp=$(date +"%T")
     echo "[$timestamp] Finish to update Chromium."
 
