@@ -52,15 +52,5 @@ do
     echo "[$timestamp] Finish to upload new result!"
     echo "- StartTime: $start_timestamp"
     echo "- EndTime: $timestamp"
-    sleep 1h
+    sleep 4h
 done
-
-skip_commit() {
-    shift;
-    while [ -n "$1" ];
-    do
-        shift;
-        map "$1";
-        shift;
-    done;
-}
