@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # Define pathes for this tool and Chromium source.
-CHROMIUM_PATH=$HOME/chromium-stats/chromium/Chromium/
-OUTPUT_PATH=$HOME/github/LGE-Chromium-Stats/lge-chromium-contribution-stats/
-GIT_STATS_PATH=$HOME/github/LGE-Chromium-Stats/lge_git_stats/bin/git_stats
+CHROMIUM_PATH=$HOME/chromium/Chromium
+OUTPUT_PATH=$HOME/chromium-stats-tool/lge-chromium-contribution-stats
+GIT_STATS_PATH=$HOME/chromium-stats-tool/lge_git_stats/bin/git_stats
 
 export LGE_EMAIL="@lge.com"
 
@@ -16,7 +16,6 @@ do
     cd $CHROMIUM_PATH
     git pull origin master:master
     git subtree add --prefix=v8-log https://chromium.googlesource.com/v8/v8.git master
-    git subtree add --prefix=pdfium-log https://pdfium.googlesource.com/pdfium master
     timestamp=$(date +"%T")
     echo "[$timestamp] Finish to update Chromium."
 
@@ -42,15 +41,8 @@ do
     git reset --hard HEAD~1
 
     # Upload the result to github.
-    cd $OUTPUT_PATH
-    git add .
-    git commit -m "Update the new result by bot"
-    git fetch origin master
-    git rebase origin/master
-    git push origin master:master
     timestamp=$(date +"%T")
     echo "[$timestamp] Finish to upload new result!"
     echo "- StartTime: $start_timestamp"
     echo "- EndTime: $timestamp"
-    sleep 4h
 done
