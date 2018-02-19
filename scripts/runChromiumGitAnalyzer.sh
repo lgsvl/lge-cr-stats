@@ -2,7 +2,7 @@
 
 # Define pathes for this tool and Chromium source.
 CHROMIUM_PATH=$HOME/chromium/Chromium
-OUTPUT_PATH=$HOME/chromium-stats-tool/lge-chromium-contribution-stats
+OUTPUT_PATH=$HOME/chromium-stats-tool/lge-cr-stats
 GIT_STATS_PATH=$HOME/chromium-stats-tool/lge_git_stats/bin/git_stats
 
 export LGE_EMAIL="@lge.com"
