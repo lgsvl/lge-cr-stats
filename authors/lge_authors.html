@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>GitStats - Chromium</title>
+<meta charset='utf-8'>
+<link href='../assets/bootstrap/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+<style>
+body {
+   padding-top: 60px;
+   font-family: "Trebuchet MS","Bitstream Vera Sans", "DejaVu Sans", "Luxi Sans","Lucida Grande", Helvetica, Verdana, Arial,sans-serif;
+   background-color:#fdfdfd;
+}
+.navbar {
+  font-size: 16px;
+}
+.navbar .nav>li>a {
+  float: none;
+  padding: 10px 10px 10px;
+  color: #eee;
+  text-decoration: none;
+  text-shadow: none;
+}
+.navbar .nav>li>a:hover {
+  color: #ff9900;
+}
+.navbar .nav>.active>a, .navbar .nav>.active>a:hover, .navbar .nav>.active>a:focus {
+  -webkit-border-radius: 3px;
+  color: #555;
+  padding: 5px 10px 5px;
+  margin: 5px 10px 5px;
+  text-decoration: none;
+  background-color: #ccc;
+}
+.navbar .brand {
+  -webkit-border-radius: 3px;
+  background: #FF9900;
+  color: #404040;
+  display: block;
+  float: left;
+  padding: 5px 15px 5px;
+  margin: 5px 15px 5px;
+  margin-left: -20px;
+  font-size: 20px;
+  font-weight: 200;
+  /* color: white; */
+  text-shadow: none;
+}
+.navbar-inner {
+  background: #404040;
+}
+a {
+  color: #666666;
+}
+a:hover {
+  color: #ff9900;
+}
+</style>
+<link href='../assets/bootstrap/css/bootstrap-responsive.min.css' rel='stylesheet' type='text/css'>
+<script src='../assets/jquery.min.js' type='text/javascript'></script>
+<script src='../assets/bootstrap/js/bootstrap.min.js' type='text/javascript'></script>
+<script src='../assets/highstock.js' type='text/javascript'></script>
+<script src='../assets/exporting.js' type='text/javascript'></script>
+<script src='../assets/export-csv.js' type='text/javascript'></script>
+</head>
+<body>
+<div class='navbar navbar-fixed-top'>
+<div class='navbar-inner'>
+<div class='container'>
+<a class='btn btn-navbar' data-target='.nav-collapse' data-toggle='collapse'>
+<span class='icon-bar'></span>
+<span class='icon-bar'></span>
+<span class='icon-bar'></span>
+</a>
+<a class='brand' href='../index.html'>GitStats - Chromium</a>
+<div class='nav-collapse collapse'>
+<ul class='nav'>
+<li class=''>
+<a href='../general.html'>General</a>
+</li>
+<li class=''>
+<a href='../activity/by_date.html'>Activity</a>
+</li>
+<li class='active'>
+<a href='lge_authors.html'>Authors</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class='container'>
+<div class='tabbable tabs-left'>
+<ul class='nav nav-tabs'>
+<li class='active'>
+<a href='lge_authors.html'>LGE Chromium authors</a>
+</li>
+<li class=''>
+<a href='commits_sum_by_author_by_date.html'>Commits sum by author by date</a>
+</li>
+</ul>
+<div class='tab-content'>
+<div class='tab-pane active'>
+<div class='page-header'>
+<h1 class='pagination-centered'>LGE Chromium authors</h1>
+</div>
+<table class='table table-condensed table-hover'>
+<tr>
+<th>#</th>
+<th>Author</th>
+<th>Commits</th>
+<th>Chromium Gerrit</th>
+<th>Chromium Rietveld</th>
+<th>Ongoing Review</th>
+<th>First commit</th>
+<th>Last commit</th>
+<th></th>
+</tr>
+<tr>
+<th>1</th>
+<th>Gyuyoung Kim &lt;gyuyoung.kim@lge.com&gt;</th>
+<td><a href=https://chromium.googlesource.com/chromium/src/+log/master?author=gyuyoung.kim@lge.com>83</a></td>
+<td><a href=https://chromium-review.googlesource.com/q/status:merged+author:gyuyoung.kim@lge.com>gerrit</a></td>
+<td><a href=https://codereview.chromium.org/search?closed=2&owner=gyuyoung.kim@lge.com>rietveld</a></td>
+<td><a href=https://chromium-review.googlesource.com/q/is:open+owner:gyuyoung.kim@lge.com>ongoing</a></td>
+<td>September 11, 2017 02:37</td>
+<td>February 27, 2018 16:31</td>
+<td>
+<a class='btn' href='gyuyoung_kim/activity/by_date.html'>Activity</a>
+</td>
+<td>
+<a class='btn' href='gyuyoung_kim/author_details/commits_by_date.html'>Details</a>
+</td>
+</tr>
+<tr>
+<th>2</th>
+<th>Jose Dapena Paz &lt;jose.dapena@lge.com&gt;</th>
+<td><a href=https://chromium.googlesource.com/chromium/src/+log/master?author=jose.dapena@lge.com>43</a></td>
+<td><a href=https://chromium-review.googlesource.com/q/status:merged+author:jose.dapena@lge.com>gerrit</a></td>
+<td><a href=https://codereview.chromium.org/search?closed=2&owner=jose.dapena@lge.com>rietveld</a></td>
+<td><a href=https://chromium-review.googlesource.com/q/is:open+owner:jose.dapena@lge.com>ongoing</a></td>
+<td>October 24, 2017 14:01</td>
+<td>February 08, 2018 15:50</td>
+<td>
+<a class='btn' href='jose_dapena_paz/activity/by_date.html'>Activity</a>
+</td>
+<td>
+<a class='btn' href='jose_dapena_paz/author_details/commits_by_date.html'>Details</a>
+</td>
+</tr>
+<tr>
+<th>3</th>
+<th>Sunghoon Kim &lt;shoon.kim@lge.com&gt;</th>
+<td><a href=https://chromium.googlesource.com/chromium/src/+log/master?author=shoon.kim@lge.com>6</a></td>
+<td><a href=https://chromium-review.googlesource.com/q/status:merged+author:shoon.kim@lge.com>gerrit</a></td>
+<td><a href=https://codereview.chromium.org/search?closed=2&owner=shoon.kim@lge.com>rietveld</a></td>
+<td><a href=https://chromium-review.googlesource.com/q/is:open+owner:shoon.kim@lge.com>ongoing</a></td>
+<td>January 16, 2017 01:58</td>
+<td>May 23, 2017 21:59</td>
+<td>
+<a class='btn' href='sunghoon_kim/activity/by_date.html'>Activity</a>
+</td>
+<td>
+<a class='btn' href='sunghoon_kim/author_details/commits_by_date.html'>Details</a>
+</td>
+</tr>
+<tr>
+<th>4</th>
+<th>Wanchang Ryu &lt;wanchang.ryu@lge.com&gt;</th>
+<td><a href=https://chromium.googlesource.com/chromium/src/+log/master?author=wanchang.ryu@lge.com>6</a></td>
+<td><a href=https://chromium-review.googlesource.com/q/status:merged+author:wanchang.ryu@lge.com>gerrit</a></td>
+<td><a href=https://codereview.chromium.org/search?closed=2&owner=wanchang.ryu@lge.com>rietveld</a></td>
+<td><a href=https://chromium-review.googlesource.com/q/is:open+owner:wanchang.ryu@lge.com>ongoing</a></td>
+<td>December 21, 2016 02:56</td>
+<td>August 30, 2017 07:25</td>
+<td>
+<a class='btn' href='wanchang_ryu/activity/by_date.html'>Activity</a>
+</td>
+<td>
+<a class='btn' href='wanchang_ryu/author_details/commits_by_date.html'>Details</a>
+</td>
+</tr>
+<tr>
+<th>5</th>
+<th>Junho Seo &lt;junho0924.seo@lge.com&gt;</th>
+<td><a href=https://chromium.googlesource.com/chromium/src/+log/master?author=junho0924.seo@lge.com>4</a></td>
+<td><a href=https://chromium-review.googlesource.com/q/status:merged+author:junho0924.seo@lge.com>gerrit</a></td>
+<td><a href=https://codereview.chromium.org/search?closed=2&owner=junho0924.seo@lge.com>rietveld</a></td>
+<td><a href=https://chromium-review.googlesource.com/q/is:open+owner:junho0924.seo@lge.com>ongoing</a></td>
+<td>November 15, 2017 06:24</td>
+<td>January 19, 2018 05:27</td>
+<td>
+<a class='btn' href='junho_seo/activity/by_date.html'>Activity</a>
+</td>
+<td>
+<a class='btn' href='junho_seo/author_details/commits_by_date.html'>Details</a>
+</td>
+</tr>
+<tr>
+<th>6</th>
+<th>Dongheun Kang &lt;dongheun.kang@lge.com&gt;</th>
+<td><a href=https://chromium.googlesource.com/chromium/src/+log/master?author=dongheun.kang@lge.com>3</a></td>
+<td><a href=https://chromium-review.googlesource.com/q/status:merged+author:dongheun.kang@lge.com>gerrit</a></td>
+<td><a href=https://codereview.chromium.org/search?closed=2&owner=dongheun.kang@lge.com>rietveld</a></td>
+<td><a href=https://chromium-review.googlesource.com/q/is:open+owner:dongheun.kang@lge.com>ongoing</a></td>
+<td>November 22, 2016 02:00</td>
+<td>December 05, 2016 21:32</td>
+<td>
+<a class='btn' href='dongheun_kang/activity/by_date.html'>Activity</a>
+</td>
+<td>
+<a class='btn' href='dongheun_kang/author_details/commits_by_date.html'>Details</a>
+</td>
+</tr>
+<tr>
+<th>7</th>
+<th>Jani Hautakangas &lt;jani.hautakangas@lge.com&gt;</th>
+<td><a href=https://chromium.googlesource.com/chromium/src/+log/master?author=jani.hautakangas@lge.com>3</a></td>
+<td><a href=https://chromium-review.googlesource.com/q/status:merged+author:jani.hautakangas@lge.com>gerrit</a></td>
+<td><a href=https://codereview.chromium.org/search?closed=2&owner=jani.hautakangas@lge.com>rietveld</a></td>
+<td><a href=https://chromium-review.googlesource.com/q/is:open+owner:jani.hautakangas@lge.com>ongoing</a></td>
+<td>November 15, 2017 06:44</td>
+<td>March 02, 2018 20:29</td>
+<td>
+<a class='btn' href='jani_hautakangas/activity/by_date.html'>Activity</a>
+</td>
+<td>
+<a class='btn' href='jani_hautakangas/author_details/commits_by_date.html'>Details</a>
+</td>
+</tr>
+<tr>
+<th>8</th>
+<th>Jinkyu Seong &lt;jinkyu.seong@lge.com&gt;</th>
+<td><a href=https://chromium.googlesource.com/chromium/src/+log/master?author=jinkyu.seong@lge.com>2</a></td>
+<td><a href=https://chromium-review.googlesource.com/q/status:merged+author:jinkyu.seong@lge.com>gerrit</a></td>
+<td><a href=https://codereview.chromium.org/search?closed=2&owner=jinkyu.seong@lge.com>rietveld</a></td>
+<td><a href=https://chromium-review.googlesource.com/q/is:open+owner:jinkyu.seong@lge.com>ongoing</a></td>
+<td>July 25, 2015 03:09</td>
+<td>July 27, 2015 00:06</td>
+<td>
+<a class='btn' href='jinkyu_seong/activity/by_date.html'>Activity</a>
+</td>
+<td>
+<a class='btn' href='jinkyu_seong/author_details/commits_by_date.html'>Details</a>
+</td>
+</tr>
+<tr>
+<th>9</th>
+<th>LGE commit counter (Ignore this account) &lt;lge-git-counter@lge.com&gt;</th>
+<td><a href=https://chromium.googlesource.com/chromium/src/+log/master?author=lge-git-counter@lge.com>2</a></td>
+<td><a href=https://chromium-review.googlesource.com/q/status:merged+author:lge-git-counter@lge.com>gerrit</a></td>
+<td><a href=https://codereview.chromium.org/search?closed=2&owner=lge-git-counter@lge.com>rietveld</a></td>
+<td><a href=https://chromium-review.googlesource.com/q/is:open+owner:lge-git-counter@lge.com>ongoing</a></td>
+<td>March 03, 2018 00:16</td>
+<td>March 03, 2018 00:19</td>
+<td>
+<a class='btn' href='lge_commit_counter_(ignore_this_account)/activity/by_date.html'>Activity</a>
+</td>
+<td>
+<a class='btn' href='lge_commit_counter_(ignore_this_account)/author_details/commits_by_date.html'>Details</a>
+</td>
+</tr>
+<tr>
+<th>10</th>
+<th>Yunsik Jang &lt;yunsik.jang@lge.com&gt;</th>
+<td><a href=https://chromium.googlesource.com/chromium/src/+log/master?author=yunsik.jang@lge.com>2</a></td>
+<td><a href=https://chromium-review.googlesource.com/q/status:merged+author:yunsik.jang@lge.com>gerrit</a></td>
+<td><a href=https://codereview.chromium.org/search?closed=2&owner=yunsik.jang@lge.com>rietveld</a></td>
+<td><a href=https://chromium-review.googlesource.com/q/is:open+owner:yunsik.jang@lge.com>ongoing</a></td>
+<td>April 22, 2015 06:59</td>
+<td>April 25, 2015 17:57</td>
+<td>
+<a class='btn' href='yunsik_jang/activity/by_date.html'>Activity</a>
+</td>
+<td>
+<a class='btn' href='yunsik_jang/author_details/commits_by_date.html'>Details</a>
+</td>
+</tr>
+<tr>
+<th>11</th>
+<th>Andre Goddard Rosa &lt;andre.rosa@lge.com&gt;</th>
+<td><a href=https://chromium.googlesource.com/chromium/src/+log/master?author=andre.rosa@lge.com>1</a></td>
+<td><a href=https://chromium-review.googlesource.com/q/status:merged+author:andre.rosa@lge.com>gerrit</a></td>
+<td><a href=https://codereview.chromium.org/search?closed=2&owner=andre.rosa@lge.com>rietveld</a></td>
+<td><a href=https://chromium-review.googlesource.com/q/is:open+owner:andre.rosa@lge.com>ongoing</a></td>
+<td>November 28, 2017 03:31</td>
+<td>November 28, 2017 03:31</td>
+<td>
+<a class='btn' href='andre_goddard_rosa/activity/by_date.html'>Activity</a>
+</td>
+<td>
+<a class='btn' href='andre_goddard_rosa/author_details/commits_by_date.html'>Details</a>
+</td>
+</tr>
+<tr>
+<th>12</th>
+<th>Youngho Yoo &lt;youngho33.yoo@lge.com&gt;</th>
+<td><a href=https://chromium.googlesource.com/chromium/src/+log/master?author=youngho33.yoo@lge.com>1</a></td>
+<td><a href=https://chromium-review.googlesource.com/q/status:merged+author:youngho33.yoo@lge.com>gerrit</a></td>
+<td><a href=https://codereview.chromium.org/search?closed=2&owner=youngho33.yoo@lge.com>rietveld</a></td>
+<td><a href=https://chromium-review.googlesource.com/q/is:open+owner:youngho33.yoo@lge.com>ongoing</a></td>
+<td>February 17, 2017 03:57</td>
+<td>February 17, 2017 03:57</td>
+<td>
+<a class='btn' href='youngho_yoo/activity/by_date.html'>Activity</a>
+</td>
+<td>
+<a class='btn' href='youngho_yoo/author_details/commits_by_date.html'>Details</a>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+
+
+</div>
+</body>
+</html>
