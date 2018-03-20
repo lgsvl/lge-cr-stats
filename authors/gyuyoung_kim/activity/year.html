@@ -8,6 +8,7 @@
 body {
    padding-top: 60px;
    font-family: "Trebuchet MS","Bitstream Vera Sans", "DejaVu Sans", "Luxi Sans","Lucida Grande", Helvetica, Verdana, Arial,sans-serif;
+   font-size: 12px;
    background-color:#fdfdfd;
 }
 .navbar {
@@ -47,6 +48,11 @@ body {
 }
 .navbar-inner {
   background: #404040;
+}
+.tabs-left .nav-tabs {
+  float: left;
+  margin-right: 0px;
+  border-right: 1px solid #ddd;
 }
 a {
   color: #666666;
@@ -126,7 +132,7 @@ a:hover {
           var onload = window.onload;
           window.onload = function(){
             if (typeof onload == "function") onload();
-                    var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": "Year" },"categories": [ 2017,2018 ] },"yAxis": { "title": { "text": "Commits" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.activity_by_year","type": "column" },"subtitle": {  },"series": [{ "name": "Commits by year","data": [ 67,18 ] }] };
+                    var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": "Year" },"categories": [ 2017,2018 ] },"yAxis": { "title": { "text": "Commits" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.activity_by_year","type": "column" },"subtitle": {  },"series": [{ "name": "Commits by year","data": [ 67,19 ] }] };
         
         window.chart_charts.activity_by_year = new Highcharts.Chart(options);
 

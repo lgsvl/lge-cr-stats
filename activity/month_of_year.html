@@ -8,6 +8,7 @@
 body {
    padding-top: 60px;
    font-family: "Trebuchet MS","Bitstream Vera Sans", "DejaVu Sans", "Luxi Sans","Lucida Grande", Helvetica, Verdana, Arial,sans-serif;
+   font-size: 12px;
    background-color:#fdfdfd;
 }
 .navbar {
@@ -47,6 +48,11 @@ body {
 }
 .navbar-inner {
   background: #404040;
+}
+.tabs-left .nav-tabs {
+  float: left;
+  margin-right: 0px;
+  border-right: 1px solid #ddd;
 }
 a {
   color: #666666;
@@ -140,7 +146,7 @@ a:hover {
 <th>Commits</th>
 <td>13</td>
 <td>10</td>
-<td>23</td>
+<td>25</td>
 <td>5</td>
 <td>1</td>
 <td>0</td>
@@ -153,18 +159,18 @@ a:hover {
 </tr>
 <tr>
 <th>Percentage</th>
-<td>7.6</td>
-<td>5.8</td>
-<td>13.4</td>
+<td>7.5</td>
+<td>5.7</td>
+<td>14.4</td>
 <td>2.9</td>
 <td>0.6</td>
 <td>0.0</td>
-<td>1.2</td>
+<td>1.1</td>
 <td>0.6</td>
-<td>5.8</td>
-<td>13.4</td>
-<td>36.6</td>
-<td>12.2</td>
+<td>5.7</td>
+<td>13.2</td>
+<td>36.2</td>
+<td>12.1</td>
 </tr>
 </table>
                 <script type="text/javascript">
@@ -173,7 +179,7 @@ a:hover {
           var onload = window.onload;
           window.onload = function(){
             if (typeof onload == "function") onload();
-                    var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": "Month" },"categories": [ "Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec" ] },"yAxis": { "title": { "text": "Commits" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.activity_by_month","type": "column" },"subtitle": {  },"series": [{ "name": "Commits by month","data": [ 13,10,23,5,1,0,2,1,10,23,63,21 ] }] };
+                    var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": "Month" },"categories": [ "Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec" ] },"yAxis": { "title": { "text": "Commits" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.activity_by_month","type": "column" },"subtitle": {  },"series": [{ "name": "Commits by month","data": [ 13,10,25,5,1,0,2,1,10,23,63,21 ] }] };
         
         window.chart_charts.activity_by_month = new Highcharts.Chart(options);
 
