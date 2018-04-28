@@ -40,7 +40,7 @@ do
 
     # Restore master branch
     git reset --hard refs/original/refs/heads/master
-    git reset --hard HEAD~2
+    git reset --hard HEAD~6
 
     # Upload the result to github.
     cd $OUTPUT_PATH
