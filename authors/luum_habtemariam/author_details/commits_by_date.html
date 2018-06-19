@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>GitStats - Chromium</title>
+<meta charset='utf-8'>
+<link href='../../../assets/bootstrap/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+<style>
+body {
+   padding-top: 60px;
+   font-family: "Trebuchet MS","Bitstream Vera Sans", "DejaVu Sans", "Luxi Sans","Lucida Grande", Helvetica, Verdana, Arial,sans-serif;
+   font-size: 12px;
+   background-color:#fdfdfd;
+}
+.navbar {
+  font-size: 16px;
+}
+.navbar .nav>li>a {
+  float: none;
+  padding: 10px 10px 10px;
+  color: #eee;
+  text-decoration: none;
+  text-shadow: none;
+}
+.navbar .nav>li>a:hover {
+  color: #ff9900;
+}
+.navbar .nav>.active>a, .navbar .nav>.active>a:hover, .navbar .nav>.active>a:focus {
+  -webkit-border-radius: 3px;
+  color: #555;
+  padding: 5px 10px 5px;
+  margin: 5px 10px 5px;
+  text-decoration: none;
+  background-color: #ccc;
+}
+.navbar .brand {
+  -webkit-border-radius: 3px;
+  background: #FF9900;
+  color: #404040;
+  display: block;
+  float: left;
+  padding: 5px 15px 5px;
+  margin: 5px 15px 5px;
+  margin-left: -20px;
+  font-size: 20px;
+  font-weight: 200;
+  /* color: white; */
+  text-shadow: none;
+}
+.navbar-inner {
+  background: #404040;
+}
+.tabs-left .nav-tabs {
+  float: left;
+  margin-right: 0px;
+  border-right: 1px solid #ddd;
+}
+a {
+  color: #666666;
+}
+a:hover {
+  color: #ff9900;
+}
+</style>
+<link href='../../../assets/bootstrap/css/bootstrap-responsive.min.css' rel='stylesheet' type='text/css'>
+<script src='../../../assets/jquery.min.js' type='text/javascript'></script>
+<script src='../../../assets/bootstrap/js/bootstrap.min.js' type='text/javascript'></script>
+<script src='../../../assets/highstock.js' type='text/javascript'></script>
+<script src='../../../assets/exporting.js' type='text/javascript'></script>
+<script src='../../../assets/export-csv.js' type='text/javascript'></script>
+</head>
+<body>
+<div class='navbar navbar-fixed-top'>
+<div class='navbar-inner'>
+<div class='container'>
+<a class='btn btn-navbar' data-target='.nav-collapse' data-toggle='collapse'>
+<span class='icon-bar'></span>
+<span class='icon-bar'></span>
+<span class='icon-bar'></span>
+</a>
+<a class='brand' href='../../../index.html'>GitStats - Chromium</a>
+<div class='nav-collapse collapse'>
+<ul class='nav'>
+<li class=''>
+<a href='../../../general.html'>General</a>
+</li>
+<li class=''>
+<a href='../../../activity/by_date.html'>Activity</a>
+</li>
+<li class='active'>
+<a href='../../lge_authors.html'>Authors</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class='container'>
+<div class='tabbable tabs-left'>
+<ul class='nav nav-tabs'>
+<li class='active'>
+<a href='commits_by_date.html'>Commits by date</a>
+</li>
+<li class=''>
+<a href='changed_lines_by_date.html'>Changed lines by date</a>
+</li>
+<li class=''>
+<a href='insertions_by_date.html'>Lines added by date</a>
+</li>
+<li class=''>
+<a href='deletions_by_date.html'>Lines deleted by date</a>
+</li>
+</ul>
+<div class='tab-content'>
+<div class='tab-pane active'>
+<div class='page-header'>
+<h1 class='pagination-centered'>Commits by date</h1>
+</div>
+                <script type="text/javascript">
+        (function() {
+
+          var onload = window.onload;
+          window.onload = function(){
+            if (typeof onload == "function") onload();
+                    var options = { "title": { "text": "" },"legend": { "enabled": true,"layout": "vertical","backgroundColor": "#FFFFFF","align": "left","verticalAlign": "top","x": 100,"y": 70,"floating": true,"shadow": true },"xAxis": { "title": { "text": null } },"yAxis": { "title": { "text": "Lines" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.commits_sum_by_author_by_date" },"subtitle": {  },"series": [{ "name": "Luum Habtemariam","type": "spline","data": [ [ 1507337699000,1 ],[ 1507420800000,1 ],[ 1507507200000,1 ],[ 1507593600000,1 ],[ 1507680000000,1 ],[ 1507766400000,1 ],[ 1507852800000,1 ],[ 1507939200000,1 ],[ 1508025600000,1 ],[ 1508112000000,1 ],[ 1508198400000,1 ],[ 1508284800000,1 ],[ 1508371200000,1 ],[ 1508457600000,1 ],[ 1508544000000,1 ],[ 1508630400000,1 ],[ 1508716800000,1 ],[ 1508803200000,1 ],[ 1508889600000,1 ],[ 1508976000000,1 ],[ 1509062400000,1 ],[ 1509148800000,1 ],[ 1509235200000,1 ],[ 1509321600000,1 ],[ 1509408000000,1 ],[ 1509494400000,1 ],[ 1509580800000,1 ],[ 1509667200000,1 ],[ 1509753600000,1 ],[ 1509840000000,1 ],[ 1509926400000,1 ],[ 1510012800000,1 ],[ 1510099200000,1 ],[ 1510185600000,1 ],[ 1510272000000,1 ],[ 1510358400000,1 ],[ 1510444800000,1 ],[ 1510531200000,1 ],[ 1510617600000,1 ],[ 1510704000000,1 ],[ 1510790400000,1 ],[ 1510876800000,1 ],[ 1510963200000,1 ],[ 1511049600000,1 ],[ 1511136000000,1 ],[ 1511222400000,1 ],[ 1511308800000,1 ],[ 1511395200000,1 ],[ 1511481600000,1 ],[ 1511568000000,1 ],[ 1511654400000,1 ],[ 1511740800000,1 ],[ 1511827200000,1 ],[ 1511913600000,1 ],[ 1512000000000,1 ],[ 1512162585000,2 ],[ 1512172800000,2 ],[ 1512259200000,2 ],[ 1512345600000,2 ],[ 1512432000000,2 ],[ 1512518400000,2 ],[ 1512604800000,2 ],[ 1512691200000,2 ],[ 1512777600000,2 ],[ 1512864000000,2 ],[ 1513021729000,3 ],[ 1513036800000,3 ],[ 1513123200000,3 ],[ 1513209600000,3 ],[ 1513296000000,3 ],[ 1513382400000,3 ],[ 1513468800000,3 ],[ 1513555200000,3 ],[ 1513641600000,3 ],[ 1513728000000,3 ],[ 1513814400000,3 ],[ 1513900800000,3 ],[ 1513987200000,3 ],[ 1514073600000,3 ],[ 1514160000000,3 ],[ 1514246400000,3 ],[ 1514332800000,3 ],[ 1514419200000,3 ],[ 1514505600000,3 ],[ 1514592000000,3 ],[ 1514678400000,3 ],[ 1514764800000,3 ],[ 1514851200000,3 ],[ 1514937600000,3 ],[ 1515081887000,4 ],[ 1515110400000,4 ],[ 1515196800000,4 ],[ 1515283200000,4 ],[ 1515369600000,4 ],[ 1515456000000,4 ],[ 1515542400000,4 ],[ 1515628800000,4 ],[ 1515715200000,4 ],[ 1515801600000,4 ],[ 1515888000000,4 ],[ 1515974400000,4 ],[ 1516060800000,4 ],[ 1516147200000,4 ],[ 1516233600000,4 ],[ 1516320000000,4 ],[ 1516406400000,4 ],[ 1516492800000,4 ],[ 1516661598000,5 ],[ 1516665600000,5 ],[ 1516752000000,5 ],[ 1516838400000,5 ],[ 1516989365000,6 ],[ 1517011200000,6 ],[ 1517097600000,6 ],[ 1517184000000,6 ],[ 1517270400000,6 ],[ 1517356800000,6 ],[ 1517443200000,6 ],[ 1517529600000,6 ],[ 1517616000000,6 ],[ 1517702400000,6 ],[ 1517788800000,6 ],[ 1517875200000,6 ],[ 1517961600000,6 ],[ 1518048000000,6 ],[ 1518134400000,6 ],[ 1518220800000,6 ],[ 1518307200000,6 ],[ 1518393600000,6 ],[ 1518480000000,6 ],[ 1518566400000,6 ],[ 1518652800000,6 ],[ 1518739200000,6 ],[ 1518825600000,6 ],[ 1518912000000,6 ],[ 1518998400000,6 ],[ 1519084800000,6 ],[ 1519245800000,7 ],[ 1519257600000,7 ],[ 1519344000000,7 ],[ 1519430400000,7 ],[ 1519516800000,7 ],[ 1519603200000,7 ],[ 1519689600000,7 ],[ 1519776000000,7 ],[ 1519862400000,7 ],[ 1519948800000,7 ],[ 1520035200000,7 ],[ 1520121600000,7 ],[ 1520208000000,7 ],[ 1520294400000,7 ],[ 1520380800000,7 ],[ 1520467200000,7 ],[ 1520553600000,7 ],[ 1520640000000,7 ],[ 1520726400000,7 ],[ 1520812800000,7 ],[ 1520899200000,7 ],[ 1520985600000,7 ],[ 1521072000000,7 ],[ 1521158400000,7 ],[ 1521244800000,7 ],[ 1521331200000,7 ],[ 1521417600000,7 ],[ 1521573447000,8 ],[ 1521590400000,8 ],[ 1521676800000,8 ],[ 1521763200000,8 ],[ 1521924507000,9 ],[ 1521936000000,9 ],[ 1522022400000,9 ],[ 1522108800000,9 ],[ 1522195200000,9 ],[ 1522281600000,9 ],[ 1522368000000,9 ],[ 1522454400000,9 ],[ 1522540800000,9 ],[ 1522627200000,9 ],[ 1522713600000,9 ],[ 1522800000000,9 ],[ 1522886400000,9 ],[ 1522972800000,9 ],[ 1523059200000,9 ],[ 1523145600000,9 ],[ 1523232000000,9 ],[ 1523318400000,9 ],[ 1523404800000,9 ],[ 1523491200000,9 ],[ 1523577600000,9 ],[ 1523700581000,10 ],[ 1523750400000,10 ],[ 1523836800000,10 ],[ 1523923200000,10 ],[ 1524072756000,11 ],[ 1524096000000,11 ],[ 1524182400000,11 ],[ 1524268800000,11 ],[ 1524355200000,11 ],[ 1524441600000,11 ],[ 1524528000000,11 ],[ 1524680214000,12 ] ] }] };
+        
+        window.chart_charts.commits_sum_by_author_by_date = new Highcharts.StockChart(options);
+
+          };
+                })()
+        </script>
+
+<div id="charts.commits_sum_by_author_by_date"></div>
+<small>
+<center>5 LGE Chromium authors shown</center>
+</small>
+</div>
+</div>
+</div>
+
+
+</div>
+</body>
+</html>

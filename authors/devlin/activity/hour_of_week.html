@@ -5,7 +5,61 @@
 <meta charset='utf-8'>
 <link href='../../../assets/bootstrap/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
 <style>
-body { padding-top: 60px; }
+body {
+   padding-top: 60px;
+   font-family: "Trebuchet MS","Bitstream Vera Sans", "DejaVu Sans", "Luxi Sans","Lucida Grande", Helvetica, Verdana, Arial,sans-serif;
+   font-size: 12px;
+   background-color:#fdfdfd;
+}
+.navbar {
+  font-size: 16px;
+}
+.navbar .nav>li>a {
+  float: none;
+  padding: 10px 10px 10px;
+  color: #eee;
+  text-decoration: none;
+  text-shadow: none;
+}
+.navbar .nav>li>a:hover {
+  color: #ff9900;
+}
+.navbar .nav>.active>a, .navbar .nav>.active>a:hover, .navbar .nav>.active>a:focus {
+  -webkit-border-radius: 3px;
+  color: #555;
+  padding: 5px 10px 5px;
+  margin: 5px 10px 5px;
+  text-decoration: none;
+  background-color: #ccc;
+}
+.navbar .brand {
+  -webkit-border-radius: 3px;
+  background: #FF9900;
+  color: #404040;
+  display: block;
+  float: left;
+  padding: 5px 15px 5px;
+  margin: 5px 15px 5px;
+  margin-left: -20px;
+  font-size: 20px;
+  font-weight: 200;
+  /* color: white; */
+  text-shadow: none;
+}
+.navbar-inner {
+  background: #404040;
+}
+.tabs-left .nav-tabs {
+  float: left;
+  margin-right: 0px;
+  border-right: 1px solid #ddd;
+}
+a {
+  color: #666666;
+}
+a:hover {
+  color: #ff9900;
+}
 </style>
 <link href='../../../assets/bootstrap/css/bootstrap-responsive.min.css' rel='stylesheet' type='text/css'>
 <script src='../../../assets/jquery.min.js' type='text/javascript'></script>
@@ -33,16 +87,7 @@ body { padding-top: 60px; }
 <a href='../../../activity/by_date.html'>Activity</a>
 </li>
 <li class='active'>
-<a href='../../best_authors.html'>Authors</a>
-</li>
-<li class=''>
-<a href='../../../files/by_date.html'>Files</a>
-</li>
-<li class=''>
-<a href='../../../lines/by_date.html'>Lines</a>
-</li>
-<li class=''>
-<a href='../../../comments/by_date.html'>Comments</a>
+<a href='../../lge_authors.html'>Authors</a>
 </li>
 </ul>
 </div>
@@ -81,7 +126,7 @@ body { padding-top: 60px; }
 <h3>Devlin &lt;rdevlin.cronin@chromium.org&gt;</h3>
 </div>
 </div>
-<table class='table table-bordered table-condensed'>
+<table class='table table-condensed'>
 <tr>
 <th></th>
 <th>0</th>
@@ -115,7 +160,7 @@ body { padding-top: 60px; }
 <td style='background-color: #ffffff;'>0</td>
 <td style='background-color: #ffffff;'>0</td>
 <td style='background-color: #fdfdfd;'>1</td>
-<td style='background-color: #fafafa;'>2</td>
+<td style='background-color: #fbfbfb;'>2</td>
 <td style='background-color: #ffffff;'>0</td>
 <td style='background-color: #fdfdfd;'>1</td>
 <td style='background-color: #ffffff;'>0</td>
@@ -146,155 +191,155 @@ body { padding-top: 60px; }
 <td style='background-color: #ffffff;'>0</td>
 <td style='background-color: #ffffff;'>0</td>
 <td style='background-color: #fdfdfd;'>1</td>
-<td style='background-color: #f8f8f8;'>3</td>
-<td style='background-color: #eaeaea;'>8</td>
-<td style='background-color: #cbcbcb;'>20</td>
-<td style='background-color: #c3c3c3;'>23</td>
-<td style='background-color: #d3d3d3;'>17</td>
-<td style='background-color: #bbbbbb;'>26</td>
-<td style='background-color: #b8b8b8;'>27</td>
-<td style='background-color: #c0c0c0;'>24</td>
-<td style='background-color: #d0d0d0;'>18</td>
-<td style='background-color: #aeaeae;'>31</td>
-<td style='background-color: #dddddd;'>13</td>
-<td style='background-color: #ededed;'>7</td>
-<td style='background-color: #f0f0f0;'>6</td>
-<td style='background-color: #ededed;'>7</td>
-<td style='background-color: #f2f2f2;'>5</td>
-<td style='background-color: #f2f2f2;'>5</td>
+<td style='background-color: #f9f9f9;'>3</td>
+<td style='background-color: #ededed;'>8</td>
+<td style='background-color: #d1d1d1;'>20</td>
+<td style='background-color: #cacaca;'>23</td>
+<td style='background-color: #d8d8d8;'>17</td>
+<td style='background-color: #c3c3c3;'>26</td>
+<td style='background-color: #bebebe;'>28</td>
+<td style='background-color: #c5c5c5;'>25</td>
+<td style='background-color: #d1d1d1;'>20</td>
+<td style='background-color: #b3b3b3;'>33</td>
+<td style='background-color: #dfdfdf;'>14</td>
+<td style='background-color: #efefef;'>7</td>
+<td style='background-color: #ebebeb;'>9</td>
+<td style='background-color: #ededed;'>8</td>
+<td style='background-color: #ebebeb;'>9</td>
+<td style='background-color: #e8e8e8;'>10</td>
 </tr>
 <tr>
 <th>Tue</th>
-<td style='background-color: #fafafa;'>2</td>
-<td style='background-color: #fafafa;'>2</td>
-<td style='background-color: #f2f2f2;'>5</td>
+<td style='background-color: #f4f4f4;'>5</td>
+<td style='background-color: #ebebeb;'>9</td>
+<td style='background-color: #efefef;'>7</td>
 <td style='background-color: #fdfdfd;'>1</td>
 <td style='background-color: #fdfdfd;'>1</td>
 <td style='background-color: #ffffff;'>0</td>
-<td style='background-color: #fdfdfd;'>1</td>
-<td style='background-color: #fafafa;'>2</td>
-<td style='background-color: #f0f0f0;'>6</td>
-<td style='background-color: #dbdbdb;'>14</td>
-<td style='background-color: #c8c8c8;'>21</td>
-<td style='background-color: #c3c3c3;'>23</td>
-<td style='background-color: #cdcdcd;'>19</td>
-<td style='background-color: #d3d3d3;'>17</td>
-<td style='background-color: #9b9b9b;'>38</td>
-<td style='background-color: #cdcdcd;'>19</td>
-<td style='background-color: #c3c3c3;'>23</td>
-<td style='background-color: #d3d3d3;'>17</td>
-<td style='background-color: #c6c6c6;'>22</td>
-<td style='background-color: #dbdbdb;'>14</td>
-<td style='background-color: #f8f8f8;'>3</td>
-<td style='background-color: #d8d8d8;'>15</td>
-<td style='background-color: #fafafa;'>2</td>
-<td style='background-color: #f8f8f8;'>3</td>
+<td style='background-color: #fbfbfb;'>2</td>
+<td style='background-color: #f9f9f9;'>3</td>
+<td style='background-color: #f2f2f2;'>6</td>
+<td style='background-color: #dfdfdf;'>14</td>
+<td style='background-color: #cfcfcf;'>21</td>
+<td style='background-color: #cacaca;'>23</td>
+<td style='background-color: #d3d3d3;'>19</td>
+<td style='background-color: #d8d8d8;'>17</td>
+<td style='background-color: #9b9b9b;'>43</td>
+<td style='background-color: #cccccc;'>22</td>
+<td style='background-color: #bcbcbc;'>29</td>
+<td style='background-color: #d1d1d1;'>20</td>
+<td style='background-color: #b7b7b7;'>31</td>
+<td style='background-color: #d3d3d3;'>19</td>
+<td style='background-color: #efefef;'>7</td>
+<td style='background-color: #dadada;'>16</td>
+<td style='background-color: #f9f9f9;'>3</td>
+<td style='background-color: #f6f6f6;'>4</td>
 </tr>
 <tr>
 <th>Wed</th>
-<td style='background-color: #f8f8f8;'>3</td>
-<td style='background-color: #f5f5f5;'>4</td>
-<td style='background-color: #f5f5f5;'>4</td>
-<td style='background-color: #ffffff;'>0</td>
-<td style='background-color: #fafafa;'>2</td>
-<td style='background-color: #fdfdfd;'>1</td>
-<td style='background-color: #f8f8f8;'>3</td>
-<td style='background-color: #f5f5f5;'>4</td>
-<td style='background-color: #e0e0e0;'>12</td>
-<td style='background-color: #dddddd;'>13</td>
-<td style='background-color: #bbbbbb;'>26</td>
-<td style='background-color: #cbcbcb;'>20</td>
-<td style='background-color: #cdcdcd;'>19</td>
-<td style='background-color: #b8b8b8;'>27</td>
-<td style='background-color: #b1b1b1;'>30</td>
-<td style='background-color: #b8b8b8;'>27</td>
-<td style='background-color: #bbbbbb;'>26</td>
-<td style='background-color: #b1b1b1;'>30</td>
-<td style='background-color: #e3e3e3;'>11</td>
-<td style='background-color: #eaeaea;'>8</td>
-<td style='background-color: #f2f2f2;'>5</td>
-<td style='background-color: #f8f8f8;'>3</td>
-<td style='background-color: #f8f8f8;'>3</td>
-<td style='background-color: #f8f8f8;'>3</td>
+<td style='background-color: #ededed;'>8</td>
+<td style='background-color: #f4f4f4;'>5</td>
+<td style='background-color: #f2f2f2;'>6</td>
+<td style='background-color: #f9f9f9;'>3</td>
+<td style='background-color: #f4f4f4;'>5</td>
+<td style='background-color: #fbfbfb;'>2</td>
+<td style='background-color: #f9f9f9;'>3</td>
+<td style='background-color: #f6f6f6;'>4</td>
+<td style='background-color: #e4e4e4;'>12</td>
+<td style='background-color: #e1e1e1;'>13</td>
+<td style='background-color: #c3c3c3;'>26</td>
+<td style='background-color: #d1d1d1;'>20</td>
+<td style='background-color: #d3d3d3;'>19</td>
+<td style='background-color: #c1c1c1;'>27</td>
+<td style='background-color: #b3b3b3;'>33</td>
+<td style='background-color: #bebebe;'>28</td>
+<td style='background-color: #c1c1c1;'>27</td>
+<td style='background-color: #aeaeae;'>35</td>
+<td style='background-color: #dadada;'>16</td>
+<td style='background-color: #e1e1e1;'>13</td>
+<td style='background-color: #ebebeb;'>9</td>
+<td style='background-color: #f4f4f4;'>5</td>
+<td style='background-color: #efefef;'>7</td>
+<td style='background-color: #f4f4f4;'>5</td>
 </tr>
 <tr>
 <th>Thu</th>
-<td style='background-color: #f2f2f2;'>5</td>
-<td style='background-color: #e8e8e8;'>9</td>
-<td style='background-color: #f5f5f5;'>4</td>
-<td style='background-color: #f5f5f5;'>4</td>
+<td style='background-color: #e1e1e1;'>13</td>
+<td style='background-color: #d8d8d8;'>17</td>
+<td style='background-color: #f2f2f2;'>6</td>
+<td style='background-color: #f4f4f4;'>5</td>
+<td style='background-color: #fdfdfd;'>1</td>
+<td style='background-color: #f9f9f9;'>3</td>
 <td style='background-color: #ffffff;'>0</td>
-<td style='background-color: #ffffff;'>0</td>
-<td style='background-color: #ffffff;'>0</td>
-<td style='background-color: #f8f8f8;'>3</td>
-<td style='background-color: #e5e5e5;'>10</td>
-<td style='background-color: #d5d5d5;'>16</td>
-<td style='background-color: #d0d0d0;'>18</td>
-<td style='background-color: #cdcdcd;'>19</td>
-<td style='background-color: #c6c6c6;'>22</td>
-<td style='background-color: #bbbbbb;'>26</td>
-<td style='background-color: #bbbbbb;'>26</td>
-<td style='background-color: #b3b3b3;'>29</td>
-<td style='background-color: #d8d8d8;'>15</td>
-<td style='background-color: #cbcbcb;'>20</td>
-<td style='background-color: #d0d0d0;'>18</td>
-<td style='background-color: #dbdbdb;'>14</td>
-<td style='background-color: #ededed;'>7</td>
-<td style='background-color: #f0f0f0;'>6</td>
-<td style='background-color: #f5f5f5;'>4</td>
-<td style='background-color: #fafafa;'>2</td>
+<td style='background-color: #f4f4f4;'>5</td>
+<td style='background-color: #e6e6e6;'>11</td>
+<td style='background-color: #d6d6d6;'>18</td>
+<td style='background-color: #d6d6d6;'>18</td>
+<td style='background-color: #d1d1d1;'>20</td>
+<td style='background-color: #cccccc;'>22</td>
+<td style='background-color: #c1c1c1;'>27</td>
+<td style='background-color: #bebebe;'>28</td>
+<td style='background-color: #b5b5b5;'>32</td>
+<td style='background-color: #d8d8d8;'>17</td>
+<td style='background-color: #cfcfcf;'>21</td>
+<td style='background-color: #cccccc;'>22</td>
+<td style='background-color: #dadada;'>16</td>
+<td style='background-color: #e6e6e6;'>11</td>
+<td style='background-color: #e6e6e6;'>11</td>
+<td style='background-color: #efefef;'>7</td>
+<td style='background-color: #f6f6f6;'>4</td>
 </tr>
 <tr>
 <th>Fri</th>
-<td style='background-color: #ededed;'>7</td>
+<td style='background-color: #e8e8e8;'>10</td>
+<td style='background-color: #f2f2f2;'>6</td>
+<td style='background-color: #f9f9f9;'>3</td>
+<td style='background-color: #efefef;'>7</td>
+<td style='background-color: #f9f9f9;'>3</td>
 <td style='background-color: #fdfdfd;'>1</td>
-<td style='background-color: #f8f8f8;'>3</td>
-<td style='background-color: #f2f2f2;'>5</td>
-<td style='background-color: #fdfdfd;'>1</td>
-<td style='background-color: #ffffff;'>0</td>
-<td style='background-color: #fafafa;'>2</td>
-<td style='background-color: #f2f2f2;'>5</td>
-<td style='background-color: #ededed;'>7</td>
-<td style='background-color: #dddddd;'>13</td>
-<td style='background-color: #d8d8d8;'>15</td>
-<td style='background-color: #d5d5d5;'>16</td>
-<td style='background-color: #d5d5d5;'>16</td>
-<td style='background-color: #cdcdcd;'>19</td>
-<td style='background-color: #d8d8d8;'>15</td>
-<td style='background-color: #cbcbcb;'>20</td>
-<td style='background-color: #c8c8c8;'>21</td>
-<td style='background-color: #c6c6c6;'>22</td>
-<td style='background-color: #cdcdcd;'>19</td>
-<td style='background-color: #d8d8d8;'>15</td>
-<td style='background-color: #eaeaea;'>8</td>
-<td style='background-color: #f5f5f5;'>4</td>
-<td style='background-color: #f2f2f2;'>5</td>
-<td style='background-color: #f5f5f5;'>4</td>
+<td style='background-color: #f9f9f9;'>3</td>
+<td style='background-color: #f4f4f4;'>5</td>
+<td style='background-color: #efefef;'>7</td>
+<td style='background-color: #e1e1e1;'>13</td>
+<td style='background-color: #dddddd;'>15</td>
+<td style='background-color: #dadada;'>16</td>
+<td style='background-color: #dadada;'>16</td>
+<td style='background-color: #d3d3d3;'>19</td>
+<td style='background-color: #d8d8d8;'>17</td>
+<td style='background-color: #c5c5c5;'>25</td>
+<td style='background-color: #c8c8c8;'>24</td>
+<td style='background-color: #cacaca;'>23</td>
+<td style='background-color: #c8c8c8;'>24</td>
+<td style='background-color: #cfcfcf;'>21</td>
+<td style='background-color: #e4e4e4;'>12</td>
+<td style='background-color: #f2f2f2;'>6</td>
+<td style='background-color: #ededed;'>8</td>
+<td style='background-color: #ededed;'>8</td>
 </tr>
 <tr>
 <th>Sat</th>
+<td style='background-color: #fbfbfb;'>2</td>
+<td style='background-color: #ededed;'>8</td>
+<td style='background-color: #e8e8e8;'>10</td>
+<td style='background-color: #f9f9f9;'>3</td>
 <td style='background-color: #fdfdfd;'>1</td>
-<td style='background-color: #f8f8f8;'>3</td>
-<td style='background-color: #f5f5f5;'>4</td>
-<td style='background-color: #fafafa;'>2</td>
 <td style='background-color: #fdfdfd;'>1</td>
+<td style='background-color: #fbfbfb;'>2</td>
 <td style='background-color: #ffffff;'>0</td>
 <td style='background-color: #ffffff;'>0</td>
 <td style='background-color: #ffffff;'>0</td>
-<td style='background-color: #ffffff;'>0</td>
-<td style='background-color: #ffffff;'>0</td>
-<td style='background-color: #ffffff;'>0</td>
-<td style='background-color: #ffffff;'>0</td>
-<td style='background-color: #ffffff;'>0</td>
-<td style='background-color: #fdfdfd;'>1</td>
-<td style='background-color: #f8f8f8;'>3</td>
 <td style='background-color: #ffffff;'>0</td>
 <td style='background-color: #ffffff;'>0</td>
 <td style='background-color: #ffffff;'>0</td>
 <td style='background-color: #fdfdfd;'>1</td>
+<td style='background-color: #f9f9f9;'>3</td>
 <td style='background-color: #ffffff;'>0</td>
 <td style='background-color: #ffffff;'>0</td>
 <td style='background-color: #ffffff;'>0</td>
+<td style='background-color: #fdfdfd;'>1</td>
+<td style='background-color: #ffffff;'>0</td>
+<td style='background-color: #ffffff;'>0</td>
+<td style='background-color: #fdfdfd;'>1</td>
 <td style='background-color: #ffffff;'>0</td>
 <td style='background-color: #ffffff;'>0</td>
 </tr>

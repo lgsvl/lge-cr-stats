@@ -5,7 +5,61 @@
 <meta charset='utf-8'>
 <link href='../../../assets/bootstrap/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
 <style>
-body { padding-top: 60px; }
+body {
+   padding-top: 60px;
+   font-family: "Trebuchet MS","Bitstream Vera Sans", "DejaVu Sans", "Luxi Sans","Lucida Grande", Helvetica, Verdana, Arial,sans-serif;
+   font-size: 12px;
+   background-color:#fdfdfd;
+}
+.navbar {
+  font-size: 16px;
+}
+.navbar .nav>li>a {
+  float: none;
+  padding: 10px 10px 10px;
+  color: #eee;
+  text-decoration: none;
+  text-shadow: none;
+}
+.navbar .nav>li>a:hover {
+  color: #ff9900;
+}
+.navbar .nav>.active>a, .navbar .nav>.active>a:hover, .navbar .nav>.active>a:focus {
+  -webkit-border-radius: 3px;
+  color: #555;
+  padding: 5px 10px 5px;
+  margin: 5px 10px 5px;
+  text-decoration: none;
+  background-color: #ccc;
+}
+.navbar .brand {
+  -webkit-border-radius: 3px;
+  background: #FF9900;
+  color: #404040;
+  display: block;
+  float: left;
+  padding: 5px 15px 5px;
+  margin: 5px 15px 5px;
+  margin-left: -20px;
+  font-size: 20px;
+  font-weight: 200;
+  /* color: white; */
+  text-shadow: none;
+}
+.navbar-inner {
+  background: #404040;
+}
+.tabs-left .nav-tabs {
+  float: left;
+  margin-right: 0px;
+  border-right: 1px solid #ddd;
+}
+a {
+  color: #666666;
+}
+a:hover {
+  color: #ff9900;
+}
 </style>
 <link href='../../../assets/bootstrap/css/bootstrap-responsive.min.css' rel='stylesheet' type='text/css'>
 <script src='../../../assets/jquery.min.js' type='text/javascript'></script>
@@ -33,16 +87,7 @@ body { padding-top: 60px; }
 <a href='../../../activity/by_date.html'>Activity</a>
 </li>
 <li class='active'>
-<a href='../../best_authors.html'>Authors</a>
-</li>
-<li class=''>
-<a href='../../../files/by_date.html'>Files</a>
-</li>
-<li class='active'>
-<a href='../../../lines/by_date.html'>Lines</a>
-</li>
-<li class=''>
-<a href='../../../comments/by_date.html'>Comments</a>
+<a href='../../lge_authors.html'>Authors</a>
 </li>
 </ul>
 </div>
@@ -76,7 +121,7 @@ body { padding-top: 60px; }
           var onload = window.onload;
           window.onload = function(){
             if (typeof onload == "function") onload();
-                    var options = { "title": { "text": "" },"legend": { "enabled": true,"layout": "vertical","backgroundColor": "#FFFFFF","align": "left","verticalAlign": "top","x": 100,"y": 70,"floating": true,"shadow": true },"xAxis": { "title": { "text": null } },"yAxis": { "title": { "text": "Lines" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.changed_lines_by_author_by_date" },"subtitle": {  },"series": [{ "name": "Alex","type": "spline","data": [ [ 1426760570000,4613629 ],[ 1426809600000,4613629 ],[ 1426896000000,4613629 ],[ 1426982400000,4613629 ],[ 1427068800000,4613629 ],[ 1427155200000,4613629 ],[ 1427241600000,4613629 ],[ 1427328000000,4613629 ],[ 1427414400000,4613629 ],[ 1427500800000,4613629 ],[ 1427587200000,4613629 ],[ 1427673600000,4613629 ],[ 1427760000000,4613629 ],[ 1427846400000,4613629 ],[ 1427932800000,4613629 ],[ 1428019200000,4613629 ],[ 1428105600000,4613629 ],[ 1428192000000,4613629 ],[ 1428278400000,4613629 ],[ 1428364800000,4613629 ],[ 1428451200000,4613629 ],[ 1428537600000,4613629 ],[ 1428624000000,4613629 ],[ 1428710400000,4613629 ],[ 1428796800000,4613629 ],[ 1428883200000,4613629 ],[ 1428969600000,4613629 ],[ 1429056000000,4613629 ],[ 1429142400000,4613629 ],[ 1429228800000,4613629 ],[ 1429315200000,4613629 ],[ 1429401600000,4613629 ],[ 1429488000000,4613629 ],[ 1429574400000,4613629 ],[ 1429660800000,4613629 ],[ 1429747200000,4613629 ],[ 1429833600000,4613629 ],[ 1429920000000,4613629 ],[ 1430006400000,4613629 ],[ 1430092800000,4613629 ],[ 1430179200000,4613629 ],[ 1430265600000,4613629 ],[ 1430352000000,4613629 ],[ 1430438400000,4613629 ],[ 1430524800000,4613629 ],[ 1430611200000,4613629 ],[ 1430697600000,4613629 ],[ 1430784000000,4613629 ],[ 1430870400000,4613629 ],[ 1430956800000,4613629 ],[ 1431043200000,4613629 ],[ 1431129600000,4613629 ],[ 1431216000000,4613629 ],[ 1431302400000,4613629 ],[ 1431388800000,4613629 ],[ 1431475200000,4613629 ],[ 1431561600000,4613629 ],[ 1431648000000,4613629 ],[ 1431734400000,4613629 ],[ 1431820800000,4613629 ],[ 1431907200000,4613629 ],[ 1431993600000,4613629 ],[ 1432080000000,4613629 ],[ 1432166400000,4613629 ],[ 1432252800000,4613629 ],[ 1432339200000,4613629 ],[ 1432425600000,4613629 ],[ 1432512000000,4613629 ],[ 1432598400000,4613629 ],[ 1432684800000,4613629 ],[ 1432771200000,4613629 ],[ 1432857600000,4613629 ],[ 1432944000000,4613629 ],[ 1433030400000,4613629 ],[ 1433116800000,4613629 ],[ 1433203200000,4613629 ],[ 1433289600000,4613629 ],[ 1433376000000,4613629 ],[ 1433462400000,4613629 ],[ 1433548800000,4613629 ],[ 1433635200000,4613629 ],[ 1433721600000,4613629 ],[ 1433808000000,4613629 ],[ 1433894400000,4613629 ],[ 1434052249000,7347062 ] ] }] };
+                    var options = { "title": { "text": "" },"legend": { "enabled": true,"layout": "vertical","backgroundColor": "#FFFFFF","align": "left","verticalAlign": "top","x": 100,"y": 70,"floating": true,"shadow": true },"xAxis": { "title": { "text": null } },"yAxis": { "title": { "text": "Lines" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.changed_lines_by_author_by_date" },"subtitle": {  },"series": [{ "name": "alex","type": "spline","data": [ [ 1426760570000,11 ],[ 1426809600000,11 ],[ 1426896000000,11 ],[ 1426982400000,11 ],[ 1427068800000,11 ],[ 1427155200000,11 ],[ 1427241600000,11 ],[ 1427328000000,11 ],[ 1427414400000,11 ],[ 1427500800000,11 ],[ 1427587200000,11 ],[ 1427673600000,11 ],[ 1427760000000,11 ],[ 1427846400000,11 ],[ 1427932800000,11 ],[ 1428019200000,11 ],[ 1428105600000,11 ],[ 1428192000000,11 ],[ 1428278400000,11 ],[ 1428364800000,11 ],[ 1428451200000,11 ],[ 1428537600000,11 ],[ 1428624000000,11 ],[ 1428710400000,11 ],[ 1428796800000,11 ],[ 1428883200000,11 ],[ 1428969600000,11 ],[ 1429056000000,11 ],[ 1429142400000,11 ],[ 1429228800000,11 ],[ 1429315200000,11 ],[ 1429401600000,11 ],[ 1429488000000,11 ],[ 1429574400000,11 ],[ 1429660800000,11 ],[ 1429747200000,11 ],[ 1429833600000,11 ],[ 1429920000000,11 ],[ 1430006400000,11 ],[ 1430092800000,11 ],[ 1430179200000,11 ],[ 1430265600000,11 ],[ 1430352000000,11 ],[ 1430438400000,11 ],[ 1430524800000,11 ],[ 1430611200000,11 ],[ 1430697600000,11 ],[ 1430784000000,11 ],[ 1430870400000,11 ],[ 1430956800000,11 ],[ 1431043200000,11 ],[ 1431129600000,11 ],[ 1431216000000,11 ],[ 1431302400000,11 ],[ 1431388800000,11 ],[ 1431475200000,11 ],[ 1431561600000,11 ],[ 1431648000000,11 ],[ 1431734400000,11 ],[ 1431820800000,11 ],[ 1431907200000,11 ],[ 1431993600000,11 ],[ 1432080000000,11 ],[ 1432166400000,11 ],[ 1432252800000,11 ],[ 1432339200000,11 ],[ 1432425600000,11 ],[ 1432512000000,11 ],[ 1432598400000,11 ],[ 1432684800000,11 ],[ 1432771200000,11 ],[ 1432857600000,11 ],[ 1432944000000,11 ],[ 1433030400000,11 ],[ 1433116800000,11 ],[ 1433203200000,11 ],[ 1433289600000,11 ],[ 1433376000000,11 ],[ 1433462400000,11 ],[ 1433548800000,11 ],[ 1433635200000,11 ],[ 1433721600000,11 ],[ 1433808000000,11 ],[ 1433894400000,11 ],[ 1434052249000,60 ] ] }] };
         
         window.chart_charts.changed_lines_by_author_by_date = new Highcharts.StockChart(options);
 
@@ -86,7 +131,7 @@ body { padding-top: 60px; }
 
 <div id="charts.changed_lines_by_author_by_date"></div>
 <small>
-<center>5 best authors shown</center>
+<center>5 LGE Chromium authors shown</center>
 </small>
 </div>
 </div>

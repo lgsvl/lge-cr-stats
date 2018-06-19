@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>GitStats - Chromium</title>
+<meta charset='utf-8'>
+<link href='../../../assets/bootstrap/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+<style>
+body {
+   padding-top: 60px;
+   font-family: "Trebuchet MS","Bitstream Vera Sans", "DejaVu Sans", "Luxi Sans","Lucida Grande", Helvetica, Verdana, Arial,sans-serif;
+   font-size: 12px;
+   background-color:#fdfdfd;
+}
+.navbar {
+  font-size: 16px;
+}
+.navbar .nav>li>a {
+  float: none;
+  padding: 10px 10px 10px;
+  color: #eee;
+  text-decoration: none;
+  text-shadow: none;
+}
+.navbar .nav>li>a:hover {
+  color: #ff9900;
+}
+.navbar .nav>.active>a, .navbar .nav>.active>a:hover, .navbar .nav>.active>a:focus {
+  -webkit-border-radius: 3px;
+  color: #555;
+  padding: 5px 10px 5px;
+  margin: 5px 10px 5px;
+  text-decoration: none;
+  background-color: #ccc;
+}
+.navbar .brand {
+  -webkit-border-radius: 3px;
+  background: #FF9900;
+  color: #404040;
+  display: block;
+  float: left;
+  padding: 5px 15px 5px;
+  margin: 5px 15px 5px;
+  margin-left: -20px;
+  font-size: 20px;
+  font-weight: 200;
+  /* color: white; */
+  text-shadow: none;
+}
+.navbar-inner {
+  background: #404040;
+}
+.tabs-left .nav-tabs {
+  float: left;
+  margin-right: 0px;
+  border-right: 1px solid #ddd;
+}
+a {
+  color: #666666;
+}
+a:hover {
+  color: #ff9900;
+}
+</style>
+<link href='../../../assets/bootstrap/css/bootstrap-responsive.min.css' rel='stylesheet' type='text/css'>
+<script src='../../../assets/jquery.min.js' type='text/javascript'></script>
+<script src='../../../assets/bootstrap/js/bootstrap.min.js' type='text/javascript'></script>
+<script src='../../../assets/highstock.js' type='text/javascript'></script>
+<script src='../../../assets/exporting.js' type='text/javascript'></script>
+<script src='../../../assets/export-csv.js' type='text/javascript'></script>
+</head>
+<body>
+<div class='navbar navbar-fixed-top'>
+<div class='navbar-inner'>
+<div class='container'>
+<a class='btn btn-navbar' data-target='.nav-collapse' data-toggle='collapse'>
+<span class='icon-bar'></span>
+<span class='icon-bar'></span>
+<span class='icon-bar'></span>
+</a>
+<a class='brand' href='../../../index.html'>GitStats - Chromium</a>
+<div class='nav-collapse collapse'>
+<ul class='nav'>
+<li class=''>
+<a href='../../../general.html'>General</a>
+</li>
+<li class=''>
+<a href='../../../activity/by_date.html'>Activity</a>
+</li>
+<li class='active'>
+<a href='../../lge_authors.html'>Authors</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class='container'>
+<div class='tabbable tabs-left'>
+<ul class='nav nav-tabs'>
+<li class='active'>
+<a href='commits_by_date.html'>Commits by date</a>
+</li>
+<li class=''>
+<a href='changed_lines_by_date.html'>Changed lines by date</a>
+</li>
+<li class=''>
+<a href='insertions_by_date.html'>Lines added by date</a>
+</li>
+<li class=''>
+<a href='deletions_by_date.html'>Lines deleted by date</a>
+</li>
+</ul>
+<div class='tab-content'>
+<div class='tab-pane active'>
+<div class='page-header'>
+<h1 class='pagination-centered'>Commits by date</h1>
+</div>
+                <script type="text/javascript">
+        (function() {
+
+          var onload = window.onload;
+          window.onload = function(){
+            if (typeof onload == "function") onload();
+                    var options = { "title": { "text": "" },"legend": { "enabled": true,"layout": "vertical","backgroundColor": "#FFFFFF","align": "left","verticalAlign": "top","x": 100,"y": 70,"floating": true,"shadow": true },"xAxis": { "title": { "text": null } },"yAxis": { "title": { "text": "Lines" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.commits_sum_by_author_by_date" },"subtitle": {  },"series": [{ "name": "Simon Zünd","type": "spline","data": [ [ 1523004296000,1 ],[ 1523015923000,2 ],[ 1523059200000,2 ],[ 1523145600000,2 ],[ 1523232000000,2 ],[ 1523350020000,3 ],[ 1523431256000,4 ],[ 1523435615000,5 ],[ 1523529699000,6 ],[ 1523598185000,7 ],[ 1523605703000,8 ],[ 1523664000000,8 ],[ 1523750400000,8 ],[ 1523836800000,8 ],[ 1523923200000,8 ],[ 1524035230000,9 ],[ 1524036839000,10 ],[ 1524038840000,11 ],[ 1524053295000,12 ],[ 1524135265000,13 ],[ 1524223998000,14 ],[ 1524227262000,15 ],[ 1524268800000,15 ],[ 1524355200000,15 ],[ 1524441600000,15 ],[ 1524528000000,15 ],[ 1524640256000,16 ],[ 1524644049000,17 ],[ 1524700800000,17 ],[ 1524833249000,18 ],[ 1524873600000,18 ],[ 1524960000000,18 ],[ 1525101346000,19 ],[ 1525132800000,19 ],[ 1525238693000,20 ],[ 1525332925000,21 ],[ 1525392000000,21 ],[ 1525478400000,21 ],[ 1525564800000,21 ],[ 1525651200000,21 ],[ 1525758628000,22 ],[ 1525759086000,23 ],[ 1525779177000,24 ],[ 1525868368000,25 ],[ 1525910400000,25 ],[ 1525996800000,25 ],[ 1526083200000,25 ],[ 1526169600000,25 ],[ 1526295184000,26 ],[ 1526299010000,27 ],[ 1526304987000,28 ],[ 1526342400000,28 ],[ 1526454195000,29 ],[ 1526515200000,29 ],[ 1526601600000,29 ],[ 1526688000000,29 ],[ 1526774400000,29 ],[ 1526860800000,29 ],[ 1526992331000,30 ],[ 1526993309000,31 ],[ 1527067867000,32 ],[ 1527077703000,33 ],[ 1527153958000,34 ],[ 1527160772000,35 ],[ 1527161136000,36 ],[ 1527206400000,36 ],[ 1527292800000,36 ],[ 1527379200000,36 ],[ 1527465600000,36 ],[ 1527603519000,37 ],[ 1527607258000,38 ],[ 1527607642000,39 ],[ 1527638400000,39 ],[ 1527724800000,39 ],[ 1527811200000,39 ],[ 1527897600000,39 ],[ 1527984000000,39 ],[ 1528094481000,40 ],[ 1528185289000,41 ],[ 1528199678000,42 ],[ 1528203447000,43 ],[ 1528243200000,43 ],[ 1528372106000,44 ],[ 1528375579000,45 ],[ 1528456379000,46 ],[ 1528502400000,46 ],[ 1528588800000,46 ],[ 1528701247000,47 ],[ 1528793643000,48 ],[ 1528878317000,49 ],[ 1528934400000,49 ],[ 1529053651000,50 ],[ 1529054101000,51 ] ] }] };
+        
+        window.chart_charts.commits_sum_by_author_by_date = new Highcharts.StockChart(options);
+
+          };
+                })()
+        </script>
+
+<div id="charts.commits_sum_by_author_by_date"></div>
+<small>
+<center>5 LGE Chromium authors shown</center>
+</small>
+</div>
+</div>
+</div>
+
+
+</div>
+</body>
+</html>

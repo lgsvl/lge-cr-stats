@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>GitStats - Chromium</title>
+<meta charset='utf-8'>
+<link href='../../../assets/bootstrap/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+<style>
+body {
+   padding-top: 60px;
+   font-family: "Trebuchet MS","Bitstream Vera Sans", "DejaVu Sans", "Luxi Sans","Lucida Grande", Helvetica, Verdana, Arial,sans-serif;
+   font-size: 12px;
+   background-color:#fdfdfd;
+}
+.navbar {
+  font-size: 16px;
+}
+.navbar .nav>li>a {
+  float: none;
+  padding: 10px 10px 10px;
+  color: #eee;
+  text-decoration: none;
+  text-shadow: none;
+}
+.navbar .nav>li>a:hover {
+  color: #ff9900;
+}
+.navbar .nav>.active>a, .navbar .nav>.active>a:hover, .navbar .nav>.active>a:focus {
+  -webkit-border-radius: 3px;
+  color: #555;
+  padding: 5px 10px 5px;
+  margin: 5px 10px 5px;
+  text-decoration: none;
+  background-color: #ccc;
+}
+.navbar .brand {
+  -webkit-border-radius: 3px;
+  background: #FF9900;
+  color: #404040;
+  display: block;
+  float: left;
+  padding: 5px 15px 5px;
+  margin: 5px 15px 5px;
+  margin-left: -20px;
+  font-size: 20px;
+  font-weight: 200;
+  /* color: white; */
+  text-shadow: none;
+}
+.navbar-inner {
+  background: #404040;
+}
+.tabs-left .nav-tabs {
+  float: left;
+  margin-right: 0px;
+  border-right: 1px solid #ddd;
+}
+a {
+  color: #666666;
+}
+a:hover {
+  color: #ff9900;
+}
+</style>
+<link href='../../../assets/bootstrap/css/bootstrap-responsive.min.css' rel='stylesheet' type='text/css'>
+<script src='../../../assets/jquery.min.js' type='text/javascript'></script>
+<script src='../../../assets/bootstrap/js/bootstrap.min.js' type='text/javascript'></script>
+<script src='../../../assets/highstock.js' type='text/javascript'></script>
+<script src='../../../assets/exporting.js' type='text/javascript'></script>
+<script src='../../../assets/export-csv.js' type='text/javascript'></script>
+</head>
+<body>
+<div class='navbar navbar-fixed-top'>
+<div class='navbar-inner'>
+<div class='container'>
+<a class='btn btn-navbar' data-target='.nav-collapse' data-toggle='collapse'>
+<span class='icon-bar'></span>
+<span class='icon-bar'></span>
+<span class='icon-bar'></span>
+</a>
+<a class='brand' href='../../../index.html'>GitStats - Chromium</a>
+<div class='nav-collapse collapse'>
+<ul class='nav'>
+<li class=''>
+<a href='../../../general.html'>General</a>
+</li>
+<li class=''>
+<a href='../../../activity/by_date.html'>Activity</a>
+</li>
+<li class='active'>
+<a href='../../lge_authors.html'>Authors</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class='container'>
+<div class='tabbable tabs-left'>
+<ul class='nav nav-tabs'>
+<li class=''>
+<a href='commits_by_date.html'>Commits by date</a>
+</li>
+<li class=''>
+<a href='changed_lines_by_date.html'>Changed lines by date</a>
+</li>
+<li class='active'>
+<a href='insertions_by_date.html'>Lines added by date</a>
+</li>
+<li class=''>
+<a href='deletions_by_date.html'>Lines deleted by date</a>
+</li>
+</ul>
+<div class='tab-content'>
+<div class='tab-pane active'>
+<div class='page-header'>
+<h1 class='pagination-centered'>Lines added by date</h1>
+</div>
+                <script type="text/javascript">
+        (function() {
+
+          var onload = window.onload;
+          window.onload = function(){
+            if (typeof onload == "function") onload();
+                    var options = { "title": { "text": "" },"legend": { "enabled": true,"layout": "vertical","backgroundColor": "#FFFFFF","align": "left","verticalAlign": "top","x": 100,"y": 70,"floating": true,"shadow": true },"xAxis": { "title": { "text": null } },"yAxis": { "title": { "text": "Lines" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.insertions_by_author_by_date" },"subtitle": {  },"series": [{ "name": "Calder Kitagawa","type": "spline","data": [ [ 1515447139000,3 ],[ 1515507630000,18 ],[ 1515527297000,29 ],[ 1515542400000,29 ],[ 1515701817000,43 ],[ 1515715200000,43 ],[ 1515801600000,43 ],[ 1515888000000,43 ],[ 1515974400000,43 ],[ 1516060800000,43 ],[ 1516147200000,43 ],[ 1516233600000,43 ],[ 1516320000000,43 ],[ 1516406400000,43 ],[ 1516492800000,43 ],[ 1516579200000,43 ],[ 1516665600000,43 ],[ 1516752000000,43 ],[ 1516838400000,43 ],[ 1516924800000,43 ],[ 1517011200000,43 ],[ 1517097600000,43 ],[ 1517184000000,43 ],[ 1517270400000,43 ],[ 1517356800000,43 ],[ 1517443200000,43 ],[ 1517529600000,43 ],[ 1517616000000,43 ],[ 1517702400000,43 ],[ 1517788800000,43 ],[ 1517875200000,43 ],[ 1517961600000,43 ],[ 1518048000000,43 ],[ 1518199562000,233 ],[ 1518220800000,233 ],[ 1518307200000,233 ],[ 1518455689000,245 ],[ 1518480000000,245 ],[ 1518566400000,245 ],[ 1518652800000,245 ],[ 1518739200000,245 ],[ 1518825600000,245 ],[ 1518912000000,245 ],[ 1518998400000,245 ],[ 1519084800000,245 ],[ 1519171200000,245 ],[ 1519257600000,245 ],[ 1519344000000,245 ],[ 1519430400000,245 ],[ 1519516800000,245 ],[ 1519665819000,247 ],[ 1519761659000,256 ],[ 1519766636000,262 ],[ 1519837745000,408 ],[ 1519837790000,414 ],[ 1519862400000,414 ],[ 1519948800000,414 ],[ 1520035200000,414 ],[ 1520121600000,414 ],[ 1520208000000,414 ],[ 1520294400000,414 ],[ 1520450711000,424 ],[ 1520467200000,424 ],[ 1520622521000,428 ],[ 1520640000000,428 ],[ 1520726400000,428 ],[ 1520812800000,428 ],[ 1520899200000,428 ],[ 1521055716000,436 ],[ 1521146101000,512 ],[ 1521233049000,513 ],[ 1521244800000,513 ],[ 1521331200000,513 ],[ 1521417600000,513 ],[ 1521504000000,513 ],[ 1521590400000,513 ],[ 1521676800000,513 ],[ 1521763200000,513 ],[ 1521849600000,513 ],[ 1521936000000,513 ],[ 1522022400000,513 ],[ 1522166774000,515 ],[ 1522195200000,515 ],[ 1522281600000,515 ],[ 1522368000000,515 ],[ 1522454400000,515 ],[ 1522540800000,515 ],[ 1522627200000,515 ],[ 1522713600000,515 ],[ 1522800000000,515 ],[ 1522933010000,519 ],[ 1523043085000,597 ],[ 1523059200000,597 ],[ 1523145600000,597 ],[ 1523285396000,611 ],[ 1523390588000,615 ],[ 1523404800000,615 ],[ 1523491200000,615 ],[ 1523577600000,615 ],[ 1523664000000,615 ],[ 1523750400000,615 ],[ 1523836800000,615 ],[ 1523923200000,615 ],[ 1524009600000,615 ],[ 1524096000000,615 ],[ 1524182400000,615 ],[ 1524268800000,615 ],[ 1524355200000,615 ],[ 1524441600000,615 ],[ 1524578086000,776 ],[ 1524602127000,906 ],[ 1524668795000,906 ],[ 1524687740000,922 ],[ 1524700800000,922 ],[ 1524868665000,1039 ],[ 1524873600000,1039 ],[ 1524960000000,1039 ],[ 1525046400000,1039 ],[ 1525132800000,1039 ],[ 1525274848000,1216 ],[ 1525305600000,1216 ],[ 1525392000000,1216 ],[ 1525478400000,1216 ],[ 1525564800000,1216 ],[ 1525709337000,1227 ],[ 1525792111000,1252 ],[ 1525877930000,1545 ],[ 1525895474000,1846 ],[ 1525910400000,1846 ],[ 1525996800000,1846 ],[ 1526083200000,1846 ],[ 1526169600000,1846 ],[ 1526256000000,1846 ],[ 1526342400000,1846 ],[ 1526428800000,1846 ],[ 1526515200000,1846 ],[ 1526601600000,1846 ],[ 1526688000000,1846 ],[ 1526774400000,1846 ],[ 1526860800000,1846 ],[ 1526947200000,1846 ],[ 1527096651000,3181 ] ] }] };
+        
+        window.chart_charts.insertions_by_author_by_date = new Highcharts.StockChart(options);
+
+          };
+                })()
+        </script>
+
+<div id="charts.insertions_by_author_by_date"></div>
+<small>
+<center>5 LGE Chromium authors shown</center>
+</small>
+</div>
+</div>
+</div>
+
+
+</div>
+</body>
+</html>

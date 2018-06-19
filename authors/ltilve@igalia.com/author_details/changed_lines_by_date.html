@@ -5,7 +5,61 @@
 <meta charset='utf-8'>
 <link href='../../../assets/bootstrap/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
 <style>
-body { padding-top: 60px; }
+body {
+   padding-top: 60px;
+   font-family: "Trebuchet MS","Bitstream Vera Sans", "DejaVu Sans", "Luxi Sans","Lucida Grande", Helvetica, Verdana, Arial,sans-serif;
+   font-size: 12px;
+   background-color:#fdfdfd;
+}
+.navbar {
+  font-size: 16px;
+}
+.navbar .nav>li>a {
+  float: none;
+  padding: 10px 10px 10px;
+  color: #eee;
+  text-decoration: none;
+  text-shadow: none;
+}
+.navbar .nav>li>a:hover {
+  color: #ff9900;
+}
+.navbar .nav>.active>a, .navbar .nav>.active>a:hover, .navbar .nav>.active>a:focus {
+  -webkit-border-radius: 3px;
+  color: #555;
+  padding: 5px 10px 5px;
+  margin: 5px 10px 5px;
+  text-decoration: none;
+  background-color: #ccc;
+}
+.navbar .brand {
+  -webkit-border-radius: 3px;
+  background: #FF9900;
+  color: #404040;
+  display: block;
+  float: left;
+  padding: 5px 15px 5px;
+  margin: 5px 15px 5px;
+  margin-left: -20px;
+  font-size: 20px;
+  font-weight: 200;
+  /* color: white; */
+  text-shadow: none;
+}
+.navbar-inner {
+  background: #404040;
+}
+.tabs-left .nav-tabs {
+  float: left;
+  margin-right: 0px;
+  border-right: 1px solid #ddd;
+}
+a {
+  color: #666666;
+}
+a:hover {
+  color: #ff9900;
+}
 </style>
 <link href='../../../assets/bootstrap/css/bootstrap-responsive.min.css' rel='stylesheet' type='text/css'>
 <script src='../../../assets/jquery.min.js' type='text/javascript'></script>
@@ -33,16 +87,7 @@ body { padding-top: 60px; }
 <a href='../../../activity/by_date.html'>Activity</a>
 </li>
 <li class='active'>
-<a href='../../best_authors.html'>Authors</a>
-</li>
-<li class=''>
-<a href='../../../files/by_date.html'>Files</a>
-</li>
-<li class='active'>
-<a href='../../../lines/by_date.html'>Lines</a>
-</li>
-<li class=''>
-<a href='../../../comments/by_date.html'>Comments</a>
+<a href='../../lge_authors.html'>Authors</a>
 </li>
 </ul>
 </div>
@@ -76,7 +121,7 @@ body { padding-top: 60px; }
           var onload = window.onload;
           window.onload = function(){
             if (typeof onload == "function") onload();
-                    var options = { "title": { "text": "" },"legend": { "enabled": true,"layout": "vertical","backgroundColor": "#FFFFFF","align": "left","verticalAlign": "top","x": 100,"y": 70,"floating": true,"shadow": true },"xAxis": { "title": { "text": null } },"yAxis": { "title": { "text": "Lines" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.changed_lines_by_author_by_date" },"subtitle": {  },"series": [{ "name": "ltilve@igalia.com","type": "spline","data": [ [ 1395400298000,782439 ],[ 1395446400000,782439 ],[ 1395532800000,782439 ],[ 1395630061000,833168 ],[ 1395705600000,833168 ],[ 1395792000000,833168 ],[ 1395878400000,833168 ],[ 1395990361000,969969 ],[ 1396051200000,969969 ],[ 1396137600000,969969 ],[ 1396224000000,969969 ],[ 1396310400000,969969 ],[ 1396396800000,969969 ],[ 1396519536000,1233173 ],[ 1396569600000,1233173 ],[ 1396656625000,1340743 ],[ 1396713112000,1347652 ],[ 1396742400000,1347652 ],[ 1396828800000,1347652 ],[ 1396915200000,1347652 ],[ 1397001600000,1347652 ],[ 1397088000000,1347652 ],[ 1397174400000,1347652 ],[ 1397260800000,1347652 ],[ 1397347200000,1347652 ],[ 1397433600000,1347652 ],[ 1397520000000,1347652 ],[ 1397691050000,1855900 ],[ 1397692800000,1855900 ],[ 1397779200000,1855900 ],[ 1397865600000,1855900 ],[ 1397952000000,1855900 ],[ 1398038400000,1855900 ],[ 1398124800000,1855900 ],[ 1398211200000,1855900 ],[ 1398297600000,1855900 ],[ 1398393040000,2180134 ],[ 1398470400000,2180134 ],[ 1398556800000,2180134 ],[ 1398643200000,2180134 ],[ 1398729600000,2180134 ],[ 1398816000000,2180134 ],[ 1398902400000,2180134 ],[ 1398988800000,2180134 ],[ 1399075200000,2180134 ],[ 1399161600000,2180134 ],[ 1399248000000,2180134 ],[ 1399334400000,2180134 ],[ 1399420800000,2180134 ],[ 1399507200000,2180134 ],[ 1399593600000,2180134 ],[ 1399680000000,2180134 ],[ 1399766400000,2180134 ],[ 1399852800000,2180134 ],[ 1400024746000,2810710 ] ] }] };
+                    var options = { "title": { "text": "" },"legend": { "enabled": true,"layout": "vertical","backgroundColor": "#FFFFFF","align": "left","verticalAlign": "top","x": 100,"y": 70,"floating": true,"shadow": true },"xAxis": { "title": { "text": null } },"yAxis": { "title": { "text": "Lines" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.changed_lines_by_author_by_date" },"subtitle": {  },"series": [{ "name": "ltilve@igalia.com","type": "spline","data": [ [ 1395400298000,4 ],[ 1395446400000,4 ],[ 1395532800000,4 ],[ 1395630061000,13 ],[ 1395705600000,13 ],[ 1395792000000,13 ],[ 1395878400000,13 ],[ 1395990361000,35 ],[ 1396051200000,35 ],[ 1396137600000,35 ],[ 1396224000000,35 ],[ 1396310400000,35 ],[ 1396396800000,35 ],[ 1396519536000,36 ],[ 1396569600000,36 ],[ 1396656625000,40 ],[ 1396713112000,45 ],[ 1396742400000,45 ],[ 1396828800000,45 ],[ 1396915200000,45 ],[ 1397001600000,45 ],[ 1397088000000,45 ],[ 1397174400000,45 ],[ 1397260800000,45 ],[ 1397347200000,45 ],[ 1397433600000,45 ],[ 1397520000000,45 ],[ 1397691050000,58 ],[ 1397692800000,58 ],[ 1397779200000,58 ],[ 1397865600000,58 ],[ 1397952000000,58 ],[ 1398038400000,58 ],[ 1398124800000,58 ],[ 1398211200000,58 ],[ 1398297600000,58 ],[ 1398393040000,62 ],[ 1398470400000,62 ],[ 1398556800000,62 ],[ 1398643200000,62 ],[ 1398729600000,62 ],[ 1398816000000,62 ],[ 1398902400000,62 ],[ 1398988800000,62 ],[ 1399075200000,62 ],[ 1399161600000,62 ],[ 1399248000000,62 ],[ 1399334400000,62 ],[ 1399420800000,62 ],[ 1399507200000,62 ],[ 1399593600000,62 ],[ 1399680000000,62 ],[ 1399766400000,62 ],[ 1399852800000,62 ],[ 1400024746000,69 ] ] }] };
         
         window.chart_charts.changed_lines_by_author_by_date = new Highcharts.StockChart(options);
 
@@ -86,7 +131,7 @@ body { padding-top: 60px; }
 
 <div id="charts.changed_lines_by_author_by_date"></div>
 <small>
-<center>5 best authors shown</center>
+<center>5 LGE Chromium authors shown</center>
 </small>
 </div>
 </div>

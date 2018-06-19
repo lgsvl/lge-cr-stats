@@ -5,7 +5,61 @@
 <meta charset='utf-8'>
 <link href='../../../assets/bootstrap/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
 <style>
-body { padding-top: 60px; }
+body {
+   padding-top: 60px;
+   font-family: "Trebuchet MS","Bitstream Vera Sans", "DejaVu Sans", "Luxi Sans","Lucida Grande", Helvetica, Verdana, Arial,sans-serif;
+   font-size: 12px;
+   background-color:#fdfdfd;
+}
+.navbar {
+  font-size: 16px;
+}
+.navbar .nav>li>a {
+  float: none;
+  padding: 10px 10px 10px;
+  color: #eee;
+  text-decoration: none;
+  text-shadow: none;
+}
+.navbar .nav>li>a:hover {
+  color: #ff9900;
+}
+.navbar .nav>.active>a, .navbar .nav>.active>a:hover, .navbar .nav>.active>a:focus {
+  -webkit-border-radius: 3px;
+  color: #555;
+  padding: 5px 10px 5px;
+  margin: 5px 10px 5px;
+  text-decoration: none;
+  background-color: #ccc;
+}
+.navbar .brand {
+  -webkit-border-radius: 3px;
+  background: #FF9900;
+  color: #404040;
+  display: block;
+  float: left;
+  padding: 5px 15px 5px;
+  margin: 5px 15px 5px;
+  margin-left: -20px;
+  font-size: 20px;
+  font-weight: 200;
+  /* color: white; */
+  text-shadow: none;
+}
+.navbar-inner {
+  background: #404040;
+}
+.tabs-left .nav-tabs {
+  float: left;
+  margin-right: 0px;
+  border-right: 1px solid #ddd;
+}
+a {
+  color: #666666;
+}
+a:hover {
+  color: #ff9900;
+}
 </style>
 <link href='../../../assets/bootstrap/css/bootstrap-responsive.min.css' rel='stylesheet' type='text/css'>
 <script src='../../../assets/jquery.min.js' type='text/javascript'></script>
@@ -33,16 +87,7 @@ body { padding-top: 60px; }
 <a href='../../../activity/by_date.html'>Activity</a>
 </li>
 <li class='active'>
-<a href='../../best_authors.html'>Authors</a>
-</li>
-<li class=''>
-<a href='../../../files/by_date.html'>Files</a>
-</li>
-<li class=''>
-<a href='../../../lines/by_date.html'>Lines</a>
-</li>
-<li class=''>
-<a href='../../../comments/by_date.html'>Comments</a>
+<a href='../../lge_authors.html'>Authors</a>
 </li>
 </ul>
 </div>
@@ -81,7 +126,7 @@ body { padding-top: 60px; }
 <h3>Steven Bennetts &lt;stevenjb@chromium.org&gt;</h3>
 </div>
 </div>
-<table class='table table-bordered table-condensed'>
+<table class='table table-condensed'>
 <tr>
 <th>Hour</th>
 <th>0</th>
@@ -111,57 +156,57 @@ body { padding-top: 60px; }
 </tr>
 <tr>
 <th>Commits</th>
-<td>18</td>
-<td>22</td>
-<td>13</td>
-<td>5</td>
+<td>26</td>
+<td>32</td>
+<td>21</td>
+<td>7</td>
+<td>2</td>
+<td>0</td>
 <td>1</td>
-<td>0</td>
-<td>0</td>
 <td>0</td>
 <td>8</td>
 <td>30</td>
 <td>60</td>
-<td>71</td>
+<td>72</td>
 <td>73</td>
 <td>52</td>
 <td>56</td>
-<td>76</td>
-<td>62</td>
-<td>69</td>
-<td>70</td>
-<td>44</td>
-<td>30</td>
-<td>23</td>
-<td>20</td>
-<td>25</td>
+<td>80</td>
+<td>71</td>
+<td>80</td>
+<td>77</td>
+<td>59</td>
+<td>42</td>
+<td>34</td>
+<td>29</td>
+<td>31</td>
 </tr>
 <tr>
 <th>Percentage</th>
+<td>2.8</td>
+<td>3.4</td>
 <td>2.2</td>
-<td>2.7</td>
-<td>1.6</td>
-<td>0.6</td>
+<td>0.7</td>
+<td>0.2</td>
+<td>0.0</td>
 <td>0.1</td>
 <td>0.0</td>
-<td>0.0</td>
-<td>0.0</td>
-<td>1.0</td>
-<td>3.6</td>
-<td>7.2</td>
-<td>8.6</td>
-<td>8.8</td>
-<td>6.3</td>
-<td>6.8</td>
-<td>9.2</td>
-<td>7.5</td>
-<td>8.3</td>
+<td>0.8</td>
+<td>3.2</td>
+<td>6.4</td>
+<td>7.6</td>
+<td>7.7</td>
+<td>5.5</td>
+<td>5.9</td>
 <td>8.5</td>
-<td>5.3</td>
+<td>7.5</td>
+<td>8.5</td>
+<td>8.2</td>
+<td>6.3</td>
+<td>4.5</td>
 <td>3.6</td>
-<td>2.8</td>
-<td>2.4</td>
-<td>3.0</td>
+<td>3.1</td>
+<td>3.3</td>
 </tr>
 </table>
                 <script type="text/javascript">
@@ -170,7 +215,7 @@ body { padding-top: 60px; }
           var onload = window.onload;
           window.onload = function(){
             if (typeof onload == "function") onload();
-                    var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": "Hour" },"categories": "0..23" },"yAxis": { "title": { "text": "Commits" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.activity_by_hour","type": "column" },"subtitle": {  },"series": [{ "name": "Commits by hour","data": [ 18,22,13,5,1,0,0,0,8,30,60,71,73,52,56,76,62,69,70,44,30,23,20,25 ] }] };
+                    var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": "Hour" },"categories": "0..23" },"yAxis": { "title": { "text": "Commits" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.activity_by_hour","type": "column" },"subtitle": {  },"series": [{ "name": "Commits by hour","data": [ 26,32,21,7,2,0,1,0,8,30,60,72,73,52,56,80,71,80,77,59,42,34,29,31 ] }] };
         
         window.chart_charts.activity_by_hour = new Highcharts.Chart(options);
 

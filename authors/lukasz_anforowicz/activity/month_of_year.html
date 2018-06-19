@@ -5,7 +5,61 @@
 <meta charset='utf-8'>
 <link href='../../../assets/bootstrap/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
 <style>
-body { padding-top: 60px; }
+body {
+   padding-top: 60px;
+   font-family: "Trebuchet MS","Bitstream Vera Sans", "DejaVu Sans", "Luxi Sans","Lucida Grande", Helvetica, Verdana, Arial,sans-serif;
+   font-size: 12px;
+   background-color:#fdfdfd;
+}
+.navbar {
+  font-size: 16px;
+}
+.navbar .nav>li>a {
+  float: none;
+  padding: 10px 10px 10px;
+  color: #eee;
+  text-decoration: none;
+  text-shadow: none;
+}
+.navbar .nav>li>a:hover {
+  color: #ff9900;
+}
+.navbar .nav>.active>a, .navbar .nav>.active>a:hover, .navbar .nav>.active>a:focus {
+  -webkit-border-radius: 3px;
+  color: #555;
+  padding: 5px 10px 5px;
+  margin: 5px 10px 5px;
+  text-decoration: none;
+  background-color: #ccc;
+}
+.navbar .brand {
+  -webkit-border-radius: 3px;
+  background: #FF9900;
+  color: #404040;
+  display: block;
+  float: left;
+  padding: 5px 15px 5px;
+  margin: 5px 15px 5px;
+  margin-left: -20px;
+  font-size: 20px;
+  font-weight: 200;
+  /* color: white; */
+  text-shadow: none;
+}
+.navbar-inner {
+  background: #404040;
+}
+.tabs-left .nav-tabs {
+  float: left;
+  margin-right: 0px;
+  border-right: 1px solid #ddd;
+}
+a {
+  color: #666666;
+}
+a:hover {
+  color: #ff9900;
+}
 </style>
 <link href='../../../assets/bootstrap/css/bootstrap-responsive.min.css' rel='stylesheet' type='text/css'>
 <script src='../../../assets/jquery.min.js' type='text/javascript'></script>
@@ -33,16 +87,7 @@ body { padding-top: 60px; }
 <a href='../../../activity/by_date.html'>Activity</a>
 </li>
 <li class='active'>
-<a href='../../best_authors.html'>Authors</a>
-</li>
-<li class=''>
-<a href='../../../files/by_date.html'>Files</a>
-</li>
-<li class=''>
-<a href='../../../lines/by_date.html'>Lines</a>
-</li>
-<li class=''>
-<a href='../../../comments/by_date.html'>Comments</a>
+<a href='../../lge_authors.html'>Authors</a>
 </li>
 </ul>
 </div>
@@ -81,7 +126,7 @@ body { padding-top: 60px; }
 <h3>Lukasz Anforowicz &lt;lukasza@chromium.org&gt;</h3>
 </div>
 </div>
-<table class='table table-bordered table-condensed'>
+<table class='table table-condensed'>
 <tr>
 <th>Month</th>
 <th>Jan</th>
@@ -99,12 +144,12 @@ body { padding-top: 60px; }
 </tr>
 <tr>
 <th>Commits</th>
-<td>75</td>
-<td>57</td>
-<td>37</td>
-<td>81</td>
-<td>38</td>
-<td>56</td>
+<td>77</td>
+<td>70</td>
+<td>61</td>
+<td>105</td>
+<td>64</td>
+<td>64</td>
 <td>39</td>
 <td>36</td>
 <td>94</td>
@@ -114,18 +159,18 @@ body { padding-top: 60px; }
 </tr>
 <tr>
 <th>Percentage</th>
-<td>10.1</td>
+<td>9.1</td>
+<td>8.3</td>
+<td>7.2</td>
+<td>12.5</td>
 <td>7.6</td>
-<td>5.0</td>
-<td>10.9</td>
-<td>5.1</td>
-<td>7.5</td>
-<td>5.2</td>
-<td>4.8</td>
-<td>12.6</td>
-<td>10.9</td>
-<td>8.6</td>
-<td>11.8</td>
+<td>7.6</td>
+<td>4.6</td>
+<td>4.3</td>
+<td>11.2</td>
+<td>9.6</td>
+<td>7.6</td>
+<td>10.4</td>
 </tr>
 </table>
                 <script type="text/javascript">
@@ -134,7 +179,7 @@ body { padding-top: 60px; }
           var onload = window.onload;
           window.onload = function(){
             if (typeof onload == "function") onload();
-                    var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": "Month" },"categories": [ "Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec" ] },"yAxis": { "title": { "text": "Commits" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.activity_by_month","type": "column" },"subtitle": {  },"series": [{ "name": "Commits by month","data": [ 75,57,37,81,38,56,39,36,94,81,64,88 ] }] };
+                    var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": "Month" },"categories": [ "Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec" ] },"yAxis": { "title": { "text": "Commits" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.activity_by_month","type": "column" },"subtitle": {  },"series": [{ "name": "Commits by month","data": [ 77,70,61,105,64,64,39,36,94,81,64,88 ] }] };
         
         window.chart_charts.activity_by_month = new Highcharts.Chart(options);
 
