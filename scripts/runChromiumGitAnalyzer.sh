@@ -18,6 +18,7 @@ do
     git subtree add --prefix=v8-log https://chromium.googlesource.com/v8/v8.git master
     git subtree add --prefix=pdfium-log https://pdfium.googlesource.com/pdfium master
     git subtree add --prefix=angle-log https://chromium.googlesource.com/angle/angle.git master
+    git subtree add --prefix=crashpad-log https://chromium.googlesource.com/crashpad/crashpad master
     timestamp=$(date +"%T")
     echo "[$timestamp] Finish to update Chromium."
 
