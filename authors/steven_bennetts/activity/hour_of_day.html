@@ -156,55 +156,55 @@ a:hover {
 </tr>
 <tr>
 <th>Commits</th>
-<td>26</td>
+<td>28</td>
 <td>32</td>
-<td>21</td>
-<td>7</td>
+<td>22</td>
+<td>8</td>
 <td>2</td>
 <td>0</td>
 <td>1</td>
 <td>0</td>
 <td>8</td>
 <td>30</td>
-<td>60</td>
+<td>61</td>
 <td>72</td>
 <td>73</td>
 <td>52</td>
 <td>56</td>
-<td>80</td>
-<td>71</td>
-<td>80</td>
+<td>81</td>
+<td>73</td>
+<td>82</td>
 <td>77</td>
 <td>59</td>
-<td>42</td>
-<td>34</td>
-<td>29</td>
-<td>31</td>
+<td>46</td>
+<td>36</td>
+<td>30</td>
+<td>32</td>
 </tr>
 <tr>
 <th>Percentage</th>
-<td>2.8</td>
-<td>3.4</td>
-<td>2.2</td>
-<td>0.7</td>
+<td>2.9</td>
+<td>3.3</td>
+<td>2.3</td>
+<td>0.8</td>
 <td>0.2</td>
 <td>0.0</td>
 <td>0.1</td>
 <td>0.0</td>
 <td>0.8</td>
-<td>3.2</td>
-<td>6.4</td>
-<td>7.6</td>
-<td>7.7</td>
-<td>5.5</td>
-<td>5.9</td>
-<td>8.5</td>
-<td>7.5</td>
-<td>8.5</td>
-<td>8.2</td>
+<td>3.1</td>
 <td>6.3</td>
-<td>4.5</td>
-<td>3.6</td>
+<td>7.5</td>
+<td>7.6</td>
+<td>5.4</td>
+<td>5.8</td>
+<td>8.4</td>
+<td>7.6</td>
+<td>8.5</td>
+<td>8.0</td>
+<td>6.1</td>
+<td>4.8</td>
+<td>3.7</td>
 <td>3.1</td>
 <td>3.3</td>
 </tr>
@@ -215,7 +215,7 @@ a:hover {
           var onload = window.onload;
           window.onload = function(){
             if (typeof onload == "function") onload();
-                    var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": "Hour" },"categories": "0..23" },"yAxis": { "title": { "text": "Commits" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.activity_by_hour","type": "column" },"subtitle": {  },"series": [{ "name": "Commits by hour","data": [ 26,32,21,7,2,0,1,0,8,30,60,72,73,52,56,80,71,80,77,59,42,34,29,31 ] }] };
+                    var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": "Hour" },"categories": "0..23" },"yAxis": { "title": { "text": "Commits" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.activity_by_hour","type": "column" },"subtitle": {  },"series": [{ "name": "Commits by hour","data": [ 28,32,22,8,2,0,1,0,8,30,61,72,73,52,56,81,73,82,77,59,46,36,30,32 ] }] };
         
         window.chart_charts.activity_by_hour = new Highcharts.Chart(options);
 

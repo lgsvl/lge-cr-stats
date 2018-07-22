@@ -149,8 +149,8 @@ a:hover {
 <td>61</td>
 <td>94</td>
 <td>138</td>
-<td>72</td>
-<td>81</td>
+<td>93</td>
+<td>132</td>
 <td>87</td>
 <td>66</td>
 <td>94</td>
@@ -159,18 +159,18 @@ a:hover {
 </tr>
 <tr>
 <th>Percentage</th>
-<td>7.6</td>
-<td>4.7</td>
-<td>6.2</td>
-<td>9.6</td>
-<td>14.1</td>
-<td>7.3</td>
-<td>8.2</td>
+<td>7.1</td>
+<td>4.4</td>
+<td>5.8</td>
 <td>8.9</td>
-<td>6.7</td>
-<td>9.6</td>
-<td>10.5</td>
-<td>6.6</td>
+<td>13.1</td>
+<td>8.8</td>
+<td>12.5</td>
+<td>8.3</td>
+<td>6.3</td>
+<td>8.9</td>
+<td>9.8</td>
+<td>6.2</td>
 </tr>
 </table>
                 <script type="text/javascript">
@@ -179,7 +179,7 @@ a:hover {
           var onload = window.onload;
           window.onload = function(){
             if (typeof onload == "function") onload();
-                    var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": "Month" },"categories": [ "Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec" ] },"yAxis": { "title": { "text": "Commits" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.activity_by_month","type": "column" },"subtitle": {  },"series": [{ "name": "Commits by month","data": [ 75,46,61,94,138,72,81,87,66,94,103,65 ] }] };
+                    var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": "Month" },"categories": [ "Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec" ] },"yAxis": { "title": { "text": "Commits" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.activity_by_month","type": "column" },"subtitle": {  },"series": [{ "name": "Commits by month","data": [ 75,46,61,94,138,93,132,87,66,94,103,65 ] }] };
         
         window.chart_charts.activity_by_month = new Highcharts.Chart(options);
 

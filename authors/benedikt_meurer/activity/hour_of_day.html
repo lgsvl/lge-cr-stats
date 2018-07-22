@@ -161,17 +161,17 @@ a:hover {
 <td>136</td>
 <td>121</td>
 <td>143</td>
-<td>163</td>
+<td>164</td>
 <td>118</td>
 <td>83</td>
-<td>88</td>
+<td>89</td>
 <td>85</td>
 <td>76</td>
 <td>90</td>
 <td>83</td>
-<td>56</td>
-<td>37</td>
-<td>13</td>
+<td>57</td>
+<td>38</td>
+<td>14</td>
 <td>6</td>
 <td>6</td>
 <td>7</td>
@@ -184,19 +184,19 @@ a:hover {
 <tr>
 <th>Percentage</th>
 <td>6.4</td>
-<td>7.1</td>
+<td>7.0</td>
 <td>6.9</td>
 <td>6.1</td>
-<td>7.3</td>
+<td>7.2</td>
 <td>8.3</td>
 <td>6.0</td>
 <td>4.2</td>
 <td>4.5</td>
 <td>4.3</td>
-<td>3.9</td>
+<td>3.8</td>
 <td>4.6</td>
 <td>4.2</td>
-<td>2.8</td>
+<td>2.9</td>
 <td>1.9</td>
 <td>0.7</td>
 <td>0.3</td>
@@ -215,7 +215,7 @@ a:hover {
           var onload = window.onload;
           window.onload = function(){
             if (typeof onload == "function") onload();
-                    var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": "Hour" },"categories": "0..23" },"yAxis": { "title": { "text": "Commits" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.activity_by_hour","type": "column" },"subtitle": {  },"series": [{ "name": "Commits by hour","data": [ 126,139,136,121,143,163,118,83,88,85,76,90,83,56,37,13,6,6,7,16,24,57,136,162 ] }] };
+                    var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": "Hour" },"categories": "0..23" },"yAxis": { "title": { "text": "Commits" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.activity_by_hour","type": "column" },"subtitle": {  },"series": [{ "name": "Commits by hour","data": [ 126,139,136,121,143,164,118,83,89,85,76,90,83,57,38,14,6,6,7,16,24,57,136,162 ] }] };
         
         window.chart_charts.activity_by_hour = new Highcharts.Chart(options);
 
