@@ -159,14 +159,14 @@ a:hover {
 <td>36</td>
 <td>44</td>
 <td>44</td>
-<td>45</td>
+<td>44</td>
 <td>43</td>
-<td>33</td>
+<td>32</td>
 <td>36</td>
 <td>34</td>
 <td>36</td>
 <td>36</td>
-<td>36</td>
+<td>35</td>
 <td>30</td>
 <td>15</td>
 <td>11</td>
@@ -184,16 +184,16 @@ a:hover {
 <tr>
 <th>Percentage</th>
 <td>4.8</td>
-<td>5.8</td>
-<td>5.8</td>
-<td>6.0</td>
+<td>5.9</td>
+<td>5.9</td>
+<td>5.9</td>
 <td>5.7</td>
-<td>4.4</td>
+<td>4.3</td>
 <td>4.8</td>
 <td>4.5</td>
 <td>4.8</td>
 <td>4.8</td>
-<td>4.8</td>
+<td>4.7</td>
 <td>4.0</td>
 <td>2.0</td>
 <td>1.5</td>
@@ -202,7 +202,7 @@ a:hover {
 <td>3.3</td>
 <td>4.0</td>
 <td>3.1</td>
-<td>5.4</td>
+<td>5.5</td>
 <td>4.4</td>
 <td>2.7</td>
 <td>4.4</td>
@@ -215,7 +215,7 @@ a:hover {
           var onload = window.onload;
           window.onload = function(){
             if (typeof onload == "function") onload();
-                    var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": "Hour" },"categories": "0..23" },"yAxis": { "title": { "text": "Commits" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.activity_by_hour","type": "column" },"subtitle": {  },"series": [{ "name": "Commits by hour","data": [ 36,44,44,45,43,33,36,34,36,36,36,30,15,11,16,20,25,30,23,41,33,20,33,33 ] }] };
+                    var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": "Hour" },"categories": "0..23" },"yAxis": { "title": { "text": "Commits" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.activity_by_hour","type": "column" },"subtitle": {  },"series": [{ "name": "Commits by hour","data": [ 36,44,44,44,43,32,36,34,36,36,35,30,15,11,16,20,25,30,23,41,33,20,33,33 ] }] };
         
         window.chart_charts.activity_by_hour = new Highcharts.Chart(options);
 
