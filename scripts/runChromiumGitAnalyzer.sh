@@ -43,6 +43,10 @@ do
     # Restore master branch
     git reset --hard refs/original/refs/heads/master
     git reset --hard HEAD~6
+    git reset --hard origin
+    git reflog expire --all --expire-unreachable=0
+    git prune
+    git gc --auto
 
 
     # Upload the result to github.
