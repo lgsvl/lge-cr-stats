@@ -43,11 +43,10 @@ do
     # Restore master branch
     git reset --hard refs/original/refs/heads/master
     git reset --hard HEAD~6
-    git reset --hard origin
-    git reflog expire --all --expire-unreachable=0
-    git prune
-    git gc --auto
-
+    git reset --hard
+#    git for-each-ref --format='delete %(refname)' refs/original | git update-ref --stdin
+#    git reflog expire --expire=now --all
+#    git gc --prune=now
 
     # Upload the result to github.
     cd $OUTPUT_PATH
