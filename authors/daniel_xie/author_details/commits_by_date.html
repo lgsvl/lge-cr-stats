@@ -121,7 +121,7 @@ a:hover {
           var onload = window.onload;
           window.onload = function(){
             if (typeof onload == "function") onload();
-                    var options = { "title": { "text": "" },"legend": { "enabled": true,"layout": "vertical","backgroundColor": "#FFFFFF","align": "left","verticalAlign": "top","x": 100,"y": 70,"floating": true,"shadow": true },"xAxis": { "title": { "text": null } },"yAxis": { "title": { "text": "Lines" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.commits_sum_by_author_by_date" },"subtitle": {  },"series": [{ "name": "Daniel Xie","type": "spline","data": [ [ 1425168000000,1 ],[ 1425188292000,1 ],[ 1425254400000,1 ],[ 1425420895000,2 ],[ 1425442971000,3 ],[ 1425502953000,4 ],[ 1425513600000,4 ],[ 1425600000000,4 ],[ 1425686400000,4 ],[ 1425772800000,4 ],[ 1425859200000,4 ],[ 1425945600000,4 ],[ 1426032000000,4 ],[ 1426118400000,4 ],[ 1426204800000,4 ],[ 1426371746000,5 ] ] }] };
+                    var options = { "title": { "text": "" },"legend": { "enabled": true,"layout": "vertical","backgroundColor": "#FFFFFF","align": "left","verticalAlign": "top","x": 100,"y": 70,"floating": true,"shadow": true },"xAxis": { "title": { "text": null } },"yAxis": { "title": { "text": "Commits" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.commits_sum_by_author_by_date" },"subtitle": {  },"series": [{ "name": "Daniel Xie","type": "spline","data": [ [ 1425168000000,1 ],[ 1425188292000,1 ],[ 1425254400000,1 ],[ 1425420895000,2 ],[ 1425442971000,3 ],[ 1425502953000,4 ],[ 1425513600000,4 ],[ 1425600000000,4 ],[ 1425686400000,4 ],[ 1425772800000,4 ],[ 1425859200000,4 ],[ 1425945600000,4 ],[ 1426032000000,4 ],[ 1426118400000,4 ],[ 1426204800000,4 ],[ 1426371746000,5 ] ] }] };
         
         window.chart_charts.commits_sum_by_author_by_date = new Highcharts.StockChart(options);
 
@@ -131,7 +131,7 @@ a:hover {
 
 <div id="charts.commits_sum_by_author_by_date"></div>
 <small>
-<center>5 LGE Chromium authors shown</center>
+<center>Individual LGE Chromium author shown</center>
 </small>
 </div>
 </div>

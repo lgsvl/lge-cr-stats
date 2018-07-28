@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>GitStats - Chromium</title>
+<meta charset='utf-8'>
+<link href='../../../assets/bootstrap/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+<style>
+body {
+   padding-top: 60px;
+   font-family: "Trebuchet MS","Bitstream Vera Sans", "DejaVu Sans", "Luxi Sans","Lucida Grande", Helvetica, Verdana, Arial,sans-serif;
+   font-size: 12px;
+   background-color:#fdfdfd;
+}
+.navbar {
+  font-size: 16px;
+}
+.navbar .nav>li>a {
+  float: none;
+  padding: 10px 10px 10px;
+  color: #eee;
+  text-decoration: none;
+  text-shadow: none;
+}
+.navbar .nav>li>a:hover {
+  color: #ff9900;
+}
+.navbar .nav>.active>a, .navbar .nav>.active>a:hover, .navbar .nav>.active>a:focus {
+  -webkit-border-radius: 3px;
+  color: #555;
+  padding: 5px 10px 5px;
+  margin: 5px 10px 5px;
+  text-decoration: none;
+  background-color: #ccc;
+}
+.navbar .brand {
+  -webkit-border-radius: 3px;
+  background: #FF9900;
+  color: #404040;
+  display: block;
+  float: left;
+  padding: 5px 15px 5px;
+  margin: 5px 15px 5px;
+  margin-left: -20px;
+  font-size: 20px;
+  font-weight: 200;
+  /* color: white; */
+  text-shadow: none;
+}
+.navbar-inner {
+  background: #404040;
+}
+.tabs-left .nav-tabs {
+  float: left;
+  margin-right: 0px;
+  border-right: 1px solid #ddd;
+}
+a {
+  color: #666666;
+}
+a:hover {
+  color: #ff9900;
+}
+</style>
+<link href='../../../assets/bootstrap/css/bootstrap-responsive.min.css' rel='stylesheet' type='text/css'>
+<script src='../../../assets/jquery.min.js' type='text/javascript'></script>
+<script src='../../../assets/bootstrap/js/bootstrap.min.js' type='text/javascript'></script>
+<script src='../../../assets/highstock.js' type='text/javascript'></script>
+<script src='../../../assets/exporting.js' type='text/javascript'></script>
+<script src='../../../assets/export-csv.js' type='text/javascript'></script>
+</head>
+<body>
+<div class='navbar navbar-fixed-top'>
+<div class='navbar-inner'>
+<div class='container'>
+<a class='btn btn-navbar' data-target='.nav-collapse' data-toggle='collapse'>
+<span class='icon-bar'></span>
+<span class='icon-bar'></span>
+<span class='icon-bar'></span>
+</a>
+<a class='brand' href='../../../index.html'>GitStats - Chromium</a>
+<div class='nav-collapse collapse'>
+<ul class='nav'>
+<li class=''>
+<a href='../../../general.html'>General</a>
+</li>
+<li class=''>
+<a href='../../../activity/by_date.html'>Activity</a>
+</li>
+<li class='active'>
+<a href='../../lge_authors.html'>Authors</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class='container'>
+<div class='tabbable tabs-left'>
+<ul class='nav nav-tabs'>
+<li class=''>
+<a href='commits_by_date.html'>Commits by date</a>
+</li>
+<li class='active'>
+<a href='changed_lines_by_date.html'>Changed lines by date</a>
+</li>
+<li class=''>
+<a href='insertions_by_date.html'>Lines added by date</a>
+</li>
+<li class=''>
+<a href='deletions_by_date.html'>Lines deleted by date</a>
+</li>
+</ul>
+<div class='tab-content'>
+<div class='tab-pane active'>
+<div class='page-header'>
+<h1 class='pagination-centered'>Changed lines by date</h1>
+</div>
+                <script type="text/javascript">
+        (function() {
+
+          var onload = window.onload;
+          window.onload = function(){
+            if (typeof onload == "function") onload();
+                    var options = { "title": { "text": "" },"legend": { "enabled": true,"layout": "vertical","backgroundColor": "#FFFFFF","align": "left","verticalAlign": "top","x": 100,"y": 70,"floating": true,"shadow": true },"xAxis": { "title": { "text": null } },"yAxis": { "title": { "text": "Lines" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.changed_lines_by_author_by_date" },"subtitle": {  },"series": [{ "name": "Lingfeng Yang","type": "spline","data": [ [ 1518116275000,1739 ],[ 1518116345000,1812 ],[ 1518134400000,1812 ],[ 1518220800000,1812 ],[ 1518307200000,1812 ],[ 1518393600000,1812 ],[ 1518480000000,1812 ],[ 1518652800000,1821 ],[ 1518663691000,1821 ],[ 1518739200000,1821 ],[ 1518825600000,1821 ],[ 1518912000000,1821 ],[ 1519075457000,1828 ],[ 1519076328000,1943 ],[ 1519084800000,1979 ],[ 1519087526000,1979 ],[ 1519171200000,1979 ],[ 1519257600000,1979 ],[ 1519344000000,1979 ],[ 1519430400000,1979 ],[ 1519603200000,3151 ],[ 1519617504000,3151 ],[ 1519689600000,3151 ],[ 1519776000000,3151 ],[ 1519862400000,3151 ],[ 1519948800000,3151 ],[ 1520035200000,3151 ],[ 1520121600000,3151 ],[ 1520208000000,3151 ],[ 1520294400000,3151 ],[ 1520380800000,3151 ],[ 1520467200000,3151 ],[ 1520553600000,3151 ],[ 1520640000000,3151 ],[ 1520726400000,3151 ],[ 1520868672000,4323 ],[ 1520891125000,9195 ],[ 1520899200000,9195 ],[ 1520985600000,9195 ],[ 1521072000000,9195 ],[ 1521158400000,9195 ],[ 1521244800000,9195 ],[ 1521331200000,9195 ],[ 1521417600000,9195 ],[ 1521504000000,9195 ],[ 1521659650000,9691 ],[ 1521676800000,9691 ],[ 1521763200000,9691 ],[ 1521849600000,9691 ],[ 1521936000000,9691 ],[ 1522022400000,9691 ],[ 1522108800000,9691 ],[ 1522263388000,9823 ],[ 1522333301000,9942 ],[ 1522367432000,10052 ],[ 1522368000000,10294 ],[ 1522369912000,10294 ],[ 1522454400000,10294 ],[ 1522540800000,10294 ],[ 1522698144000,10312 ],[ 1522713600000,10312 ],[ 1522859148000,10419 ],[ 1522946360000,10674 ],[ 1523036968000,10731 ],[ 1523059200000,10731 ],[ 1523145600000,10731 ],[ 1523284136000,10956 ],[ 1523285843000,11077 ],[ 1523286526000,11327 ],[ 1523318400000,11327 ],[ 1523404800000,11327 ],[ 1523491200000,11327 ],[ 1523577600000,11327 ],[ 1523664000000,11327 ],[ 1523750400000,11327 ],[ 1523899191000,11650 ],[ 1523900633000,12021 ],[ 1523923200000,12021 ],[ 1524009600000,12021 ],[ 1524096000000,12021 ],[ 1524182400000,12021 ],[ 1524268800000,12021 ],[ 1524355200000,12021 ],[ 1524499309000,12140 ],[ 1524499329000,14889 ],[ 1524528000000,14889 ],[ 1524614400000,14889 ],[ 1524700800000,14889 ],[ 1524787200000,14889 ],[ 1524873600000,14889 ],[ 1524960000000,14889 ],[ 1525046400000,14889 ],[ 1525132800000,14889 ],[ 1525219200000,14889 ],[ 1525305600000,14889 ],[ 1525392000000,14889 ],[ 1525478400000,14889 ],[ 1525564800000,14889 ],[ 1525651200000,14889 ],[ 1525737600000,14889 ],[ 1525824000000,14889 ],[ 1525910400000,14889 ],[ 1525996800000,14889 ],[ 1526083200000,14889 ],[ 1526169600000,14889 ],[ 1526256000000,14889 ],[ 1526342400000,14889 ],[ 1526428800000,14889 ],[ 1526579014000,15486 ],[ 1526621812000,18408 ],[ 1526632954000,18578 ],[ 1526688000000,18578 ],[ 1526774400000,18578 ],[ 1526860800000,18578 ],[ 1526947200000,18578 ],[ 1527033600000,18578 ],[ 1527181934000,19997 ],[ 1527206400000,19997 ],[ 1527292800000,19997 ],[ 1527379200000,19997 ],[ 1527465600000,19997 ],[ 1527552000000,19997 ],[ 1527724800000,20622 ],[ 1527733458000,20065 ],[ 1527738057000,20379 ],[ 1527739937000,20622 ],[ 1527871384000,21039 ],[ 1527897600000,21039 ],[ 1527984000000,21039 ],[ 1528070400000,21039 ],[ 1528156800000,21039 ],[ 1528243200000,21039 ],[ 1528388018000,21683 ],[ 1528396405000,22797 ],[ 1528493969000,23651 ],[ 1528502400000,23651 ],[ 1528588800000,23651 ],[ 1528675200000,23651 ],[ 1528761600000,23651 ],[ 1528907340000,26285 ],[ 1528934400000,26285 ],[ 1529020800000,26285 ],[ 1529107200000,26285 ],[ 1529193600000,26285 ],[ 1529280000000,26285 ],[ 1529366400000,26285 ],[ 1529452800000,26285 ],[ 1529625600000,26585 ],[ 1529634165000,26585 ],[ 1529712000000,26585 ],[ 1529798400000,26585 ],[ 1529884800000,26585 ],[ 1529971200000,26585 ],[ 1530057600000,26585 ],[ 1530144000000,26585 ],[ 1530230400000,26585 ],[ 1530316800000,26585 ],[ 1530403200000,26585 ],[ 1530489600000,26585 ],[ 1530576000000,26585 ],[ 1530662400000,26585 ],[ 1530748800000,26585 ],[ 1530835200000,26585 ],[ 1530921600000,26585 ],[ 1531008000000,26585 ],[ 1531094400000,26585 ],[ 1531180800000,26585 ],[ 1531267200000,26585 ],[ 1531425126000,27239 ] ] }] };
+        
+        window.chart_charts.changed_lines_by_author_by_date = new Highcharts.StockChart(options);
+
+          };
+                })()
+        </script>
+
+<div id="charts.changed_lines_by_author_by_date"></div>
+<small>
+<center>Individual LGE Chromium author shown</center>
+</small>
+</div>
+</div>
+</div>
+
+
+</div>
+</body>
+</html>

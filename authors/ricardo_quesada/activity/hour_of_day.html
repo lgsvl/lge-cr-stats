@@ -123,7 +123,7 @@ a:hover {
 <div class='tab-pane active'>
 <div class='page-header pagination-centered'>
 <h1>Hour of day</h1>
-<h3>Ricardo Quesada &lt;ricardoq@chromium.org&gt;</h3>
+<h3>Ricardo Quesada &lt;ricardoq@google.com&gt;</h3>
 </div>
 </div>
 <table class='table table-condensed'>
@@ -175,11 +175,11 @@ a:hover {
 <td>0</td>
 <td>1</td>
 <td>0</td>
-<td>0</td>
-<td>0</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
+<td>0</td>
+<td>1</td>
 </tr>
 <tr>
 <th>Percentage</th>
@@ -200,13 +200,13 @@ a:hover {
 <td>0.0</td>
 <td>0.0</td>
 <td>0.0</td>
-<td>50.0</td>
+<td>33.3</td>
+<td>0.0</td>
+<td>33.3</td>
 <td>0.0</td>
 <td>0.0</td>
 <td>0.0</td>
-<td>50.0</td>
-<td>0.0</td>
-<td>0.0</td>
+<td>33.3</td>
 </tr>
 </table>
                 <script type="text/javascript">
@@ -215,7 +215,7 @@ a:hover {
           var onload = window.onload;
           window.onload = function(){
             if (typeof onload == "function") onload();
-                    var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": "Hour" },"categories": "0..23" },"yAxis": { "title": { "text": "Commits" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.activity_by_hour","type": "column" },"subtitle": {  },"series": [{ "name": "Commits by hour","data": [ 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0 ] }] };
+                    var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": "Hour" },"categories": "0..23" },"yAxis": { "title": { "text": "Commits" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.activity_by_hour","type": "column" },"subtitle": {  },"series": [{ "name": "Commits by hour","data": [ 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,1 ] }] };
         
         window.chart_charts.activity_by_hour = new Highcharts.Chart(options);
 
