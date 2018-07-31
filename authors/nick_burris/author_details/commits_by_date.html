@@ -121,7 +121,7 @@ a:hover {
           var onload = window.onload;
           window.onload = function(){
             if (typeof onload == "function") onload();
-                    var options = { "title": { "text": "" },"legend": { "enabled": true,"layout": "vertical","backgroundColor": "#FFFFFF","align": "left","verticalAlign": "top","x": 100,"y": 70,"floating": true,"shadow": true },"xAxis": { "title": { "text": null } },"yAxis": { "title": { "text": "Commits" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.commits_sum_by_author_by_date" },"subtitle": {  },"series": [{ "name": "Nick Burris","type": "spline","data": [ [ 1528730758000,1 ],[ 1528761600000,1 ],[ 1528848000000,1 ],[ 1528934400000,1 ],[ 1529020800000,1 ],[ 1529107200000,1 ],[ 1529193600000,1 ],[ 1529280000000,1 ],[ 1529426581000,2 ],[ 1529452800000,2 ],[ 1529539200000,2 ],[ 1529625600000,2 ],[ 1529712000000,2 ],[ 1529798400000,2 ],[ 1529884800000,2 ],[ 1529971200000,2 ],[ 1530057600000,2 ],[ 1530144000000,2 ],[ 1530304617000,3 ],[ 1530316800000,3 ],[ 1530403200000,3 ],[ 1530489600000,3 ],[ 1530576000000,3 ],[ 1530662400000,3 ],[ 1530748800000,3 ],[ 1530904009000,4 ],[ 1530921600000,4 ],[ 1531008000000,4 ],[ 1531094400000,4 ],[ 1531229352000,5 ],[ 1531350797000,6 ],[ 1531413197000,7 ],[ 1531426295000,8 ],[ 1531503924000,9 ] ] }] };
+                    var options = { "title": { "text": "" },"legend": { "enabled": true,"layout": "vertical","backgroundColor": "#FFFFFF","align": "left","verticalAlign": "top","x": 100,"y": 70,"floating": true,"shadow": true },"xAxis": { "title": { "text": null } },"yAxis": { "title": { "text": "Lines" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.commits_sum_by_author_by_date" },"subtitle": {  },"series": [{ "name": "Nick Burris","type": "spline","data": [ [ 1528730758000,1 ] ] }] };
         
         window.chart_charts.commits_sum_by_author_by_date = new Highcharts.StockChart(options);
 
@@ -131,7 +131,7 @@ a:hover {
 
 <div id="charts.commits_sum_by_author_by_date"></div>
 <small>
-<center>Individual LGE Chromium author shown</center>
+<center>5 LGE Chromium authors shown</center>
 </small>
 </div>
 </div>

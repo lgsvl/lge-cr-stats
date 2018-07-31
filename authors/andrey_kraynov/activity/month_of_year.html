@@ -150,7 +150,7 @@ a:hover {
 <td>3</td>
 <td>3</td>
 <td>4</td>
-<td>8</td>
+<td>6</td>
 <td>5</td>
 <td>7</td>
 <td>11</td>
@@ -159,18 +159,18 @@ a:hover {
 </tr>
 <tr>
 <th>Percentage</th>
-<td>6.3</td>
-<td>3.1</td>
-<td>10.9</td>
-<td>4.7</td>
-<td>4.7</td>
-<td>6.3</td>
-<td>12.5</td>
-<td>7.8</td>
-<td>10.9</td>
-<td>17.2</td>
-<td>10.9</td>
-<td>4.7</td>
+<td>6.5</td>
+<td>3.2</td>
+<td>11.3</td>
+<td>4.8</td>
+<td>4.8</td>
+<td>6.5</td>
+<td>9.7</td>
+<td>8.1</td>
+<td>11.3</td>
+<td>17.7</td>
+<td>11.3</td>
+<td>4.8</td>
 </tr>
 </table>
                 <script type="text/javascript">
@@ -179,7 +179,7 @@ a:hover {
           var onload = window.onload;
           window.onload = function(){
             if (typeof onload == "function") onload();
-                    var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": "Month" },"categories": [ "Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec" ] },"yAxis": { "title": { "text": "Commits" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.activity_by_month","type": "column" },"subtitle": {  },"series": [{ "name": "Commits by month","data": [ 4,2,7,3,3,4,8,5,7,11,7,3 ] }] };
+                    var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": "Month" },"categories": [ "Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec" ] },"yAxis": { "title": { "text": "Commits" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.activity_by_month","type": "column" },"subtitle": {  },"series": [{ "name": "Commits by month","data": [ 4,2,7,3,3,4,6,5,7,11,7,3 ] }] };
         
         window.chart_charts.activity_by_month = new Highcharts.Chart(options);
 
