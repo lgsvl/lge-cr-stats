@@ -149,8 +149,8 @@ a:hover {
 <td>101</td>
 <td>88</td>
 <td>94</td>
-<td>44</td>
-<td>16</td>
+<td>93</td>
+<td>109</td>
 <td>41</td>
 <td>95</td>
 <td>51</td>
@@ -159,18 +159,18 @@ a:hover {
 </tr>
 <tr>
 <th>Percentage</th>
-<td>9.0</td>
-<td>7.1</td>
-<td>13.5</td>
-<td>11.8</td>
-<td>12.6</td>
-<td>5.9</td>
-<td>2.1</td>
-<td>5.5</td>
-<td>12.7</td>
-<td>6.8</td>
-<td>5.8</td>
-<td>7.2</td>
+<td>7.5</td>
+<td>6.0</td>
+<td>11.4</td>
+<td>9.9</td>
+<td>10.6</td>
+<td>10.5</td>
+<td>12.3</td>
+<td>4.6</td>
+<td>10.7</td>
+<td>5.7</td>
+<td>4.8</td>
+<td>6.1</td>
 </tr>
 </table>
                 <script type="text/javascript">
@@ -179,7 +179,7 @@ a:hover {
           var onload = window.onload;
           window.onload = function(){
             if (typeof onload == "function") onload();
-                    var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": "Month" },"categories": [ "Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec" ] },"yAxis": { "title": { "text": "Commits" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.activity_by_month","type": "column" },"subtitle": {  },"series": [{ "name": "Commits by month","data": [ 67,53,101,88,94,44,16,41,95,51,43,54 ] }] };
+                    var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": "Month" },"categories": [ "Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec" ] },"yAxis": { "title": { "text": "Commits" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.activity_by_month","type": "column" },"subtitle": {  },"series": [{ "name": "Commits by month","data": [ 67,53,101,88,94,93,109,41,95,51,43,54 ] }] };
         
         window.chart_charts.activity_by_month = new Highcharts.Chart(options);
 

@@ -132,7 +132,7 @@ a:hover {
           var onload = window.onload;
           window.onload = function(){
             if (typeof onload == "function") onload();
-                    var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": "Year" },"categories": [ 2015,2016,2017,2018 ] },"yAxis": { "title": { "text": "Commits" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.activity_by_year","type": "column" },"subtitle": {  },"series": [{ "name": "Commits by year","data": [ 4,4,125,101 ] }] };
+                    var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": "Year" },"categories": [ 2001,2002,2003,2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018 ] },"yAxis": { "title": { "text": "Commits" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.activity_by_year","type": "column" },"subtitle": {  },"series": [{ "name": "Commits by year","data": [ 517,2520,2203,2020,2681,5576,7333,14925,37029,47789,62361,75745,81257,84260,81146,85717,97569,59865 ] }] };
         
         window.chart_charts.activity_by_year = new Highcharts.Chart(options);
 

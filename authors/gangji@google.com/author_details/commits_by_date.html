@@ -121,7 +121,7 @@ a:hover {
           var onload = window.onload;
           window.onload = function(){
             if (typeof onload == "function") onload();
-                    var options = { "title": { "text": "" },"legend": { "enabled": true,"layout": "vertical","backgroundColor": "#FFFFFF","align": "left","verticalAlign": "top","x": 100,"y": 70,"floating": true,"shadow": true },"xAxis": { "title": { "text": null } },"yAxis": { "title": { "text": "Lines" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.commits_sum_by_author_by_date" },"subtitle": {  },"series": [{ "name": "gangji@google.com","type": "spline","data": [ [ 1299095129000,1 ],[ 1299110400000,1 ],[ 1299279616000,2 ],[ 1299283200000,2 ],[ 1299369600000,2 ],[ 1299456000000,2 ],[ 1299611403000,3 ],[ 1299619355000,4 ],[ 1299628800000,4 ],[ 1299715200000,4 ],[ 1299870122000,5 ],[ 1299891828000,6 ],[ 1299974400000,6 ],[ 1300060800000,6 ],[ 1300147200000,6 ],[ 1300233600000,6 ],[ 1300320000000,6 ],[ 1300478525000,7 ],[ 1300492800000,7 ],[ 1300579200000,7 ],[ 1300665600000,7 ],[ 1300752000000,7 ],[ 1300838400000,7 ],[ 1300924800000,7 ],[ 1301070180000,8 ] ] }] };
+                    var options = { "title": { "text": "" },"legend": { "enabled": true,"layout": "vertical","backgroundColor": "#FFFFFF","align": "left","verticalAlign": "top","x": 100,"y": 70,"floating": true,"shadow": true },"xAxis": { "title": { "text": null } },"yAxis": { "title": { "text": "Commits" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.commits_sum_by_author_by_date" },"subtitle": {  },"series": [{ "name": "gangji@google.com","type": "spline","data": [ [ 1299095129000,1 ],[ 1299110400000,1 ],[ 1299279616000,2 ],[ 1299283200000,2 ],[ 1299369600000,2 ],[ 1299456000000,2 ],[ 1299611403000,3 ],[ 1299619355000,4 ],[ 1299628800000,4 ],[ 1299715200000,4 ],[ 1299870122000,5 ],[ 1299891828000,6 ],[ 1299974400000,6 ],[ 1300060800000,6 ],[ 1300147200000,6 ],[ 1300233600000,6 ],[ 1300320000000,6 ],[ 1300478525000,7 ],[ 1300492800000,7 ],[ 1300579200000,7 ],[ 1300665600000,7 ],[ 1300752000000,7 ],[ 1300838400000,7 ],[ 1300924800000,7 ],[ 1301070180000,8 ] ] }] };
         
         window.chart_charts.commits_sum_by_author_by_date = new Highcharts.StockChart(options);
 
@@ -131,7 +131,7 @@ a:hover {
 
 <div id="charts.commits_sum_by_author_by_date"></div>
 <small>
-<center>5 LGE Chromium authors shown</center>
+<center>Individual LGE Chromium author shown</center>
 </small>
 </div>
 </div>
