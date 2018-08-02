@@ -121,7 +121,7 @@ a:hover {
           var onload = window.onload;
           window.onload = function(){
             if (typeof onload == "function") onload();
-                    var options = { "title": { "text": "" },"legend": { "enabled": true,"layout": "vertical","backgroundColor": "#FFFFFF","align": "left","verticalAlign": "top","x": 100,"y": 70,"floating": true,"shadow": true },"xAxis": { "title": { "text": null } },"yAxis": { "title": { "text": "Commits" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.commits_sum_by_author_by_date" },"subtitle": {  },"series": [{ "name": "jeremycho@google.com","type": "spline","data": [ [ 1345687594000,1 ],[ 1345714203000,2 ],[ 1345766400000,2 ],[ 1345852800000,2 ],[ 1345939200000,2 ],[ 1346025600000,2 ],[ 1346112000000,2 ],[ 1346198400000,2 ],[ 1346284800000,2 ],[ 1346371200000,2 ],[ 1346457600000,2 ],[ 1346544000000,2 ],[ 1346630400000,2 ],[ 1346785982000,3 ] ] }] };
+                    var options = { "title": { "text": "" },"legend": { "enabled": true,"layout": "vertical","backgroundColor": "#FFFFFF","align": "left","verticalAlign": "top","x": 100,"y": 70,"floating": true,"shadow": true },"xAxis": { "title": { "text": null } },"yAxis": { "title": { "text": "Lines" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.commits_sum_by_author_by_date" },"subtitle": {  },"series": [{ "name": "jeremycho@google.com","type": "spline","data": [ [ 1345687594000,1 ],[ 1345714203000,2 ],[ 1345766400000,2 ],[ 1345852800000,2 ],[ 1345939200000,2 ],[ 1346025600000,2 ],[ 1346112000000,2 ],[ 1346198400000,2 ],[ 1346284800000,2 ],[ 1346371200000,2 ],[ 1346457600000,2 ],[ 1346544000000,2 ],[ 1346630400000,2 ],[ 1346785982000,3 ] ] }] };
         
         window.chart_charts.commits_sum_by_author_by_date = new Highcharts.StockChart(options);
 
@@ -131,7 +131,7 @@ a:hover {
 
 <div id="charts.commits_sum_by_author_by_date"></div>
 <small>
-<center>Individual LGE Chromium author shown</center>
+<center>5 LGE Chromium authors shown</center>
 </small>
 </div>
 </div>

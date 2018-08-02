@@ -121,7 +121,7 @@ a:hover {
           var onload = window.onload;
           window.onload = function(){
             if (typeof onload == "function") onload();
-                    var options = { "title": { "text": "" },"legend": { "enabled": true,"layout": "vertical","backgroundColor": "#FFFFFF","align": "left","verticalAlign": "top","x": 100,"y": 70,"floating": true,"shadow": true },"xAxis": { "title": { "text": null } },"yAxis": { "title": { "text": "Commits" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.commits_sum_by_author_by_date" },"subtitle": {  },"series": [{ "name": "Alex Gaynor","type": "spline","data": [ [ 1501640605000,1 ],[ 1501718400000,1 ],[ 1501804800000,1 ],[ 1501891200000,1 ],[ 1501977600000,1 ],[ 1502064000000,1 ],[ 1502150400000,1 ],[ 1502236800000,1 ],[ 1502323200000,1 ],[ 1502409600000,1 ],[ 1502496000000,1 ],[ 1502582400000,1 ],[ 1502668800000,1 ],[ 1502755200000,1 ],[ 1502841600000,1 ],[ 1503012312000,2 ],[ 1503014400000,2 ],[ 1503100800000,2 ],[ 1503187200000,2 ],[ 1503273600000,2 ],[ 1503360000000,2 ],[ 1503446400000,2 ],[ 1503532800000,2 ],[ 1503619200000,2 ],[ 1503705600000,2 ],[ 1503792000000,2 ],[ 1503878400000,2 ],[ 1503964800000,2 ],[ 1504051200000,2 ],[ 1504137600000,2 ],[ 1504297684000,3 ] ] }] };
+                    var options = { "title": { "text": "" },"legend": { "enabled": true,"layout": "vertical","backgroundColor": "#FFFFFF","align": "left","verticalAlign": "top","x": 100,"y": 70,"floating": true,"shadow": true },"xAxis": { "title": { "text": null } },"yAxis": { "title": { "text": "Lines" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.commits_sum_by_author_by_date" },"subtitle": {  },"series": [{ "name": "Alex Gaynor","type": "spline","data": [ [ 1501640605000,1 ],[ 1501718400000,1 ],[ 1501804800000,1 ],[ 1501891200000,1 ],[ 1501977600000,1 ],[ 1502064000000,1 ],[ 1502150400000,1 ],[ 1502236800000,1 ],[ 1502323200000,1 ],[ 1502409600000,1 ],[ 1502496000000,1 ],[ 1502582400000,1 ],[ 1502668800000,1 ],[ 1502755200000,1 ],[ 1502841600000,1 ],[ 1503012312000,2 ],[ 1503014400000,2 ],[ 1503100800000,2 ],[ 1503187200000,2 ],[ 1503273600000,2 ],[ 1503360000000,2 ],[ 1503446400000,2 ],[ 1503532800000,2 ],[ 1503619200000,2 ],[ 1503705600000,2 ],[ 1503792000000,2 ],[ 1503878400000,2 ],[ 1503964800000,2 ],[ 1504051200000,2 ],[ 1504137600000,2 ],[ 1504297684000,3 ] ] }] };
         
         window.chart_charts.commits_sum_by_author_by_date = new Highcharts.StockChart(options);
 
@@ -131,7 +131,7 @@ a:hover {
 
 <div id="charts.commits_sum_by_author_by_date"></div>
 <small>
-<center>Individual LGE Chromium author shown</center>
+<center>5 LGE Chromium authors shown</center>
 </small>
 </div>
 </div>

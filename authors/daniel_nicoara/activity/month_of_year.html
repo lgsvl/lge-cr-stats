@@ -149,8 +149,8 @@ a:hover {
 <td>30</td>
 <td>30</td>
 <td>28</td>
-<td>21</td>
-<td>14</td>
+<td>16</td>
+<td>4</td>
 <td>4</td>
 <td>30</td>
 <td>28</td>
@@ -159,18 +159,18 @@ a:hover {
 </tr>
 <tr>
 <th>Percentage</th>
-<td>11.5</td>
-<td>9.5</td>
-<td>10.2</td>
-<td>10.2</td>
-<td>9.5</td>
-<td>7.1</td>
-<td>4.7</td>
+<td>12.1</td>
+<td>10.0</td>
+<td>10.7</td>
+<td>10.7</td>
+<td>10.0</td>
+<td>5.7</td>
 <td>1.4</td>
-<td>10.2</td>
-<td>9.5</td>
-<td>8.1</td>
-<td>8.1</td>
+<td>1.4</td>
+<td>10.7</td>
+<td>10.0</td>
+<td>8.6</td>
+<td>8.6</td>
 </tr>
 </table>
                 <script type="text/javascript">
@@ -179,7 +179,7 @@ a:hover {
           var onload = window.onload;
           window.onload = function(){
             if (typeof onload == "function") onload();
-                    var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": "Month" },"categories": [ "Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec" ] },"yAxis": { "title": { "text": "Commits" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.activity_by_month","type": "column" },"subtitle": {  },"series": [{ "name": "Commits by month","data": [ 34,28,30,30,28,21,14,4,30,28,24,24 ] }] };
+                    var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": "Month" },"categories": [ "Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec" ] },"yAxis": { "title": { "text": "Commits" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.activity_by_month","type": "column" },"subtitle": {  },"series": [{ "name": "Commits by month","data": [ 34,28,30,30,28,16,4,4,30,28,24,24 ] }] };
         
         window.chart_charts.activity_by_month = new Highcharts.Chart(options);
 

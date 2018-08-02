@@ -121,7 +121,7 @@ a:hover {
           var onload = window.onload;
           window.onload = function(){
             if (typeof onload == "function") onload();
-                    var options = { "title": { "text": "" },"legend": { "enabled": true,"layout": "vertical","backgroundColor": "#FFFFFF","align": "left","verticalAlign": "top","x": 100,"y": 70,"floating": true,"shadow": true },"xAxis": { "title": { "text": null } },"yAxis": { "title": { "text": "Commits" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.commits_sum_by_author_by_date" },"subtitle": {  },"series": [{ "name": "tommi@google.com","type": "spline","data": [ [ 1239727931000,1 ],[ 1239753600000,1 ],[ 1239840000000,1 ],[ 1239926400000,1 ],[ 1240012800000,1 ],[ 1240099200000,1 ],[ 1240185600000,1 ],[ 1240272000000,1 ],[ 1240358400000,1 ],[ 1240444800000,1 ],[ 1240531200000,1 ],[ 1240617600000,1 ],[ 1240704000000,1 ],[ 1240790400000,1 ],[ 1240876800000,1 ],[ 1240963200000,1 ],[ 1241049600000,1 ],[ 1241136000000,1 ],[ 1241282727000,2 ] ] }] };
+                    var options = { "title": { "text": "" },"legend": { "enabled": true,"layout": "vertical","backgroundColor": "#FFFFFF","align": "left","verticalAlign": "top","x": 100,"y": 70,"floating": true,"shadow": true },"xAxis": { "title": { "text": null } },"yAxis": { "title": { "text": "Lines" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.commits_sum_by_author_by_date" },"subtitle": {  },"series": [{ "name": "tommi@google.com","type": "spline","data": [ [ 1239727931000,1 ],[ 1239753600000,1 ],[ 1239840000000,1 ],[ 1239926400000,1 ],[ 1240012800000,1 ],[ 1240099200000,1 ],[ 1240185600000,1 ],[ 1240272000000,1 ],[ 1240358400000,1 ],[ 1240444800000,1 ],[ 1240531200000,1 ],[ 1240617600000,1 ],[ 1240704000000,1 ],[ 1240790400000,1 ],[ 1240876800000,1 ],[ 1240963200000,1 ],[ 1241049600000,1 ],[ 1241136000000,1 ],[ 1241282727000,2 ] ] }] };
         
         window.chart_charts.commits_sum_by_author_by_date = new Highcharts.StockChart(options);
 
@@ -131,7 +131,7 @@ a:hover {
 
 <div id="charts.commits_sum_by_author_by_date"></div>
 <small>
-<center>Individual LGE Chromium author shown</center>
+<center>5 LGE Chromium authors shown</center>
 </small>
 </div>
 </div>
