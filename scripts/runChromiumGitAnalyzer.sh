@@ -14,12 +14,21 @@ do
     timestamp=$start_timestamp
     echo "[$timestamp] Start updating  Chromium trunk, please wait..."
     cd $CHROMIUM_PATH
-    git reset --hard HEAD~6
-    git pull origin master:master
+
+    # Restore master branch
+    git checkout -B master origin/master 
+    git reset --hard origin
+    git reflog expire --all --expire-unreachable=0
+    # git repack -A -d
+    git prune
+    git gc --auto
+
     git subtree add --prefix=v8-log https://chromium.googlesource.com/v8/v8.git master
     git subtree add --prefix=angle-log https://chromium.googlesource.com/angle/angle.git master
     git subtree add --prefix=crashpad-log https://chromium.googlesource.com/crashpad/crashpad master
     git subtree add --prefix=pdfium-log https://pdfium.googlesource.com/pdfium master
+    git add pdfium-log # Because of pdfium-log
+    git commit --amend --no-edit
     timestamp=$(date +"%T")
     echo "[$timestamp] Finish to update Chromium."
 
@@ -40,13 +49,10 @@ do
 
     $GIT_STATS_PATH generate -p $CHROMIUM_PATH -o $OUTPUT_PATH
 
-    # Restore master branch
-    git reset --hard refs/original/refs/heads/master
-    git reset --hard HEAD~6
-    git reset --hard
-#    git for-each-ref --format='delete %(refname)' refs/original | git update-ref --stdin
-#    git reflog expire --expire=now --all
-#    git gc --prune=now
+
+#    git reset --hard refs/original/refs/heads/master
+#    git reset --hard HEAD~6
+#    git reset --hard
 
     # Upload the result to github.
     cd $OUTPUT_PATH
