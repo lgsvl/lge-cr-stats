@@ -23,6 +23,10 @@ do
     git prune
     git gc --auto
 
+    # Fetch latest source.
+    git reset --hard HEAD~6
+    git pull
+
     git subtree add --prefix=v8-log https://chromium.googlesource.com/v8/v8.git master
     git subtree add --prefix=angle-log https://chromium.googlesource.com/angle/angle.git master
     git subtree add --prefix=crashpad-log https://chromium.googlesource.com/crashpad/crashpad master
