@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>GitStats - Chromium</title>
+<meta charset='utf-8'>
+<link href='../../../assets/bootstrap/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+<style>
+body {
+   padding-top: 60px;
+   font-family: "Trebuchet MS","Bitstream Vera Sans", "DejaVu Sans", "Luxi Sans","Lucida Grande", Helvetica, Verdana, Arial,sans-serif;
+   font-size: 12px;
+   background-color:#fdfdfd;
+}
+.navbar {
+  font-size: 16px;
+}
+.navbar .nav>li>a {
+  float: none;
+  padding: 10px 10px 10px;
+  color: #eee;
+  text-decoration: none;
+  text-shadow: none;
+}
+.navbar .nav>li>a:hover {
+  color: #ff9900;
+}
+.navbar .nav>.active>a, .navbar .nav>.active>a:hover, .navbar .nav>.active>a:focus {
+  -webkit-border-radius: 3px;
+  color: #555;
+  padding: 5px 10px 5px;
+  margin: 5px 10px 5px;
+  text-decoration: none;
+  background-color: #ccc;
+}
+.navbar .brand {
+  -webkit-border-radius: 3px;
+  background: #FF9900;
+  color: #404040;
+  display: block;
+  float: left;
+  padding: 5px 15px 5px;
+  margin: 5px 15px 5px;
+  margin-left: -20px;
+  font-size: 20px;
+  font-weight: 200;
+  /* color: white; */
+  text-shadow: none;
+}
+.navbar-inner {
+  background: #404040;
+}
+.tabs-left .nav-tabs {
+  float: left;
+  margin-right: 0px;
+  border-right: 1px solid #ddd;
+}
+a {
+  color: #666666;
+}
+a:hover {
+  color: #ff9900;
+}
+</style>
+<link href='../../../assets/bootstrap/css/bootstrap-responsive.min.css' rel='stylesheet' type='text/css'>
+<script src='../../../assets/jquery.min.js' type='text/javascript'></script>
+<script src='../../../assets/bootstrap/js/bootstrap.min.js' type='text/javascript'></script>
+<script src='../../../assets/highstock.js' type='text/javascript'></script>
+<script src='../../../assets/exporting.js' type='text/javascript'></script>
+<script src='../../../assets/export-csv.js' type='text/javascript'></script>
+</head>
+<body>
+<div class='navbar navbar-fixed-top'>
+<div class='navbar-inner'>
+<div class='container'>
+<a class='btn btn-navbar' data-target='.nav-collapse' data-toggle='collapse'>
+<span class='icon-bar'></span>
+<span class='icon-bar'></span>
+<span class='icon-bar'></span>
+</a>
+<a class='brand' href='../../../index.html'>GitStats - Chromium</a>
+<div class='nav-collapse collapse'>
+<ul class='nav'>
+<li class=''>
+<a href='../../../general.html'>General</a>
+</li>
+<li class=''>
+<a href='../../../activity/by_date.html'>Activity</a>
+</li>
+<li class='active'>
+<a href='../../lge_authors.html'>Authors</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class='container'>
+<div class='tabbable tabs-left'>
+<ul class='nav nav-tabs'>
+<li class=''>
+<a href='commits_by_date.html'>Commits by date</a>
+</li>
+<li class=''>
+<a href='changed_lines_by_date.html'>Changed lines by date</a>
+</li>
+<li class=''>
+<a href='insertions_by_date.html'>Lines added by date</a>
+</li>
+<li class='active'>
+<a href='deletions_by_date.html'>Lines deleted by date</a>
+</li>
+</ul>
+<div class='tab-content'>
+<div class='tab-pane active'>
+<div class='page-header'>
+<h1 class='pagination-centered'>Lines deleted by date</h1>
+</div>
+                <script type="text/javascript">
+        (function() {
+
+          var onload = window.onload;
+          window.onload = function(){
+            if (typeof onload == "function") onload();
+                    var options = { "title": { "text": "" },"legend": { "enabled": true,"layout": "vertical","backgroundColor": "#FFFFFF","align": "left","verticalAlign": "top","x": 100,"y": 70,"floating": true,"shadow": true },"xAxis": { "title": { "text": null } },"yAxis": { "title": { "text": "Lines" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.deletions_by_author_by_date" },"subtitle": {  },"series": [{ "name": "Stefan Teodorescu","type": "spline","data": [ [ 1531388776000,1 ],[ 1531440000000,1 ],[ 1531526400000,1 ],[ 1531612800000,1 ],[ 1531699200000,1 ],[ 1531785600000,1 ],[ 1531872000000,1 ],[ 1531958400000,1 ],[ 1532044800000,1 ],[ 1532131200000,1 ],[ 1532217600000,1 ],[ 1532304000000,1 ],[ 1532438658000,121 ],[ 1532476800000,121 ],[ 1532563200000,121 ],[ 1532649600000,121 ],[ 1532736000000,121 ],[ 1532822400000,121 ],[ 1532908800000,121 ],[ 1532995200000,121 ],[ 1533081600000,121 ],[ 1533168000000,121 ],[ 1533254400000,121 ],[ 1533340800000,121 ],[ 1533427200000,121 ],[ 1533513600000,121 ],[ 1533600000000,121 ],[ 1533686400000,121 ],[ 1533772800000,121 ],[ 1533859200000,121 ],[ 1533945600000,121 ],[ 1534032000000,121 ],[ 1534118400000,121 ],[ 1534204800000,121 ],[ 1534291200000,121 ],[ 1534377600000,121 ],[ 1534464000000,121 ],[ 1534550400000,121 ],[ 1534636800000,121 ],[ 1534723200000,121 ],[ 1534809600000,121 ],[ 1534965223000,638 ],[ 1534982400000,638 ],[ 1535068800000,638 ],[ 1535155200000,638 ],[ 1535241600000,638 ],[ 1535328000000,638 ],[ 1535414400000,638 ],[ 1535500800000,638 ],[ 1535587200000,638 ],[ 1535673600000,638 ],[ 1535760000000,638 ],[ 1535846400000,638 ],[ 1535932800000,638 ],[ 1536019200000,638 ],[ 1536168212000,638 ],[ 1536192000000,638 ],[ 1536278400000,638 ],[ 1536364800000,638 ],[ 1536451200000,638 ],[ 1536537600000,638 ],[ 1536624000000,638 ],[ 1536710400000,638 ],[ 1536796800000,638 ],[ 1536883200000,638 ],[ 1536969600000,638 ],[ 1537056000000,638 ],[ 1537142400000,638 ],[ 1537228800000,638 ],[ 1537383070000,649 ],[ 1537395259000,771 ],[ 1537401600000,771 ],[ 1537488000000,771 ],[ 1537574400000,771 ],[ 1537660800000,771 ],[ 1537747200000,771 ],[ 1537833600000,771 ],[ 1537920000000,771 ],[ 1538040746000,771 ],[ 1538068920000,800 ] ] }] };
+        
+        window.chart_charts.deletions_by_author_by_date = new Highcharts.StockChart(options);
+
+          };
+                })()
+        </script>
+
+<div id="charts.deletions_by_author_by_date"></div>
+<small>
+<center>Individual LGE Chromium author shown</center>
+</small>
+</div>
+</div>
+</div>
+
+
+</div>
+</body>
+</html>

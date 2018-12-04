@@ -5,7 +5,61 @@
 <meta charset='utf-8'>
 <link href='../../../assets/bootstrap/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
 <style>
-body { padding-top: 60px; }
+body {
+   padding-top: 60px;
+   font-family: "Trebuchet MS","Bitstream Vera Sans", "DejaVu Sans", "Luxi Sans","Lucida Grande", Helvetica, Verdana, Arial,sans-serif;
+   font-size: 12px;
+   background-color:#fdfdfd;
+}
+.navbar {
+  font-size: 16px;
+}
+.navbar .nav>li>a {
+  float: none;
+  padding: 10px 10px 10px;
+  color: #eee;
+  text-decoration: none;
+  text-shadow: none;
+}
+.navbar .nav>li>a:hover {
+  color: #ff9900;
+}
+.navbar .nav>.active>a, .navbar .nav>.active>a:hover, .navbar .nav>.active>a:focus {
+  -webkit-border-radius: 3px;
+  color: #555;
+  padding: 5px 10px 5px;
+  margin: 5px 10px 5px;
+  text-decoration: none;
+  background-color: #ccc;
+}
+.navbar .brand {
+  -webkit-border-radius: 3px;
+  background: #FF9900;
+  color: #404040;
+  display: block;
+  float: left;
+  padding: 5px 15px 5px;
+  margin: 5px 15px 5px;
+  margin-left: -20px;
+  font-size: 20px;
+  font-weight: 200;
+  /* color: white; */
+  text-shadow: none;
+}
+.navbar-inner {
+  background: #404040;
+}
+.tabs-left .nav-tabs {
+  float: left;
+  margin-right: 0px;
+  border-right: 1px solid #ddd;
+}
+a {
+  color: #666666;
+}
+a:hover {
+  color: #ff9900;
+}
 </style>
 <link href='../../../assets/bootstrap/css/bootstrap-responsive.min.css' rel='stylesheet' type='text/css'>
 <script src='../../../assets/jquery.min.js' type='text/javascript'></script>
@@ -33,16 +87,7 @@ body { padding-top: 60px; }
 <a href='../../../activity/by_date.html'>Activity</a>
 </li>
 <li class='active'>
-<a href='../../best_authors.html'>Authors</a>
-</li>
-<li class=''>
-<a href='../../../files/by_date.html'>Files</a>
-</li>
-<li class=''>
-<a href='../../../lines/by_date.html'>Lines</a>
-</li>
-<li class=''>
-<a href='../../../comments/by_date.html'>Comments</a>
+<a href='../../lge_authors.html'>Authors</a>
 </li>
 </ul>
 </div>
@@ -76,7 +121,7 @@ body { padding-top: 60px; }
           var onload = window.onload;
           window.onload = function(){
             if (typeof onload == "function") onload();
-                    var options = { "title": { "text": "" },"legend": { "enabled": true,"layout": "vertical","backgroundColor": "#FFFFFF","align": "left","verticalAlign": "top","x": 100,"y": 70,"floating": true,"shadow": true },"xAxis": { "title": { "text": null } },"yAxis": { "title": { "text": "Lines" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.deletions_by_author_by_date" },"subtitle": {  },"series": [{ "name": "Martin Robinson","type": "spline","data": [ [ 1381430195000,46666 ] ] }] };
+                    var options = { "title": { "text": "" },"legend": { "enabled": true,"layout": "vertical","backgroundColor": "#FFFFFF","align": "left","verticalAlign": "top","x": 100,"y": 70,"floating": true,"shadow": true },"xAxis": { "title": { "text": null } },"yAxis": { "title": { "text": "Lines" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.deletions_by_author_by_date" },"subtitle": {  },"series": [{ "name": "Martin Robinson","type": "spline","data": [ [ 1532535378000,6 ],[ 1532535808000,9 ],[ 1532535872000,15 ],[ 1532563200000,15 ],[ 1532708585000,17 ],[ 1532736000000,17 ],[ 1532822400000,17 ],[ 1532908800000,17 ],[ 1533027946000,371 ],[ 1533081600000,371 ],[ 1533198671000,391 ],[ 1533219222000,441 ],[ 1533254400000,441 ],[ 1533340800000,441 ],[ 1533427200000,441 ],[ 1533513600000,441 ],[ 1533600000000,441 ],[ 1533686400000,441 ],[ 1533772800000,441 ],[ 1533859200000,441 ],[ 1533945600000,441 ],[ 1534032000000,441 ],[ 1534118400000,441 ],[ 1534204800000,441 ],[ 1534291200000,441 ],[ 1534377600000,441 ],[ 1534464000000,441 ],[ 1534550400000,441 ],[ 1534636800000,441 ],[ 1534723200000,441 ],[ 1534809600000,441 ],[ 1534941811000,481 ],[ 1534949518000,559 ],[ 1535016923000,599 ],[ 1535068800000,599 ],[ 1535155200000,599 ],[ 1535241600000,599 ],[ 1535328000000,599 ],[ 1535477687000,656 ],[ 1535500800000,656 ],[ 1535587200000,656 ],[ 1535673600000,656 ],[ 1535760000000,656 ],[ 1535846400000,656 ],[ 1535932800000,656 ],[ 1536019200000,656 ],[ 1536105600000,656 ],[ 1536192000000,656 ],[ 1536343878000,705 ],[ 1536346697000,717 ],[ 1536364800000,717 ],[ 1536451200000,717 ],[ 1536537600000,717 ],[ 1536624000000,717 ],[ 1536710400000,717 ],[ 1536857425000,735 ],[ 1536883200000,735 ],[ 1536969600000,735 ],[ 1537056000000,735 ],[ 1537142400000,735 ],[ 1537266621000,815 ],[ 1537292056000,818 ],[ 1537388761000,990 ],[ 1537401600000,990 ],[ 1537519747000,990 ],[ 1537572696000,1088 ],[ 1537574400000,1088 ],[ 1537660800000,1088 ],[ 1537747200000,1088 ],[ 1537833600000,1088 ],[ 1537920000000,1088 ],[ 1538006400000,1088 ],[ 1538092800000,1088 ],[ 1538179200000,1088 ],[ 1538265600000,1088 ],[ 1538352000000,1088 ],[ 1538438400000,1088 ],[ 1538524800000,1088 ],[ 1538611200000,1088 ],[ 1538697600000,1088 ],[ 1538784000000,1088 ],[ 1538870400000,1088 ],[ 1538956800000,1088 ],[ 1539043200000,1088 ],[ 1539129600000,1088 ],[ 1539283023000,1258 ],[ 1539302400000,1258 ],[ 1539388800000,1258 ],[ 1539475200000,1258 ],[ 1539561600000,1258 ],[ 1539648000000,1258 ],[ 1539734400000,1258 ],[ 1539820800000,1258 ],[ 1539907200000,1258 ],[ 1539993600000,1258 ],[ 1540080000000,1258 ],[ 1540166400000,1258 ],[ 1540252800000,1258 ],[ 1540339200000,1258 ],[ 1540425600000,1258 ],[ 1540512000000,1258 ],[ 1540598400000,1258 ],[ 1540684800000,1258 ],[ 1540771200000,1258 ],[ 1540857600000,1258 ],[ 1541009742000,1258 ],[ 1541030400000,1258 ],[ 1541116800000,1258 ],[ 1541203200000,1258 ],[ 1541289600000,1258 ],[ 1541376000000,1258 ],[ 1541462400000,1258 ],[ 1541548800000,1258 ],[ 1541635200000,1258 ],[ 1541721600000,1258 ],[ 1541808000000,1258 ],[ 1541894400000,1258 ],[ 1541980800000,1258 ],[ 1542067200000,1258 ],[ 1542210234000,1263 ],[ 1542240000000,1263 ],[ 1542362523000,1268 ] ] }] };
         
         window.chart_charts.deletions_by_author_by_date = new Highcharts.StockChart(options);
 
@@ -86,7 +131,7 @@ body { padding-top: 60px; }
 
 <div id="charts.deletions_by_author_by_date"></div>
 <small>
-<center>5 best authors shown</center>
+<center>Individual LGE Chromium author shown</center>
 </small>
 </div>
 </div>

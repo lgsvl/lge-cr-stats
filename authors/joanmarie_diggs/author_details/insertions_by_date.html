@@ -5,7 +5,61 @@
 <meta charset='utf-8'>
 <link href='../../../assets/bootstrap/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
 <style>
-body { padding-top: 60px; }
+body {
+   padding-top: 60px;
+   font-family: "Trebuchet MS","Bitstream Vera Sans", "DejaVu Sans", "Luxi Sans","Lucida Grande", Helvetica, Verdana, Arial,sans-serif;
+   font-size: 12px;
+   background-color:#fdfdfd;
+}
+.navbar {
+  font-size: 16px;
+}
+.navbar .nav>li>a {
+  float: none;
+  padding: 10px 10px 10px;
+  color: #eee;
+  text-decoration: none;
+  text-shadow: none;
+}
+.navbar .nav>li>a:hover {
+  color: #ff9900;
+}
+.navbar .nav>.active>a, .navbar .nav>.active>a:hover, .navbar .nav>.active>a:focus {
+  -webkit-border-radius: 3px;
+  color: #555;
+  padding: 5px 10px 5px;
+  margin: 5px 10px 5px;
+  text-decoration: none;
+  background-color: #ccc;
+}
+.navbar .brand {
+  -webkit-border-radius: 3px;
+  background: #FF9900;
+  color: #404040;
+  display: block;
+  float: left;
+  padding: 5px 15px 5px;
+  margin: 5px 15px 5px;
+  margin-left: -20px;
+  font-size: 20px;
+  font-weight: 200;
+  /* color: white; */
+  text-shadow: none;
+}
+.navbar-inner {
+  background: #404040;
+}
+.tabs-left .nav-tabs {
+  float: left;
+  margin-right: 0px;
+  border-right: 1px solid #ddd;
+}
+a {
+  color: #666666;
+}
+a:hover {
+  color: #ff9900;
+}
 </style>
 <link href='../../../assets/bootstrap/css/bootstrap-responsive.min.css' rel='stylesheet' type='text/css'>
 <script src='../../../assets/jquery.min.js' type='text/javascript'></script>
@@ -33,16 +87,7 @@ body { padding-top: 60px; }
 <a href='../../../activity/by_date.html'>Activity</a>
 </li>
 <li class='active'>
-<a href='../../best_authors.html'>Authors</a>
-</li>
-<li class=''>
-<a href='../../../files/by_date.html'>Files</a>
-</li>
-<li class=''>
-<a href='../../../lines/by_date.html'>Lines</a>
-</li>
-<li class=''>
-<a href='../../../comments/by_date.html'>Comments</a>
+<a href='../../lge_authors.html'>Authors</a>
 </li>
 </ul>
 </div>
@@ -76,7 +121,7 @@ body { padding-top: 60px; }
           var onload = window.onload;
           window.onload = function(){
             if (typeof onload == "function") onload();
-                    var options = { "title": { "text": "" },"legend": { "enabled": true,"layout": "vertical","backgroundColor": "#FFFFFF","align": "left","verticalAlign": "top","x": 100,"y": 70,"floating": true,"shadow": true },"xAxis": { "title": { "text": null } },"yAxis": { "title": { "text": "Lines" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.insertions_by_author_by_date" },"subtitle": {  },"series": [{ "name": "Joanmarie Diggs","type": "spline","data": [ [ 1360953219000,91 ] ] }] };
+                    var options = { "title": { "text": "" },"legend": { "enabled": true,"layout": "vertical","backgroundColor": "#FFFFFF","align": "left","verticalAlign": "top","x": 100,"y": 70,"floating": true,"shadow": true },"xAxis": { "title": { "text": null } },"yAxis": { "title": { "text": "Lines" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.insertions_by_author_by_date" },"subtitle": {  },"series": [{ "name": "Joanmarie Diggs","type": "spline","data": [ [ 1532987638000,196 ],[ 1532995200000,196 ],[ 1533081600000,196 ],[ 1533168000000,196 ],[ 1533254400000,196 ],[ 1533340800000,196 ],[ 1533427200000,196 ],[ 1533513600000,196 ],[ 1533600000000,196 ],[ 1533686400000,196 ],[ 1533772800000,196 ],[ 1533936592000,310 ],[ 1533945600000,310 ],[ 1534032000000,310 ],[ 1534118400000,310 ],[ 1534204800000,310 ],[ 1534291200000,310 ],[ 1534443101000,2041 ],[ 1534464000000,2041 ],[ 1534550400000,2041 ],[ 1534636800000,2041 ],[ 1534723200000,2041 ],[ 1534809600000,2041 ],[ 1534896000000,2041 ],[ 1534982400000,2041 ],[ 1535068800000,2041 ],[ 1535155200000,2041 ],[ 1535241600000,2041 ],[ 1535328000000,2041 ],[ 1535414400000,2041 ],[ 1535500800000,2041 ],[ 1535587200000,2041 ],[ 1535673600000,2041 ],[ 1535760000000,2041 ],[ 1535846400000,2041 ],[ 1535932800000,2041 ],[ 1536019200000,2041 ],[ 1536105600000,2041 ],[ 1536192000000,2041 ],[ 1536278400000,2041 ],[ 1536364800000,2041 ],[ 1536451200000,2041 ],[ 1536599176000,2305 ],[ 1536643805000,2593 ],[ 1536684614000,2682 ],[ 1536710400000,2682 ],[ 1536842000000,2718 ],[ 1536883200000,2718 ],[ 1536969600000,2718 ],[ 1537056000000,2718 ],[ 1537142400000,2718 ],[ 1537228800000,2718 ],[ 1537315200000,2718 ],[ 1537401600000,2718 ],[ 1537488000000,2718 ],[ 1537574400000,2718 ],[ 1537660800000,2718 ],[ 1537801528000,2793 ],[ 1537833600000,2793 ],[ 1537959199000,2861 ],[ 1537985436000,2972 ],[ 1537997664000,3041 ],[ 1538006400000,3041 ],[ 1538173403000,3287 ],[ 1538179200000,3287 ],[ 1538265600000,3287 ],[ 1538352000000,3287 ],[ 1538438400000,3287 ],[ 1538524800000,3287 ],[ 1538611200000,3287 ],[ 1538768234000,3464 ] ] }] };
         
         window.chart_charts.insertions_by_author_by_date = new Highcharts.StockChart(options);
 
@@ -86,7 +131,7 @@ body { padding-top: 60px; }
 
 <div id="charts.insertions_by_author_by_date"></div>
 <small>
-<center>5 best authors shown</center>
+<center>Individual LGE Chromium author shown</center>
 </small>
 </div>
 </div>

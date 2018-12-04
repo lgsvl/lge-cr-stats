@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>GitStats - Chromium</title>
+<meta charset='utf-8'>
+<link href='../../../assets/bootstrap/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+<style>
+body {
+   padding-top: 60px;
+   font-family: "Trebuchet MS","Bitstream Vera Sans", "DejaVu Sans", "Luxi Sans","Lucida Grande", Helvetica, Verdana, Arial,sans-serif;
+   font-size: 12px;
+   background-color:#fdfdfd;
+}
+.navbar {
+  font-size: 16px;
+}
+.navbar .nav>li>a {
+  float: none;
+  padding: 10px 10px 10px;
+  color: #eee;
+  text-decoration: none;
+  text-shadow: none;
+}
+.navbar .nav>li>a:hover {
+  color: #ff9900;
+}
+.navbar .nav>.active>a, .navbar .nav>.active>a:hover, .navbar .nav>.active>a:focus {
+  -webkit-border-radius: 3px;
+  color: #555;
+  padding: 5px 10px 5px;
+  margin: 5px 10px 5px;
+  text-decoration: none;
+  background-color: #ccc;
+}
+.navbar .brand {
+  -webkit-border-radius: 3px;
+  background: #FF9900;
+  color: #404040;
+  display: block;
+  float: left;
+  padding: 5px 15px 5px;
+  margin: 5px 15px 5px;
+  margin-left: -20px;
+  font-size: 20px;
+  font-weight: 200;
+  /* color: white; */
+  text-shadow: none;
+}
+.navbar-inner {
+  background: #404040;
+}
+.tabs-left .nav-tabs {
+  float: left;
+  margin-right: 0px;
+  border-right: 1px solid #ddd;
+}
+a {
+  color: #666666;
+}
+a:hover {
+  color: #ff9900;
+}
+</style>
+<link href='../../../assets/bootstrap/css/bootstrap-responsive.min.css' rel='stylesheet' type='text/css'>
+<script src='../../../assets/jquery.min.js' type='text/javascript'></script>
+<script src='../../../assets/bootstrap/js/bootstrap.min.js' type='text/javascript'></script>
+<script src='../../../assets/highstock.js' type='text/javascript'></script>
+<script src='../../../assets/exporting.js' type='text/javascript'></script>
+<script src='../../../assets/export-csv.js' type='text/javascript'></script>
+</head>
+<body>
+<div class='navbar navbar-fixed-top'>
+<div class='navbar-inner'>
+<div class='container'>
+<a class='btn btn-navbar' data-target='.nav-collapse' data-toggle='collapse'>
+<span class='icon-bar'></span>
+<span class='icon-bar'></span>
+<span class='icon-bar'></span>
+</a>
+<a class='brand' href='../../../index.html'>GitStats - Chromium</a>
+<div class='nav-collapse collapse'>
+<ul class='nav'>
+<li class=''>
+<a href='../../../general.html'>General</a>
+</li>
+<li class=''>
+<a href='../../../activity/by_date.html'>Activity</a>
+</li>
+<li class='active'>
+<a href='../../lge_authors.html'>Authors</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class='container'>
+<div class='tabbable tabs-left'>
+<ul class='nav nav-tabs'>
+<li class='active'>
+<a href='commits_by_date.html'>Commits by date</a>
+</li>
+<li class=''>
+<a href='changed_lines_by_date.html'>Changed lines by date</a>
+</li>
+<li class=''>
+<a href='insertions_by_date.html'>Lines added by date</a>
+</li>
+<li class=''>
+<a href='deletions_by_date.html'>Lines deleted by date</a>
+</li>
+</ul>
+<div class='tab-content'>
+<div class='tab-pane active'>
+<div class='page-header'>
+<h1 class='pagination-centered'>Commits by date</h1>
+</div>
+                <script type="text/javascript">
+        (function() {
+
+          var onload = window.onload;
+          window.onload = function(){
+            if (typeof onload == "function") onload();
+                    var options = { "title": { "text": "" },"legend": { "enabled": true,"layout": "vertical","backgroundColor": "#FFFFFF","align": "left","verticalAlign": "top","x": 100,"y": 70,"floating": true,"shadow": true },"xAxis": { "title": { "text": null } },"yAxis": { "title": { "text": "Commits" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.commits_sum_by_author_by_date" },"subtitle": {  },"series": [{ "name": "Mohit Hotwani","type": "spline","data": [ [ 1518129207000,1 ],[ 1518134400000,1 ],[ 1518220800000,1 ],[ 1518307200000,1 ],[ 1518393600000,1 ],[ 1518480000000,1 ],[ 1518566400000,1 ],[ 1518652800000,1 ],[ 1518739200000,1 ],[ 1518825600000,1 ],[ 1518912000000,1 ],[ 1518998400000,1 ],[ 1519084800000,1 ],[ 1519171200000,1 ],[ 1519257600000,1 ],[ 1519344000000,1 ],[ 1519430400000,1 ],[ 1519516800000,1 ],[ 1519603200000,1 ],[ 1519689600000,1 ],[ 1519776000000,1 ],[ 1519862400000,1 ],[ 1519948800000,1 ],[ 1520035200000,1 ],[ 1520121600000,1 ],[ 1520208000000,1 ],[ 1520294400000,1 ],[ 1520380800000,1 ],[ 1520467200000,1 ],[ 1520553600000,1 ],[ 1520640000000,1 ],[ 1520726400000,1 ],[ 1520812800000,1 ],[ 1520899200000,1 ],[ 1520985600000,1 ],[ 1521072000000,1 ],[ 1521158400000,1 ],[ 1521244800000,1 ],[ 1521331200000,1 ],[ 1521417600000,1 ],[ 1521504000000,1 ],[ 1521590400000,1 ],[ 1521676800000,1 ],[ 1521763200000,1 ],[ 1521849600000,1 ],[ 1521936000000,1 ],[ 1522022400000,1 ],[ 1522108800000,1 ],[ 1522195200000,1 ],[ 1522281600000,1 ],[ 1522368000000,1 ],[ 1522454400000,1 ],[ 1522540800000,1 ],[ 1522627200000,1 ],[ 1522713600000,1 ],[ 1522800000000,1 ],[ 1522886400000,1 ],[ 1522972800000,1 ],[ 1523059200000,1 ],[ 1523145600000,1 ],[ 1523232000000,1 ],[ 1523318400000,1 ],[ 1523404800000,1 ],[ 1523491200000,1 ],[ 1523577600000,1 ],[ 1523664000000,1 ],[ 1523750400000,1 ],[ 1523836800000,1 ],[ 1523923200000,1 ],[ 1524009600000,1 ],[ 1524096000000,1 ],[ 1524182400000,1 ],[ 1524268800000,1 ],[ 1524355200000,1 ],[ 1524441600000,1 ],[ 1524528000000,1 ],[ 1524614400000,1 ],[ 1524700800000,1 ],[ 1524787200000,1 ],[ 1524873600000,1 ],[ 1524960000000,1 ],[ 1525046400000,1 ],[ 1525132800000,1 ],[ 1525219200000,1 ],[ 1525305600000,1 ],[ 1525392000000,1 ],[ 1525478400000,1 ],[ 1525564800000,1 ],[ 1525651200000,1 ],[ 1525737600000,1 ],[ 1525824000000,1 ],[ 1525910400000,1 ],[ 1525996800000,1 ],[ 1526083200000,1 ],[ 1526169600000,1 ],[ 1526256000000,1 ],[ 1526342400000,1 ],[ 1526428800000,1 ],[ 1526515200000,1 ],[ 1526601600000,1 ],[ 1526688000000,1 ],[ 1526774400000,1 ],[ 1526860800000,1 ],[ 1526947200000,1 ],[ 1527033600000,1 ],[ 1527120000000,1 ],[ 1527206400000,1 ],[ 1527292800000,1 ],[ 1527379200000,1 ],[ 1527465600000,1 ],[ 1527552000000,1 ],[ 1527638400000,1 ],[ 1527724800000,1 ],[ 1527811200000,1 ],[ 1527897600000,1 ],[ 1527984000000,1 ],[ 1528070400000,1 ],[ 1528156800000,1 ],[ 1528243200000,1 ],[ 1528329600000,1 ],[ 1528416000000,1 ],[ 1528502400000,1 ],[ 1528588800000,1 ],[ 1528675200000,1 ],[ 1528761600000,1 ],[ 1528848000000,1 ],[ 1528934400000,1 ],[ 1529020800000,1 ],[ 1529107200000,1 ],[ 1529193600000,1 ],[ 1529280000000,1 ],[ 1529373073000,2 ],[ 1529452800000,2 ],[ 1529539200000,2 ],[ 1529625600000,2 ],[ 1529712000000,2 ],[ 1529798400000,2 ],[ 1529884800000,2 ],[ 1529971200000,2 ],[ 1530057600000,2 ],[ 1530144000000,2 ],[ 1530230400000,2 ],[ 1530316800000,2 ],[ 1530403200000,2 ],[ 1530489600000,2 ],[ 1530576000000,2 ],[ 1530662400000,2 ],[ 1530748800000,2 ],[ 1530835200000,2 ],[ 1530921600000,2 ],[ 1531008000000,2 ],[ 1531094400000,2 ],[ 1531180800000,2 ],[ 1531267200000,2 ],[ 1531353600000,2 ],[ 1531440000000,2 ],[ 1531526400000,2 ],[ 1531612800000,2 ],[ 1531699200000,2 ],[ 1531785600000,2 ],[ 1531872000000,2 ],[ 1531958400000,2 ],[ 1532044800000,2 ],[ 1532131200000,2 ],[ 1532217600000,2 ],[ 1532304000000,2 ],[ 1532390400000,2 ],[ 1532476800000,2 ],[ 1532563200000,2 ],[ 1532649600000,2 ],[ 1532736000000,2 ],[ 1532822400000,2 ],[ 1532908800000,2 ],[ 1532995200000,2 ],[ 1533081600000,2 ],[ 1533168000000,2 ],[ 1533254400000,2 ],[ 1533340800000,2 ],[ 1533427200000,2 ],[ 1533513600000,2 ],[ 1533600000000,2 ],[ 1533686400000,2 ],[ 1533772800000,2 ],[ 1533859200000,2 ],[ 1533945600000,2 ],[ 1534032000000,2 ],[ 1534118400000,2 ],[ 1534204800000,2 ],[ 1534291200000,2 ],[ 1534377600000,2 ],[ 1534464000000,2 ],[ 1534550400000,2 ],[ 1534636800000,2 ],[ 1534723200000,2 ],[ 1534809600000,2 ],[ 1534896000000,2 ],[ 1534993616000,3 ] ] }] };
+        
+        window.chart_charts.commits_sum_by_author_by_date = new Highcharts.StockChart(options);
+
+          };
+                })()
+        </script>
+
+<div id="charts.commits_sum_by_author_by_date"></div>
+<small>
+<center>Individual LGE Chromium author shown</center>
+</small>
+</div>
+</div>
+</div>
+
+
+</div>
+</body>
+</html>

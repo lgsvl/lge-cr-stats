@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>GitStats - Chromium</title>
+<meta charset='utf-8'>
+<link href='../../../assets/bootstrap/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+<style>
+body {
+   padding-top: 60px;
+   font-family: "Trebuchet MS","Bitstream Vera Sans", "DejaVu Sans", "Luxi Sans","Lucida Grande", Helvetica, Verdana, Arial,sans-serif;
+   font-size: 12px;
+   background-color:#fdfdfd;
+}
+.navbar {
+  font-size: 16px;
+}
+.navbar .nav>li>a {
+  float: none;
+  padding: 10px 10px 10px;
+  color: #eee;
+  text-decoration: none;
+  text-shadow: none;
+}
+.navbar .nav>li>a:hover {
+  color: #ff9900;
+}
+.navbar .nav>.active>a, .navbar .nav>.active>a:hover, .navbar .nav>.active>a:focus {
+  -webkit-border-radius: 3px;
+  color: #555;
+  padding: 5px 10px 5px;
+  margin: 5px 10px 5px;
+  text-decoration: none;
+  background-color: #ccc;
+}
+.navbar .brand {
+  -webkit-border-radius: 3px;
+  background: #FF9900;
+  color: #404040;
+  display: block;
+  float: left;
+  padding: 5px 15px 5px;
+  margin: 5px 15px 5px;
+  margin-left: -20px;
+  font-size: 20px;
+  font-weight: 200;
+  /* color: white; */
+  text-shadow: none;
+}
+.navbar-inner {
+  background: #404040;
+}
+.tabs-left .nav-tabs {
+  float: left;
+  margin-right: 0px;
+  border-right: 1px solid #ddd;
+}
+a {
+  color: #666666;
+}
+a:hover {
+  color: #ff9900;
+}
+</style>
+<link href='../../../assets/bootstrap/css/bootstrap-responsive.min.css' rel='stylesheet' type='text/css'>
+<script src='../../../assets/jquery.min.js' type='text/javascript'></script>
+<script src='../../../assets/bootstrap/js/bootstrap.min.js' type='text/javascript'></script>
+<script src='../../../assets/highstock.js' type='text/javascript'></script>
+<script src='../../../assets/exporting.js' type='text/javascript'></script>
+<script src='../../../assets/export-csv.js' type='text/javascript'></script>
+</head>
+<body>
+<div class='navbar navbar-fixed-top'>
+<div class='navbar-inner'>
+<div class='container'>
+<a class='btn btn-navbar' data-target='.nav-collapse' data-toggle='collapse'>
+<span class='icon-bar'></span>
+<span class='icon-bar'></span>
+<span class='icon-bar'></span>
+</a>
+<a class='brand' href='../../../index.html'>GitStats - Chromium</a>
+<div class='nav-collapse collapse'>
+<ul class='nav'>
+<li class=''>
+<a href='../../../general.html'>General</a>
+</li>
+<li class=''>
+<a href='../../../activity/by_date.html'>Activity</a>
+</li>
+<li class='active'>
+<a href='../../lge_authors.html'>Authors</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class='container'>
+<div class='tabbable tabs-left'>
+<ul class='nav nav-tabs'>
+<li class=''>
+<a href='commits_by_date.html'>Commits by date</a>
+</li>
+<li class=''>
+<a href='changed_lines_by_date.html'>Changed lines by date</a>
+</li>
+<li class=''>
+<a href='insertions_by_date.html'>Lines added by date</a>
+</li>
+<li class='active'>
+<a href='deletions_by_date.html'>Lines deleted by date</a>
+</li>
+</ul>
+<div class='tab-content'>
+<div class='tab-pane active'>
+<div class='page-header'>
+<h1 class='pagination-centered'>Lines deleted by date</h1>
+</div>
+                <script type="text/javascript">
+        (function() {
+
+          var onload = window.onload;
+          window.onload = function(){
+            if (typeof onload == "function") onload();
+                    var options = { "title": { "text": "" },"legend": { "enabled": true,"layout": "vertical","backgroundColor": "#FFFFFF","align": "left","verticalAlign": "top","x": 100,"y": 70,"floating": true,"shadow": true },"xAxis": { "title": { "text": null } },"yAxis": { "title": { "text": "Lines" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.deletions_by_author_by_date" },"subtitle": {  },"series": [{ "name": "3su6n15k.default@developer.gserviceaccount.com","type": "spline","data": [ [ 1532794419000,1 ],[ 1532822400000,1 ],[ 1532908800000,1 ],[ 1532995200000,1 ],[ 1533164522000,2 ],[ 1533168000000,2 ],[ 1533268012000,3 ],[ 1533290794000,4 ],[ 1533340800000,4 ],[ 1533427200000,4 ],[ 1533513600000,4 ],[ 1533600000000,4 ],[ 1533686400000,4 ],[ 1533772800000,4 ],[ 1533859200000,4 ],[ 1533945600000,4 ],[ 1534053481000,5 ],[ 1534118400000,5 ],[ 1534204800000,5 ],[ 1534291200000,5 ],[ 1534456346000,6 ],[ 1534464000000,6 ],[ 1534550400000,6 ],[ 1534636800000,6 ],[ 1534723200000,6 ],[ 1534809600000,6 ],[ 1534896000000,6 ],[ 1535008403000,7 ],[ 1535068800000,7 ],[ 1535155200000,7 ],[ 1535271165000,8 ],[ 1535328000000,8 ],[ 1535414400000,8 ],[ 1535500800000,8 ],[ 1535587200000,8 ],[ 1535743869000,9 ],[ 1535760000000,9 ],[ 1535846400000,9 ],[ 1535932800000,9 ],[ 1536019200000,9 ],[ 1536105600000,9 ],[ 1536192000000,9 ],[ 1536278400000,9 ],[ 1536387202000,10 ],[ 1536451200000,10 ],[ 1536537600000,10 ],[ 1536624000000,10 ],[ 1536710400000,10 ],[ 1536796800000,10 ],[ 1536883200000,10 ],[ 1536978897000,11 ],[ 1537056000000,11 ],[ 1537142400000,11 ],[ 1537228800000,11 ],[ 1537339665000,12 ],[ 1537401600000,12 ],[ 1537559755000,13 ],[ 1537574400000,13 ],[ 1537660800000,13 ],[ 1537747200000,13 ],[ 1537833600000,13 ],[ 1537931124000,14 ],[ 1537959930000,15 ],[ 1538006400000,15 ],[ 1538119313000,16 ],[ 1538174954000,17 ],[ 1538210299000,18 ],[ 1538265600000,18 ],[ 1538352000000,18 ],[ 1538449855000,19 ],[ 1538524800000,19 ],[ 1538611200000,19 ],[ 1538697600000,19 ],[ 1538784000000,19 ],[ 1538870400000,19 ],[ 1538956800000,19 ],[ 1539043200000,19 ],[ 1539152794000,20 ],[ 1539166916000,21 ],[ 1539216000000,21 ],[ 1539302400000,21 ],[ 1539426325000,22 ],[ 1539517152000,23 ],[ 1539590625000,24 ],[ 1539648000000,24 ],[ 1539745171000,25 ],[ 1539820800000,25 ],[ 1539907200000,25 ],[ 1539993600000,25 ],[ 1540080000000,25 ],[ 1540166400000,25 ],[ 1540252800000,25 ],[ 1540339200000,25 ],[ 1540425600000,25 ],[ 1540512000000,25 ],[ 1540598400000,25 ],[ 1540684800000,25 ],[ 1540771200000,25 ],[ 1540857600000,25 ],[ 1540954235000,26 ],[ 1541030400000,26 ],[ 1541137768000,27 ],[ 1541198746000,28 ],[ 1541261343000,29 ],[ 1541289600000,29 ],[ 1541401512000,30 ],[ 1541421443000,31 ],[ 1541462400000,31 ],[ 1541560436000,32 ],[ 1541715058000,33 ],[ 1541759054000,34 ] ] }] };
+        
+        window.chart_charts.deletions_by_author_by_date = new Highcharts.StockChart(options);
+
+          };
+                })()
+        </script>
+
+<div id="charts.deletions_by_author_by_date"></div>
+<small>
+<center>Individual LGE Chromium author shown</center>
+</small>
+</div>
+</div>
+</div>
+
+
+</div>
+</body>
+</html>

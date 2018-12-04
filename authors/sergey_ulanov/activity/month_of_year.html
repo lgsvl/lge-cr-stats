@@ -149,28 +149,28 @@ a:hover {
 <td>58</td>
 <td>50</td>
 <td>44</td>
-<td>53</td>
-<td>26</td>
-<td>38</td>
+<td>69</td>
+<td>51</td>
+<td>55</td>
+<td>100</td>
 <td>94</td>
-<td>78</td>
-<td>23</td>
+<td>45</td>
 <td>83</td>
 </tr>
 <tr>
 <th>Percentage</th>
-<td>11.6</td>
-<td>8.9</td>
-<td>8.4</td>
-<td>7.3</td>
-<td>6.4</td>
+<td>10.1</td>
 <td>7.7</td>
-<td>3.8</td>
-<td>5.5</td>
-<td>13.7</td>
-<td>11.3</td>
-<td>3.3</td>
-<td>12.1</td>
+<td>7.3</td>
+<td>6.3</td>
+<td>5.6</td>
+<td>8.7</td>
+<td>6.5</td>
+<td>7.0</td>
+<td>12.7</td>
+<td>11.9</td>
+<td>5.7</td>
+<td>10.5</td>
 </tr>
 </table>
                 <script type="text/javascript">
@@ -179,7 +179,7 @@ a:hover {
           var onload = window.onload;
           window.onload = function(){
             if (typeof onload == "function") onload();
-                    var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": "Month" },"categories": [ "Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec" ] },"yAxis": { "title": { "text": "Commits" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.activity_by_month","type": "column" },"subtitle": {  },"series": [{ "name": "Commits by month","data": [ 80,61,58,50,44,53,26,38,94,78,23,83 ] }] };
+                    var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": "Month" },"categories": [ "Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec" ] },"yAxis": { "title": { "text": "Commits" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.activity_by_month","type": "column" },"subtitle": {  },"series": [{ "name": "Commits by month","data": [ 80,61,58,50,44,69,51,55,100,94,45,83 ] }] };
         
         window.chart_charts.activity_by_month = new Highcharts.Chart(options);
 

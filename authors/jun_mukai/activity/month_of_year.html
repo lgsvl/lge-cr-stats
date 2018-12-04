@@ -150,27 +150,27 @@ a:hover {
 <td>5</td>
 <td>1</td>
 <td>1</td>
-<td>2</td>
-<td>16</td>
-<td>32</td>
-<td>65</td>
-<td>19</td>
+<td>8</td>
+<td>27</td>
+<td>45</td>
+<td>101</td>
+<td>35</td>
 <td>12</td>
 </tr>
 <tr>
 <th>Percentage</th>
-<td>6.6</td>
-<td>6.1</td>
-<td>10.1</td>
-<td>2.5</td>
-<td>0.5</td>
-<td>0.5</td>
-<td>1.0</td>
-<td>8.1</td>
-<td>16.2</td>
-<td>32.8</td>
+<td>4.6</td>
+<td>4.3</td>
+<td>7.1</td>
+<td>1.8</td>
+<td>0.4</td>
+<td>0.4</td>
+<td>2.9</td>
 <td>9.6</td>
-<td>6.1</td>
+<td>16.1</td>
+<td>36.1</td>
+<td>12.5</td>
+<td>4.3</td>
 </tr>
 </table>
                 <script type="text/javascript">
@@ -179,7 +179,7 @@ a:hover {
           var onload = window.onload;
           window.onload = function(){
             if (typeof onload == "function") onload();
-                    var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": "Month" },"categories": [ "Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec" ] },"yAxis": { "title": { "text": "Commits" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.activity_by_month","type": "column" },"subtitle": {  },"series": [{ "name": "Commits by month","data": [ 13,12,20,5,1,1,2,16,32,65,19,12 ] }] };
+                    var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": "Month" },"categories": [ "Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec" ] },"yAxis": { "title": { "text": "Commits" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.activity_by_month","type": "column" },"subtitle": {  },"series": [{ "name": "Commits by month","data": [ 13,12,20,5,1,1,8,27,45,101,35,12 ] }] };
         
         window.chart_charts.activity_by_month = new Highcharts.Chart(options);
 
